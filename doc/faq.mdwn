@@ -12,3 +12,8 @@ In any case, please try to explain how to reproduce it.
 
 Yes, I do. Please send them to me or the mailing-list for review. See also the [devel](/devel/) section.
 
+## I'd like to contribute to awesome Web site, how can I do?
+
+Please grab sources via git [here](http://git.naquadah.org/?p=awesome-www.git;a=summary).
+You can grab them using git, or you can generate a tarball from the Web interface.
+Then, send patches to awesome list, or to me.
