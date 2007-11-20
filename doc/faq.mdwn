@@ -17,3 +17,16 @@ Yes, I do. Please send them to me or the mailing-list for review. See also the [
 Please grab sources via git [here](http://git.naquadah.org/?p=awesome-www.git;a=summary).
 You can grab them using git, or you can generate a tarball from the Web interface.
 Then, send patches to awesome list, or to me.
+
+## I used to pipe things to be printed in stdin (like dwm) in awesome 1.x, it does not work in awesome 2.0, why?
+
+Because we implemented a better system. You want to use awesome-client which read the following from stdin:
+ #screen uicb arg
+
+So to change the statusbar text on screen 0, simply do the following:
+> echo 0 setstatustext "Hello, awesome world!" | awesome-client
+
+If you want to view another tag on screen 1:
+> echo 1 tag_view 3 | awesome-client
+
+etc.
