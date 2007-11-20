@@ -1,0 +1,14 @@
+#awesome frequently asked questions.
+
+## I found a bug, what I do?
+
+First, test the developement version to check if it's still here.
+If the bug is a behaviour not expected, please explain what you expected.
+If the bug is a segmentation fault, please include a full backtrace (use gdb).
+
+In any case, please try to explain how to reproduce it.
+
+## Do you accept patches, enhancements?
+
+Yes, I do. Please send them to me or the mailing-list for review. See also the [devel](/devel/) section.
+

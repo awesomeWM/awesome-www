@@ -1,0 +1,11 @@
+Installing awesome is pretty straightforward:
+
+	tar xzvf awesome.tar.gz
+	cd awesome
+	make
+	make install
+
+will install awesome in /usr/local.
+Note that you'll need [`libconfig`](http://www.hyperrealm.com/libconfig/libconfig.html) and X developement files installed first.
+
+PS: Debian's libconfig is not what you want. See [bug#441200](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=441200).

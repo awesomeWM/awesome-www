@@ -1,0 +1,30 @@
+Version 2.0-rc1 of *awesome* is available. To download it, see the [[download]] page.
+This is the first release candidate version of the upcoming 2.0 version.
+
+This release fixes a lot of bugs, add a lot of new features and a bring a better Xinerama support. You can
+[[toggle text="see changes" id="changelog"]].
+[[toggleable id="changelog" text="""
+* New config file format (libconfig replaced by libconfuse)
+* Bug fix: fix resize_hint
+* Bug fix: reset correctly default bar position on toggle
+* Bug fix: wrong column in multi column tiled layout
+* Bug fix: fix a bunch of bugs with mplayer in Xinerama mode
+* Bug fix: better computation for moving windows
+* New feature: option to center pointer on focused client
+* New feature: nmaster/ncol/mwfact and layout can be specified by tags at config and run time
+* New feature: use Cairo to render status bar
+* New feature: status bar can now be placed on right or left of the screen
+* New feature: each physical screen can now be configured independently for colors, statusbar, font, etc
+* New feature: click-to-raise in floating mode
+* New feature: draw circle instead of square for some client flags in status bar
+* New feature: remember focused window on each tag
+* New feature: don't read on stdin any-more, introduce awesome-client to control everything via socket
+* New feature: rules can now set default screen where displays windows in Xinerama mode
+* New feature: mouse bindings are now configurable
+* New feature: map new clients on the screen where the mouse pointer is
+* New feature: mouse moving/resizing are now uicb
+"""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome list](/community/).
+
+Have fun!

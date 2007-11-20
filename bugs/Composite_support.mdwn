@@ -1,0 +1,3 @@
+awesome should support Composite without xcompmgr.
+
+> Planned in [[roadmap]]

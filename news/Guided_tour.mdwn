@@ -1,0 +1,1 @@
+A guided tour has been created [[here|doc/setup]]. Take a look!

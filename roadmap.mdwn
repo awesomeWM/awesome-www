@@ -1,0 +1,56 @@
+Here is the current developement roadmap for *awesome*. This may be not totally accurate and may change.
+
+----
+
+# awesome 1.3
+released on 5 october 2007
+
+> **Status:** *done:* 100%
+
+> <img src="../images/green-h.png" alt="progress" width="200" height="15" />
+
+Changes:
+
+- New Xinerama support;
+- Xft support;
+- Minor features.
+
+----
+
+# awesome 2.0
+
+> **Status:** *done:* 80%
+
+> <img src="../images/green-h.png" alt="progress" width="160" height="15" /><img src="../images/red-h.png" alt="progress" width="40" height="15" />
+
+Changes:
+
+- Replace libconfig with libconfuse (done);
+- Cairo support for drawing (done);
+- Support for enhanced fifo reading (done);
+- Support for configurable mouse bindings (done).
+
+----
+
+# awesome 2.1
+
+> **Status:** *done:* 0%
+
+> <img src="../images/yellow-h.png" alt="progress" width="200" height="15" />
+
+Changes:
+
+- Tabs support;
+- Real XRandR support.
+
+----
+
+# awesome 3.0
+
+> **Status:** *done:* 0%
+
+> <img src="../images/yellow-h.png" alt="progress" width="200" height="15" />
+
+Changes:
+
+- XComposite support.

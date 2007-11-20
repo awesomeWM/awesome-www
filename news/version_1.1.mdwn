@@ -1,0 +1,11 @@
+The 1.1 version awesome is available. To download it, see the [[download]] page.
+
+This release fix some bugs, here's the changelog
+
+* restack correctly windows when maximizing
+* fix a bug when resizing/moving with mouse
+* fix default configuration file parsing error and add it to tarball
+* fix default font loading on error
+* fix a heap overflow when using XRandR/XShape extensions
+
+Have fun!

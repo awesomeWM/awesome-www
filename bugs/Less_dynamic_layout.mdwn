@@ -1,0 +1,2 @@
+awesome should support a less dynamic layout scheme, where windows could be moved in columns and manually placed.
+Columns would be resizable with mouse also.

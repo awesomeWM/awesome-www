@@ -1,0 +1,19 @@
+Version 1.2 of *awesome* is available. To download it, see the [[download]] page.
+
+This release fixes some bugs, and add new features. You can
+[[toggle text="see changes" id="changelog"]].
+[[toggleable id="changelog" text="""
+* Fix toggle floating with Button2 in tileleft layout;
+* Add tag_viewprev utag_viewnext functions to key bindings;
+* Re-arrange windows when maximizing;
+* Enhance maximizing functions to support Xinerama;
+* Fix last state restore on maximizing (windows were always floating);
+* Add a new layout: max, which shows windows in fullscreen;
+* Add focusprevscreen and focusnextscreen to switch focus from one screen to another in Zaphod mode;
+* Display current layout nmaster/ncols/mwfact in status bar if no window is displayed;
+* Add swapnext and swapprev for reordering and swapping windows.
+"""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome list](/community/).
+
+Have fun!

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><TMPL_VAR TITLE></title>
+<TMPL_IF NAME="FAVICON">
+<link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
+</TMPL_IF>
+<link rel="stylesheet" href="<TMPL_VAR BASEURL>style.css" type="text/css" />
+<link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
+<TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
+<TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
+</head>
+<body>
+
+<div id="header">
+<h1><TMPL_VAR WIKINAME></h1>
+<TMPL_IF NAME="SEARCHFORM">
+<TMPL_VAR SEARCHFORM>
+</TMPL_IF>
+<ul>
+    <li><a href="/community/">community</a></li>
+    <li><a href="/screenshots/">screenshots</a></li>
+    <li><a href="/devel/">devel</a></li>
+    <li><a href="/doc/">documentation</a></li>
+    <li><a href="/download/">download</a></li>
+    <li><a href="/news/">news</a></li>
+    <li><a href="/">description</a></li>
+</ul>
+<div class="visual"></div>
+</div>
+
+<TMPL_IF NAME="HAVE_ACTIONS">
+<div class="actions">
+<ul>
+<TMPL_IF NAME="EDITURL">
+<li><a href="<TMPL_VAR EDITURL>">Edit</a></li>
+</TMPL_IF>
+<TMPL_IF NAME="RECENTCHANGESURL">
+<li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
+</TMPL_IF>
+<TMPL_IF NAME="HISTORYURL">
+<li><a href="<TMPL_VAR HISTORYURL>">History</a></li>
+</TMPL_IF>
+<TMPL_IF NAME="PREFSURL">
+<li><a href="<TMPL_VAR PREFSURL>">Preferences</a></li>
+</TMPL_IF>
+<TMPL_IF NAME="DISCUSSIONLINK">
+<li><TMPL_VAR DISCUSSIONLINK><br /></li>
+</TMPL_IF>
+</ul>
+</div>
+</TMPL_IF>
+
+<TMPL_IF SIDEBAR>
+<div id="sidebar">
+<TMPL_VAR SIDEBAR>
+</div>
+</TMPL_IF>
+
+<div id="content">
+<h1><TMPL_VAR TITLE></h1>
+<div id="text">
+<TMPL_VAR CONTENT>
+</div>
+</div>
+
+<div id="footer">
+<div id="pageinfo">
+
+<TMPL_IF NAME="TAGS">
+<div class="tags">
+Tags:
+<TMPL_LOOP NAME="TAGS">
+<TMPL_VAR NAME=LINK>
+</TMPL_LOOP>
+</div>
+</TMPL_IF>
+
+
+<SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/8909/badge_js'></SCRIPT> 
+<div class="copyright">
+<a name="pagecopyright"></a>
+<TMPL_IF COPYRIGHT>
+<TMPL_VAR COPYRIGHT>
+</TMPL_IF>
+Copyleft 2007 Julien Danjou
+</div>
+<TMPL_IF LICENSE>
+<div class="license">
+<a name="pagelicense"></a>
+License: <TMPL_VAR LICENSE>
+</div>
+</TMPL_IF>
+
+<div class="pagedate">
+Last edited <TMPL_VAR NAME=MTIME>
+</div>
+
+</div>
+<TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
+<!-- from <TMPL_VAR NAME=WIKINAME> -->
+</div>
+
+</body>
+</html>

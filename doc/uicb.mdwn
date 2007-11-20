@@ -1,0 +1,169 @@
+[[toc levels=2]]
+
+# What are uicb?
+In *awesome*, a lot of functions are available. These functions are called **uicb** (User Interface Call Backs). Each function can be bound to a key shortcut. The syntax is:
+
+    (("Modifier1", "Modifier2", ...), "key", "uicb function")
+or
+
+    (("Modifier1", "Modifier2", ...), "key", "uicb function", "argument")
+
+Some of these functions are bound to mouse buttons and those are not (yet) configurable.
+
+# Uicb function list
+
+## quit
+    Syntax: quit
+
+This function quits *awesome*.
+
+## killclient
+    Syntax: killclient
+
+This function closes the focused client.
+
+## moveresize
+    Syntax: moveresize x y width height
+
+This function allows to dynamically move and resize floating windows.
+
+Coordinates can be relative or absolute. Relative values must begin with + or -.
+
+For example, resizing a window to 200x200 without moving it will be done with:
+
+    "moveresize", "+0 +0 200 200"
+
+To move a window 10 pixels up:
+
+    "moveresize", "+0 +10 +0 +0"
+
+To move a window in the upper left corner and increase its width by 10px:
+
+    "moveresize", "0 0 +0 +10"
+
+## settrans
+    Syntax: settrans float
+
+Set client transparency, number can be a relative or absolute floating number in percentage.
+
+## setborder
+    Syntax: setborder [integer]
+
+Set default border size in pixels for new clients.
+
+## swapnext
+    Syntax: swapnext
+
+Swap window placement with the next displayed window.
+
+## swapprev
+    Syntax: swapprev
+
+Swap window placement with the previous displayed window.
+
+## focusnext
+    Syntax: focusnext
+
+Focus next window.
+
+
+## focusprev
+    Syntax: focusprev
+
+Focus previous window.
+
+## setlayout
+    Syntax: setlayout [relative or absolute integer]
+
+Set layout number # or just switch to the next layout.
+
+## togglemax
+    Syntax: togglemax
+
+Set window fullscreen. Calling this function another time will reset the window to its previous state.
+
+## togglehorizontalmax
+    Syntax: togglehorizontalmax
+
+Set window's horizontal size to display width. Calling this function another time will reset the window to its previous state.
+
+## toggleverticalmax
+    Syntax: toggleverticalmax
+
+Set window's vertical size to display height. Calling this function another time will reset the window to its previous state.
+
+## zoom
+    Syntax: zoom
+
+Set window as master window.
+
+## focusnextscreen
+    Syntax: focusnextscreen
+
+Focus first window in the next screen (Zaphod mode only, Xinerama not yet supported).
+
+## focusprevscreen
+    Syntax: focusprevscreen
+
+Focus first window in the previous screen (Zaphod mode only, Xinerama not yet supported).
+
+## movetoscreen
+    Syntax: movetoscreen [relative or absolute integer]
+
+Move focused window to the nth screen, or next (+1) or previous (-1). If no screen_number
+is set, move to the next screen.
+
+## togglebar
+    Syntax: togglebar
+
+Hide or show statusbar.
+
+## tag
+    Syntax: tag tagname
+
+Tag focused window with this tag.
+
+## togglefloating
+    Syntax: togglefloating
+
+Set window floating or tiled.
+
+## toggletag
+    Syntax; toggletag tagname
+
+Add tag to focused window.
+
+## toggleview
+    Syntax: toggleview tagname
+
+Add windows tagged with tagname to current display.
+
+## view
+    Syntax: view tagname
+
+View windows tagged with tagname
+
+## view\_tag\_prev_selected
+    Syntax: view_tag_prev_selected
+
+Switch back to the previously displayed set of tags.
+
+## tag_viewnext
+    Syntax: tag_viewnext
+
+Show windows tagged with next tag in list.
+
+## tag_viewprev
+    Syntax: tag_viewprev
+
+Show windows tagged with previous tag in list.
+
+## spawn
+    Syntax: spawn program
+
+Execute an external program.
+
+## exec
+    Syntax: exec program
+
+Replace *awesome* with another window manager.

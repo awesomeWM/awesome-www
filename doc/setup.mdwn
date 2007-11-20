@@ -1,0 +1,115 @@
+# Configuration
+awesome is configured via the config file `~/.awesomerc`.
+
+The file format should be self-explanatory. See the source for an example.
+
+# Guided tour
+
+In the following guided tour, we will assume that you are using the default configuration file.
+*awesome* modkey is **Mod4** by default in order to not interact with other applications key bindings. You can change it as you want.
+
+## First run
+
+When running *awesome* for the first time, your workspace will be empty. Since we're assuming you want to do stuff with your computer, we're going to run a first client.
+
+[[img screenshots/guided_tour/empty.png size="320x200"]]
+
+Type **Mod4+Return** to run a terminal emulator.
+
+[[img screenshots/guided_tour/term.png size="320x200"]]
+
+This first client is tiled fullscreen since it's alone.
+
+## Tiled mode
+
+Now launch another terminal.
+
+[[img screenshots/guided_tour/term2.png size="320x200"]]
+
+You see that windows are automatically arranged.
+Then run a third terminal.
+
+[[img screenshots/guided_tour/term3.png size="320x200"]]
+
+Again, windows are automagically arranged. As you can see, there's two windows on the
+left (the master area) and one window on the right.
+
+By default, *awesome* set the number of master windows to 2. That means that only 2 windows will be stacked in the master area. You can change this setting by pressing **Shift+Mod4+h** to increase it or **Shift+Mod4+l** to decrease it.
+
+If you press now **Control+Mod4+l** to decrease it, windows will be arranged like this:
+
+[[img screenshots/guided_tour/term4-nmaster1.png size="320x200"]]
+
+There's now only one window in master area and two windows in the other area.
+
+You can also change the number of colums for the non-master area. By pressing **Mod4+Control+h** you will increase the number of columns used, and will decrease it if you press **Mod4+Control+l**. By default *awesome* set the number of column to 1.
+
+If you press **Mod4+Control+h** to switch to 2 column and windows will be arranged like this:
+
+[[img screenshots/guided_tour/term4-nmaster1-col2.png size="320x200"]]
+
+The size of the master area can be adjusted by setting the master width factor. By default this value is at 60 %. You can increase it by pressing **Mod4+h** or **Mod4+l** to decrease it.
+
+If you decrease it like that, you will see that all windows size will be readjusted automatically:
+
+[[img screenshots/guided_tour/term4-nmaster1-col2-mwfact.png size="320x200"]]
+
+If you then run a new terminal, it will be put in master area and other windows will be rearrenged in column of the non-master area:
+
+[[img screenshots/guided_tour/term4-nmaster1-col2-mwfact-newterm.png size="320x200"]]
+
+## Layouts
+
+You can switch layout by pressing **Mod4+Space**. If you press it one time, you will switch to the next layout, which is by default *tileleft*. It's like *tile* (the default layout) except that the master area is on the right.
+
+[[img screenshots/guided_tour/tileleft.png size="320x200"]]
+
+If you press it another time will switch to the *max* layout, where all windows are fullscreen.
+
+[[img screenshots/guided_tour/max.png size="320x200"]]
+
+Press it once again, and you will switch to the floating layout where you can move windows with **Mod4+Button1** and resize them with **Mod4+Button3**.
+
+[[img screenshots/guided_tour/float.png size="320x200"]]
+
+Note that in tiled layout you can move and resize windows. If you do this, they will become *floating* windows. Floating can be toggled by pressing **Mod4+Control+Space**.
+
+## Ordering windows
+
+You can order windows as you want.
+
+You can use **Mod4+Shift+j** and **Mod4+Shift+k** to swap window with next or previous one.
+
+[[img screenshots/guided_tour/swap1.png size="320x200"]]
+
+If we focus xlogo and then press **Mod4+Shift+j** we will swap xlogo with the next xterm.
+
+[[img screenshots/guided_tour/swap2.png size="320x200"]]
+
+You can directly set a window as master by pressing **Mod4+Control+Return**.
+
+[[img screenshots/guided_tour/zoom.png size="320x200"]]
+
+You can focus next and previous window by pressing **Mod4+j** and **Mod4+k**.
+
+## Tagging windows
+
+*awesome* use a tag system instead of a virtual desktop model. Note that it can be used like virtual desktops, but it's a bit more powerful.
+
+First, run a terminal in tag 1 (click on 1 in the status bar or press **Mod4+1**).
+
+[[img screenshots/guided_tour/tag1.png size="320x200"]]
+
+Then, go to tag 2 and run another terminal.
+
+[[img screenshots/guided_tour/tag2.png size="320x200"]]
+
+Finally, you can view both windows tagged with 1 and 2 by right clicking on 1 when you see tag 2 or by pressing **Mod4+Control+1**.
+
+[[img screenshots/guided_tour/tag12.png size="320x200"]]
+
+You can change windows tags with **Mod4+Shift+tag number**. You can also tag windows with several tags.
+
+## More...
+
+Read awesomerc file to discover all key bindings!

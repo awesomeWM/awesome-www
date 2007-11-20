@@ -1,0 +1,6 @@
+Here is resources for *awesome* developers and contributors.
+
+- [Roadmap](/roadmap)
+- [doxygen documentation](/doc/dev)
+- [[Bugs|bugs]]
+

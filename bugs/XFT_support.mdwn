@@ -1,0 +1,3 @@
+awesome should use XFT to draw text in statusbar.
+
+> This is fixed in 1.3; marking this bug [[done]].

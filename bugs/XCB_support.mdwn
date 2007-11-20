@@ -1,0 +1,3 @@
+awesome should use XCB instead of libX11.
+
+> Xft and cairo currently lacks of XCB support, delayed.
