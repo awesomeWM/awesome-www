@@ -10,7 +10,7 @@ form{	margin:0;}
 #header li{ display: inline; background-color: #222222;  float: right;  }
 #header li a{ height: 44px; line-height: 44px; display: block; padding-left: 27px; padding-right: 27px; border-left: 1px solid Black;  float: left;     }
 #header li a:hover{ background-color: #444444; text-decoration: none;}
-#header .visual{ height:140px; background-image: url(/images/bg_visual.jpg);  background-repeat: no-repeat;  background-color: #4492C8;  border-top: 3px solid Black;   }
+#header .visual{ height:140px; background-image: url(/images/aw-block_website-banner-860-140px.png);  background-repeat: no-repeat;  background-color: #4492C8;  border-top: 3px solid Black;   }
 h1{ margin: 0; padding: 40px 0 0 0; font-family: "trebuchet ms",arial,tahoma,verdana,sans-serif; font-weight: normal; letter-spacing: .005em; color: White;  font-size: 20pt;  }
 
 #content{ width:860px; margin-left:auto; margin-right:auto;}
