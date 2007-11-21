@@ -1,29 +1,48 @@
 [[toc levels=2]]
 
 # What are uicb?
-In *awesome*, a lot of functions are available. These functions are called **uicb** (User Interface Call Backs). Each function can be bound to a key shortcut. The syntax is:
-
-    (("Modifier1", "Modifier2", ...), "key", "uicb function")
-or
-
-    (("Modifier1", "Modifier2", ...), "key", "uicb function", "argument")
-
-Some of these functions are bound to mouse buttons and those are not (yet) configurable.
+In *awesome*, a lot of functions are available. These functions are called **uicb** (User Interface Call Backs). Each function can be bound to a key shortcut or a mouse button.
 
 # Uicb function list
 
-## quit
+## General
+
+### quit
     Syntax: quit
 
 This function quits *awesome*.
 
-## killclient
-    Syntax: killclient
+### togglebar
+
+Hide or show statusbar.
+
+### spawn
+    Args: program
+
+Execute an external program.
+
+### exec
+    Args: program
+
+Replace *awesome* with another window manager.
+
+### reloadconfig
+
+Reload configuration file.
+
+### setstatustext
+    Args: text
+
+Set status bar text.
+
+## Client
+
+### client_kill
 
 This function closes the focused client.
 
-## moveresize
-    Syntax: moveresize x y width height
+### client_moveresize
+    Args: x y width height
 
 This function allows to dynamically move and resize floating windows.
 
@@ -31,139 +50,138 @@ Coordinates can be relative or absolute. Relative values must begin with + or -.
 
 For example, resizing a window to 200x200 without moving it will be done with:
 
-    "moveresize", "+0 +0 200 200"
+    "+0 +0 200 200"
 
 To move a window 10 pixels up:
 
-    "moveresize", "+0 +10 +0 +0"
+    "+0 +10 +0 +0"
 
 To move a window in the upper left corner and increase its width by 10px:
 
-    "moveresize", "0 0 +0 +10"
+    "0 0 +0 +10"
 
-## settrans
-    Syntax: settrans float
+### client_settrans
+    Args: float
 
 Set client transparency, number can be a relative or absolute floating number in percentage.
 
-## setborder
-    Syntax: setborder [integer]
-
-Set default border size in pixels for new clients.
-
-## swapnext
-    Syntax: swapnext
+### client_swapnext
 
 Swap window placement with the next displayed window.
 
-## swapprev
-    Syntax: swapprev
+### client_swapprev
 
 Swap window placement with the previous displayed window.
 
-## focusnext
-    Syntax: focusnext
+### client_focusnext
 
 Focus next window.
 
-
-## focusprev
-    Syntax: focusprev
+### client_focusprev
 
 Focus previous window.
 
-## setlayout
-    Syntax: setlayout [relative or absolute integer]
-
-Set layout number # or just switch to the next layout.
-
-## togglemax
-    Syntax: togglemax
+### client_togglemax
 
 Set window fullscreen. Calling this function another time will reset the window to its previous state.
 
-## togglehorizontalmax
-    Syntax: togglehorizontalmax
+### client_togglehorizontalmax
 
 Set window's horizontal size to display width. Calling this function another time will reset the window to its previous state.
 
-## toggleverticalmax
-    Syntax: toggleverticalmax
+### client_toggleverticalmax
 
 Set window's vertical size to display height. Calling this function another time will reset the window to its previous state.
 
-## zoom
-    Syntax: zoom
+### client_togglefloating
+
+Set window floating or tiled.
+
+### client_zoom
 
 Set window as master window.
 
-## focusnextscreen
-    Syntax: focusnextscreen
-
-Focus first window in the next screen (Zaphod mode only, Xinerama not yet supported).
-
-## focusprevscreen
-    Syntax: focusprevscreen
-
-Focus first window in the previous screen (Zaphod mode only, Xinerama not yet supported).
-
-## movetoscreen
-    Syntax: movetoscreen [relative or absolute integer]
+### client_movetoscreen
+    Args: relative or absolute integer
 
 Move focused window to the nth screen, or next (+1) or previous (-1). If no screen_number
 is set, move to the next screen.
 
-## togglebar
-    Syntax: togglebar
-
-Hide or show statusbar.
-
-## tag
-    Syntax: tag tagname
+### client_tag
+    Args: tag number
 
 Tag focused window with this tag.
 
-## togglefloating
-    Syntax: togglefloating
+### client_toggletag
+    Args: tag number
 
-Set window floating or tiled.
+Add or remove tag to focused window.
 
-## toggletag
-    Syntax; toggletag tagname
+### client_movemouse
 
-Add tag to focused window.
+Move client window with mouse.
 
-## toggleview
-    Syntax: toggleview tagname
+### client_resizemouse
 
-Add windows tagged with tagname to current display.
+Resize client window with mouse.
 
-## view
-    Syntax: view tagname
+## Screen
 
-View windows tagged with tagname
+### setborder
+    Args: relative or absolute integer
 
-## view\_tag\_prev_selected
-    Syntax: view_tag_prev_selected
+Set default border size in pixels for new clients.
 
-Switch back to the previously displayed set of tags.
+## Tag
 
-## tag_viewnext
-    Syntax: tag_viewnext
+### tag_setlayout
+    Args: relative or absolute integer
+
+Set layout number # or just switch to the next layout for current tag.
+
+### tag_toggleview
+    Args: tag number
+
+Add windows tagged with tag number to current display.
+
+### tag_view
+    Args: tag number
+
+View windows tagged with tag number.
+
+### tag_viewnext
 
 Show windows tagged with next tag in list.
 
-## tag_viewprev
-    Syntax: tag_viewprev
+### tag_viewprev
 
 Show windows tagged with previous tag in list.
 
-## spawn
-    Syntax: spawn program
+### tag\_viewprev\_selected
 
-Execute an external program.
+Switch back to the previously displayed set of tags.
 
-## exec
-    Syntax: exec program
+### tag_setmwfact
+    Args: relative or absolute float
 
-Replace *awesome* with another window manager.
+Set master width factor.
+
+### tag_setncol
+    Args: relative or absolute integer
+
+Set number of columns for non-master windows.
+
+### tag_setnmaster
+    Args: relative or absolute integer
+
+Set number of master windows.
+
+## Screen
+
+### screen_focusnext
+
+Focus first window in the next screen and move mouse.
+
+### screen_focusprev
+
+Focus first window in the previous screen and move mouse.
