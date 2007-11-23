@@ -8,7 +8,7 @@ push: output
 	rsync -Pavz html/ delmak.naquadah.org:/var/www/awesome.naquadah.org/
 
 output:
-	$(IKIWIKI) `pwd` html -v --wikiname awesome --plugin=goodstuff --templatedir=templates \
+	$(IKIWIKI) `pwd` html -v --wikiname about --plugin=goodstuff --templatedir=templates \
 	    --exclude=html --exclude=Makefile --rss --url http://awesome.naquadah.org
 
 clean:
