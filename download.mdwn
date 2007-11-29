@@ -2,7 +2,7 @@
 
 # Upcoming stable
 
-Next stable version will be 2.0. You are encouraged to use and test directly this [2.0-rc1 version](awesome-2.0-rc1.tar.gz) (codename: *Bumping Toaster*) if you are new to *awesome*.
+Next stable version will be 2.0. You are encouraged to use and test directly this [2.0-rc2 version](awesome-2.0-rc2.tar.gz) (codename: *Softened Lights*) if you are new to *awesome*.
 
 # Old stable
 
