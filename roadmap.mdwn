@@ -19,9 +19,9 @@ Changes:
 
 # awesome 2.0
 
-> **Status:** *done:* 80%
+> **Status:** *done:* 95%
 
-> <img src="../images/green-h.png" alt="progress" width="160" height="15" /><img src="../images/red-h.png" alt="progress" width="40" height="15" />
+> <img src="../images/green-h.png" alt="progress" width="190" height="15" /><img src="../images/red-h.png" alt="progress" width="10" height="15" />
 
 Changes:
 
