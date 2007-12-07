@@ -41,6 +41,7 @@ Changes:
 Changes:
 
 - Tabs support;
+- Application fullscreen support;
 - Real XRandR support.
 
 ----
