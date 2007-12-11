@@ -18,8 +18,9 @@ Changes:
 ----
 
 # awesome 2.0
+released on 11 december 2007
 
-> **Status:** *done:* 95%
+> **Status:** *done:* 100%
 
 > <img src="../images/green-h.png" alt="progress" width="190" height="15" /><img src="../images/red-h.png" alt="progress" width="10" height="15" />
 

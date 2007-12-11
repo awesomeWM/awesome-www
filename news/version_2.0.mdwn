@@ -1,0 +1,17 @@
+The final version 2.0 of *awesome* is available. To download it, see the [[download]] page.
+
+This release fixes some bugs, add some features. You can
+[[toggle text="see changes" id="changelog"]].
+[[toggleable id="changelog" text="""
+* Include missing manpage
+* Fix typo in URL in manpage
+* Add manpage for awesome-client
+* Bug fix for GTK+ combo box
+* Fix memory allocation in awesome-client
+* Bug fix: check for value in tag_toggleview
+* Add a default configuration for running awesome without configuration file
+"""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome list](/community/).
+
+Have fun!
