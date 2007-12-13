@@ -125,13 +125,6 @@ Move client window with mouse.
 
 Resize client window with mouse.
 
-## Screen
-
-### setborder
-    Args: relative or absolute integer
-
-Set default border size in pixels for new clients.
-
 ## Tag
 
 ### tag_setlayout
@@ -185,3 +178,8 @@ Focus first window in the next screen and move mouse.
 ### screen_focusprev
 
 Focus first window in the previous screen and move mouse.
+
+### setborder
+    Args: relative or absolute integer
+
+Set default border size in pixels for new clients.
