@@ -30,3 +30,11 @@ If you want to view another tag on screen 1:
 > echo 1 tag_view 3 | awesome-client
 
 etc.
+
+## Is there a program-launcher, menu... in awesome?
+
+You can use third-party tools like
+the program-launcher [dmenu](http://www.suckless.org/wiki/tools/xlib) 
+> e.g. key { modkey = {"Mod4"} key = "p" command = "spawn" arg = "exec `dmenu_path | dmenu`" } 
+
+or a X-Menu: [9menu](ftp://freefriends.org/arnold/Source/), ...
