@@ -35,14 +35,15 @@ Changes:
 
 # awesome 2.1
 
-> **Status:** *done:* 0%
+> **Status:** *done:* 10%
 
-> <img src="../images/yellow-h.png" alt="progress" width="200" height="15" />
+> <img src="../images/green-h.png" alt="progress" width="20" height="15" /><img src="../images/red-h.png" alt="progress" width="180" height="15" />
 
 Changes:
 
 - Tabs support;
 - Application fullscreen support;
+- New widget layout for status bar;
 - Real XRandR support.
 
 ----
