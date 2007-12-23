@@ -33,8 +33,13 @@ etc.
 
 ## Is there a program-launcher, menu... in awesome?
 
-You can use third-party tools like
-the program-launcher [dmenu](http://www.suckless.org/wiki/tools/xlib) 
+You can use third-party tools like:
+
+* [dmenu](http://www.suckless.org/wiki/tools/xlib) - a program launcher
 > e.g. key { modkey = {"Mod4"} key = "p" command = "spawn" arg = "exec `dmenu_path | dmenu`" } 
 
-or a X-Menu: [9menu](ftp://freefriends.org/arnold/Source/), ...
+* [dzen](http://gotmor.googlepages.com/dzen) - x-menu / statusbar and more...
+
+* [9menu](ftp://freefriends.org/arnold/Source/) - simple x-menu
+> e.g.: 9menu -file [~/.9menurc](http://www.calmar.ws/awesome/.9menurc)
+
