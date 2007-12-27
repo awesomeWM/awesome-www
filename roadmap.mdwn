@@ -35,16 +35,16 @@ Changes:
 
 # awesome 2.1
 
-> **Status:** *done:* 10%
+> **Status:** *done:* 30%
 
-> <img src="../images/green-h.png" alt="progress" width="20" height="15" /><img src="../images/red-h.png" alt="progress" width="180" height="15" />
+> <img src="../images/green-h.png" alt="progress" width="60" height="15" /><img src="../images/red-h.png" alt="progress" width="140" height="15" />
 
 Changes:
 
 - Tabs support;
 - Application fullscreen support;
-- New widget layout for status bar;
-- Real XRandR support.
+- Partial EWMH support;
+- New widget layout for status bar.
 
 ----
 
@@ -57,3 +57,4 @@ Changes:
 Changes:
 
 - XComposite support.
+- Real XRandR support.
