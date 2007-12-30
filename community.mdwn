@@ -6,4 +6,5 @@ There's also a mailing list,
 [awesome](mailto:awesome-subscribe@naquadah.org) and its
 [archive](http://lists.naquadah.org/awesome_naquadah.org/) or its [gmane
 archive](http://dir.gmane.org/gmane.comp.window-managers.awesome).
-Be sure to read the [[doc/FAQ]] first.
+
+There's also a [wiki](/wiki/) you are free to use and modify.
