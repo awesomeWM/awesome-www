@@ -4,4 +4,3 @@ Documentation for awesome.
 * [Setup](setup)
 * [Uicb functions](uicb)
 * [Developement](dev)
-* [[FAQ]]
