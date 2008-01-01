@@ -1,6 +1,0 @@
-*awesome* should not read from stdin but from a fifo. This will allow to:
-
-- send commands to interact with awesome (on specified screen);
-- print statustext on other screens with multi-head setups.
-
-> This is fixed in 2.0; marking this bug [[done]]. 

@@ -1,3 +1,0 @@
-Mouse buttons bindings should be configurable.
-
-> This is fixed in 2.0; marking this bug [[done]]. 

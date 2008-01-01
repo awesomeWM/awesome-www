@@ -1,3 +1,0 @@
-Fullscreen in Firefox on some other apps is not well respected.
-
-> This is fixed in git version.

@@ -1,3 +1,0 @@
-Each tags should be able to set its own layout and its parameters in config file and on runtime.
-
-> This is fixed in 2.0; marking this bug [[done]]. 

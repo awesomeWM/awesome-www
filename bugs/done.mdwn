@@ -1,3 +1,0 @@
-recently fixed [[bugs]]
-
-[[inline pages="./* and link(./done) and !*/Discussion" sort=mtime show=10]]
