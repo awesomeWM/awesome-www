@@ -1,4 +1,12 @@
-*awesome* is currently available in [Debian](http://packages.debian.org/awesome), [Gentoo](http://gentoo-portage.com/x11-wm/awesome), [FreeBSD](http://www.freshports.org/x11-wm/awesome/), [OpenBSD](http://ports.openbsd.nu/x11/awesome), [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038) and [SUSE](http://download.opensuse.org/repositories/home:/darix/).
+*awesome* is currently available in:
+
+* [Debian](http://packages.debian.org/awesome)
+* [Gentoo](http://gentoo-portage.com/x11-wm/awesome)
+* [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
+* [OpenBSD](http://ports.openbsd.nu/x11/awesome)
+* [NetBSD](http://pkgsrc.se/wip/awesome)
+* [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038)
+* [SUSE](http://download.opensuse.org/repositories/home:/darix/)
 
 # Stable
 
