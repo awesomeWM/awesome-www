@@ -1,6 +1,0 @@
-Documentation for awesome.
-
-* [Installation](install)
-* [Setup](setup)
-* [Uicb functions](uicb)
-* [Developement](dev)

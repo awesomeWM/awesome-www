@@ -2,10 +2,11 @@
 awesome is a tiling window manager initialy based on a [dwm](http://www.suckless.org/wiki/dwm) code rewriting.
 It's extremely fast, small, dynamic and awesome.
 
-Windows can be managed in several layouts: tiled, maximized and floating.
+Windows can be managed in several layouts: tiled, maximized, dwindle, spiral, floating…
 Each layout can be applied on the fly, optimizing the environment for the application in use and the task performed.
 
 Managing windows in tiled mode assures that no space will be wasted on your screen. No gaps, no overlap.
+Other layouts can be used for different purpose.
 
 ## Tiled layout
 With tiled layout, windows are managed in a master and a stacking area.
@@ -27,8 +28,8 @@ Tags can be compared to virtual desktops, but it's more powerful: you can quickl
 and go back to only one tag after.
 
 ## Status bar
-awesome contains a small status bar which displays all available tags, the layout, the title of the focused window, and text.
-The selected tags are highlighted with a different color, while the tags of the focused window are highlighted with a small point.
+awesome contains a small status bar which can contain a lot of widget: display all available tags, the current layout, tasklists, texts, icons, graphs, progress bars. Each widget can have its own mouse bindings.
+
 *awesome* draws a small border around windows to indicate their focus state.
 
 ## Configuration
@@ -44,7 +45,7 @@ In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list
 * Some real transparency support (using Composite extension and xcompmgr for now).
 * Some XRandR support.
 * No Lua integration, no 9P support, no editable tagbars.
-* No limit on its source size, *awesome* has features we want.
+* No limit on its source size: *awesome* has features we want.
 * Doesn't distinguish between layers: there is no floating or tiled layer. Whether or not the clients of currently selected tag(s) are in tiled layout, you can rearrange them on the fly. Popup and fixed-size windows are always floating, however.
 * Customized through editing a configuration file, which makes it extremely easy to configure. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), or recompile source code each time you do something:, just edit the configuration file, for god's sake.
-* Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via awesome-client.
+* Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via *awesome-client*.

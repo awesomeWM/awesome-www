@@ -1,9 +1,0 @@
-Installing awesome is pretty straightforward:
-
-	tar xzvf awesome.tar.gz
-	cd awesome
-	make
-	make install
-
-will install awesome in /usr/local.
-Note that you'll need [`libconfuse`](http://www.nongnu.org/confuse/), X developement files and [`cairo`](http://cairographics.org/) installed first.
