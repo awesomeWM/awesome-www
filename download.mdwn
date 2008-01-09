@@ -12,8 +12,16 @@
 
 Stable version is [2.0](awesome-2.0.tar.gz) (codename: *Fruit Fly*). Be aware that configuration file format is not compatible with 1.x versions.
 
+# Upcoming stable
+
+Next stable version be 2.1. You can participate in its testing by using the 2.1-rc1 version.
+
+* [awesome-2.1-rc1.tar.bz2](awesome-2.1-rc1.tar.bz2)
+* [awesome-2.1-rc1.tar.gz](awesome-2.1-rc1.tar.gz)
+
 # Developement
-Developement versions of awesome can be download as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
+
+Developement versions of awesome can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
 
 You can also grab a git copy by running:
 `git clone git://git.naquadah.org/awesome.git`
