@@ -1,5 +1,5 @@
 # Description
-awesome is a tiling window manager initialy based on a [dwm](http://www.suckless.org/wiki/dwm) code rewriting.
+*awesome* is a tiling window manager initialy based on a [dwm](http://www.suckless.org/wiki/dwm) code rewriting.
 It's extremely fast, small, dynamic and awesome.
 
 Windows can be managed in several layouts: tiled, maximized, dwindle, spiral, floating…
@@ -34,7 +34,7 @@ awesome contains a small status bar which can contain a lot of widget: display a
 
 ## Configuration
 
-Every aspect of awesome is configurable via a configuration file: [[awesomerc]].
+Every aspect of awesome is configurable via a configuration file: **awesomerc**.
 
 # Features and non-features
 In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list: smaller, faster, simpler or awesome.
@@ -42,6 +42,7 @@ In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list
 * Very stable.
 * No mouse needed.
 * Multihead support (Xinerama or Zaphod mode).
+* EWMH support (in-progress).
 * Some real transparency support (using Composite extension and xcompmgr for now).
 * Some XRandR support.
 * No Lua integration, no 9P support, no editable tagbars.
