@@ -1,4 +1,4 @@
-awesome has an active growing community.
+*awesome* has an active growing community.
 
 You can join it on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network ([statistics](http://gogloom.com/OFTC/awesome/)).
 
