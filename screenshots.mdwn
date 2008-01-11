@@ -1,18 +1,7 @@
-Seeing is believing:
+# Seeing is believing
 
-[[img screenshots/0.png size="640x480" alt="awesome 20070907"]]
-
-
-[[img screenshots/1.png size="640x480" alt="awesome 2.0"]]
+[[img screenshots/0.png size="320x240" alt="awesome 20070907"]] [[img screenshots/1.png size="320x240" alt="awesome 2.0"]] [[img screenshots/2.png size="320x240" alt="awesome 2.0"]] [[img screenshots/photo0.jpg size="320x240" alt="awesome photo 0070925"]]
 
 
-[[img screenshots/2.png size="640x480" alt="awesome 2.0"]]
-
-
-[[img screenshots/photo0.jpg size="640x480" alt="awesome photo 0070925"]]
-
-
-awesome on Asustek EeePC
-[[img screenshots/photo1.jpg size="640x480" alt="awesome on EeeePC"]]
-
-[[img screenshots/photo2.jpg size="640x480" alt="awesome on EeePC"]]
+# awesome on Asustek EeePC
+[[img screenshots/photo1.jpg size="320x240" alt="awesome on EeeePC"]] [[img screenshots/photo2.jpg size="320x240" alt="awesome on EeePC"]]
