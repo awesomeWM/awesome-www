@@ -1,0 +1,8 @@
+Version 2.1-rc2 of *awesome* is available. To download it, see the [[download]] page.
+This is the second release candidate version of the upcoming 2.2 version.
+
+This release fixes some minor bugs.
+
+Don't hesitate to report bugs and ask or write enhancements on awesome [bug tracking system](/bugs/) or [awesome list](/community/).
+
+Have fun!
