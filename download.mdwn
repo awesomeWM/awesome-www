@@ -10,14 +10,7 @@
 
 # Stable
 
-Stable version is [2.0](awesome-2.0.tar.gz) (codename: *Fruit Fly*). Be aware that configuration file format is not compatible with 1.x versions.
-
-# Upcoming stable
-
-Next stable version be 2.1. You can participate in its testing by using the 2.1-rc2 version.
-
-* [awesome-2.1-rc2.tar.bz2](awesome-2.1-rc2.tar.bz2)
-* [awesome-2.1-rc2.tar.gz](awesome-2.1-rc2.tar.gz)
+Stable version is [2.1](awesome-2.1.tar.gz) ([tar.bz2](awesome-2.1.tar.bz2)) (codename: *Morning Bell*).
 
 # Developement
 
