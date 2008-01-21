@@ -1,6 +1,6 @@
 *awesome* has an active growing community.
 
-You can join it on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network ([statistics](http://gogloom.com/OFTC/awesome/)).
+You can join it on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network ([statistics](http://naquadah.org/~jd/irc/awesome.html)).
 
 There's also a mailing list,
 [awesome](mailto:awesome-subscribe@naquadah.org) and its
