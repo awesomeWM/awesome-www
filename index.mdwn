@@ -50,3 +50,5 @@ In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list
 * Doesn't distinguish between layers: there is no floating or tiled layer. Whether or not the clients of currently selected tag(s) are in tiled layout, you can rearrange them on the fly. Popup and fixed-size windows are always floating, however.
 * Customized through editing a configuration file, which makes it extremely easy to configure. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), or recompile source code each time you do something:, just edit the configuration file, for god's sake.
 * Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via *awesome-client*.
+
+This gonna be LEGEN... wait for it... DARY!
