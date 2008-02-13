@@ -4,5 +4,4 @@ Here is resources for *awesome* developers and contributors.
 - [doxygen documentation](/doc/dev)
 - [Bug tracking system](/bugs/)
 
-
 <img src="/images/git_stats.png">

@@ -8,13 +8,15 @@ Each layout can be applied on the fly, optimizing the environment for the applic
 Managing windows in tiled mode assures that no space will be wasted on your screen. No gaps, no overlap.
 Other layouts can be used for different purpose.
 
+# Concepts
+
 ## Tiled layout
 With tiled layout, windows are managed in a master and a stacking area.
 The master area contains the windows which currently need most attention, whereas the stacking area contains all other windows.
 The master area can be splited in several rows and column, as you want.
 
 ## Maximized layout
-Each window is resized in full screen mode.
+Each window is resized to take full screen space.
 
 ## Floating layout
 In floating layout, windows can be resized and moved freely, just like a usual window manager.
@@ -28,27 +30,26 @@ Tags can be compared to virtual desktops, but it's more powerful: you can quickl
 and go back to only one tag after.
 
 ## Status bar
-awesome contains a small status bar which can contain a lot of widget: display all available tags, the current layout, tasklists, texts, icons, graphs, progress bars. Each widget can have its own mouse bindings.
+awesome contains a small status bar which can contain a lot of widget: display all available tags, current layout, tasklists, texts, icons, graphs, progress bars. Each widget can have its own configuration and mouse bindings.
 
 *awesome* draws a small border around windows to indicate their focus state.
 
 ## Configuration
 
-Every aspect of awesome is configurable via a configuration file: **awesomerc**.
+Every aspect of *awesome* is configurable via a configuration file: **awesomerc**.
 
 # Features and non-features
 In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list: smaller, faster, simpler or awesome.
 
 * Very stable.
-* No mouse needed.
-* Multihead support (Xinerama or Zaphod mode).
-* EWMH support (in-progress).
+* No mouse needed: everything can be performed with keyboard.
+* Multihead support (XRandR, Xinerama or Zaphod mode).
+* EWMH support.
 * Some real transparency support (using Composite extension and xcompmgr for now).
-* Some XRandR support.
 * No Lua integration, no 9P support, no editable tagbars.
 * No limit on its source size: *awesome* has features we want.
 * Doesn't distinguish between layers: there is no floating or tiled layer. Whether or not the clients of currently selected tag(s) are in tiled layout, you can rearrange them on the fly. Popup and fixed-size windows are always floating, however.
-* Customized through editing a configuration file, which makes it extremely easy to configure. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), or recompile source code each time you do something:, just edit the configuration file, for god's sake.
-* Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via *awesome-client*.
+* Customized through editing a configuration file, which makes it extremely easy to configure. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), or recompile source code each time you do something: just edit the configuration file, for god's sake.
+* Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via a socket (*awesome-client*).
 
 This gonna be LEGEN... wait for it... DARY!
