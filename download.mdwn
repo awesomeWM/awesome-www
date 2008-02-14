@@ -8,6 +8,13 @@
 * [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038)
 * [SUSE](http://download.opensuse.org/repositories/home:/darix/)
 
+# Upcoming stable
+
+Next stable version will be 2.2.
+
+You can test and download the first release candidate version [2.2-rc1](awesome-2.2-rc1.tar.gz)
+([tar.bz2](awesome-2.2-rc1.tar.bz2)) (codename: *Digital Love*).
+
 # Stable
 
 Stable version is [2.1](awesome-2.1.tar.gz) ([tar.bz2](awesome-2.1.tar.bz2)) (codename: *Morning Bell*).

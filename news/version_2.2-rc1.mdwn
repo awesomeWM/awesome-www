@@ -1,0 +1,37 @@
+The new version 2.2-rc1 of *awesome* is available. To download it, see the [[download]] page.
+This is the first release candidate version of the upcoming 2.2 version.
+
+You can see all [changes on git](http://git.naquadah.org/?p=awesome.git;a=shortlog;h=v2.2-rc1).
+
+Here's a [[toggle text="changes summary" id="changelog"]].
+[[toggleable id="changelog" text="""
+* Graph widgets works with floats;
+* Add tileup and tilebottom layouts;
+* Fix statusbar recovering each others (bug #37);
+* Fix sloppy focus problems;
+* Optimize arrangement and statusbar refreshing with a cache system;
+* Add support for keycode in keys bindings (bug #40);
+* New awesome-message program (xmessage-like);
+* Fix various problems with widget drawing;
+* Print more warnings on various errors;
+* Fix issues with padding;
+* Enable tiled windows moving/switching;
+* Add sloppy_focus_raise option (bug #47);
+* Add --check option to awesome to verify configuration file syntax;
+* Convert statusbar text to UTF-8 before drawing (bug #39);
+* Add scratch window support;
+* Remove focustitle widget: tasklist can do the same now;
+* Rename netwmicon widget to focusicon;
+* Add align options to widgets;
+* Add smart placement algorithm for floating (bug #50);
+* Fix raise problem with focus_history (bug #49);
+* Fix tag_viewprev (bug #60);
+* Add master property to rule (bug #6);
+* Fix XRandR clone mode issues (bug #42);
+* Fix windows hiding issue when launching another wm (bug #53);
+* Add opacity as rule attribute (bug #54);
+"""]]
+
+Don't hesitate to report bugs and ask or write enhancements on awesome [bug tracking system](/bugs/) or [awesome list](/community/).
+
+Have fun!
