@@ -12,8 +12,8 @@
 
 Next stable version will be 2.2.
 
-You can test and download the first release candidate version [2.2-rc1](awesome-2.2-rc1.tar.gz)
-([tar.bz2](awesome-2.2-rc1.tar.bz2)) (codename: *Digital Love*).
+You can test and download the release candidate version [2.2-rc2](awesome-2.2-rc2.tar.gz)
+([tar.bz2](awesome-2.2-rc2.tar.bz2)) (codename: *Broken Man*).
 
 # Stable
 
