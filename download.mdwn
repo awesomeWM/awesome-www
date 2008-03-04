@@ -12,8 +12,8 @@
 
 Next stable version will be 2.2.
 
-You can test and download the release candidate version [2.2-rc2](awesome-2.2-rc2.tar.gz)
-([tar.bz2](awesome-2.2-rc2.tar.bz2)) (codename: *Broken Man*).
+You can test and download the release candidate version [2.2-rc3](awesome-2.2-rc3.tar.gz)
+([tar.bz2](awesome-2.2-rc3.tar.bz2)) (codename: *There There*).
 
 # Stable
 
