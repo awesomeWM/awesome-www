@@ -16,5 +16,15 @@ There's also a [wiki](/wiki/) you are free to use and modify.
 ## March 2008
 * [My perfect Arch - X and Awesome](http://www.jabberoo.net/index.php/2008/03/16/my-perfect-arch-x-and-awesome/)
 
+## February 2008
+* [Naming your software project](http://www.hivernal.org/blog/index.php?op=comments&id=1204100785&PSGSESSID=1a0f3efa3c2223c91bdee0f2bab8cb79)
+
+## January 2008
+* [Awesome window manager, Another day, another window manager.](http://m.choffee.co.uk/thoughtsplurge/posts/2008/01/14/Awesome_window_manager/)
+
+## December 2008
+* [awesomeness in a package](http://www.lostwebsite.net/posts/debian/trying_awesome/)
+* [Playing with Awesome](http://www.paeps.cx/weblog/code/playing_with_awesome.html)
+
 ## September 2007
 * [awesome jest super!](http://linuxnews.pl/awesome-jest-super/)
