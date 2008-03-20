@@ -1,3 +1,5 @@
+# Communication
+
 *awesome* has an active growing community.
 
 You can join it on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network ([statistics](http://naquadah.org/~jd/irc/awesome.html)).
@@ -8,3 +10,11 @@ There's also a mailing list,
 archive](http://dir.gmane.org/gmane.comp.window-managers.awesome).
 
 There's also a [wiki](/wiki/) you are free to use and modify.
+
+
+# awesome on the Web
+## March 2008
+* [My perfect Arch - X and Awesome](http://www.jabberoo.net/index.php/2008/03/16/my-perfect-arch-x-and-awesome/)
+
+## September 2007
+* [awesome jest super!](http://linuxnews.pl/awesome-jest-super/)
