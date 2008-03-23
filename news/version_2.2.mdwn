@@ -1,0 +1,23 @@
+The final version 2.2 of *awesome* is available. To download it, see the [[download]] page.
+
+This release fixes some bugs, add some features. You can
+[[toggle text="see some changes" id="changelog"]] from 2.2-rc4.
+[[toggleable id="changelog" text="""
+* Add a manpage for awesome-message
+* Add more documentation into awesomerc(5)
+* Fix segmentation fault if no layout are available
+* Check for EWMH hints after reloading clients props on restart
+* Fix transparency property on focus (bug #93)
+* Fix a bug with delay inside awesome-message
+* Stop adding useless spaces at endline on default created .awesomerc
+* Fix a bug in uicb_spawn when using a DISPLAY envvar with IP address
+"""]]
+
+Thanks to the [[toggle text="awesome contributors" id="contrib"]] we had on this release.
+[[toggleable id="contrib" text="""(Fabienne Ducroquet, Hans Ulrich Niedermann, MATSUU Takuto,
+Matthieu Pasini, Michael Kaminsky, Nathan LaFreniere, Nikos Ntarmos, Thomas Janu and last but not
+least, Marco Candrian)."""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome!

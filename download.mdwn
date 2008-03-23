@@ -10,19 +10,18 @@
 
 # Upcoming stable
 
-Next stable version will be 2.2.
+Next stable version will be 2.3.
 
-You can test and download the release candidate version [2.2-rc4](awesome-2.2-rc4.tar.gz)
-([tar.bz2](awesome-2.2-rc4.tar.bz2)) (codename: *Wooden Horse*), released on 13 March 2008.
+There's no release candidate version for the time being.
 
 # Stable
 
-Stable version is [2.1](awesome-2.1.tar.gz) ([tar.bz2](awesome-2.1.tar.bz2)) (codename: *Morning Bell*),
-released on 21 January 2008.
+Stable version is [2.2](awesome-2.2.tar.gz) ([tar.bz2](awesome-2.2.tar.bz2)) (codename: *Morning Lemon*),
+released on 23 March 2008.
 
 # Developement
 
-Developement versions of awesome can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
+Developement versions of *awesome* can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
 
 You can also grab a git copy by running:
 `git clone git://git.naquadah.org/awesome.git`
