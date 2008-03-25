@@ -15,6 +15,7 @@ There's also a [wiki](/wiki/) you are free to use and modify.
 # awesome on the Web
 ## March 2008
 * [My perfect Arch - X and Awesome](http://www.jabberoo.net/index.php/2008/03/16/my-perfect-arch-x-and-awesome/)
+* [Awesome Awesome!](http://tamilinux.wordpress.com/2008/03/23/awesome-awesome/)
 
 ## February 2008
 * [Naming your software project](http://www.hivernal.org/blog/index.php?op=comments&id=1204100785&PSGSESSID=1a0f3efa3c2223c91bdee0f2bab8cb79)
