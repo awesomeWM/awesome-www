@@ -22,6 +22,7 @@ There's also a [wiki](/wiki/) you are free to use and modify.
 
 ## January 2008
 * [Awesome window manager, Another day, another window manager.](http://m.choffee.co.uk/thoughtsplurge/posts/2008/01/14/Awesome_window_manager/)
+* [AwesomeWM - A Brief Introduction](http://ubuntuforums.org/showthread.php?t=675292)
 
 ## December 2008
 * [awesomeness in a package](http://www.lostwebsite.net/posts/debian/trying_awesome/)
