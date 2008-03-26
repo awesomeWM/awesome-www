@@ -23,10 +23,15 @@ There's also a [wiki](/wiki/) you are free to use and modify.
 ## January 2008
 * [Awesome window manager, Another day, another window manager.](http://m.choffee.co.uk/thoughtsplurge/posts/2008/01/14/Awesome_window_manager/)
 * [AwesomeWM - A Brief Introduction](http://ubuntuforums.org/showthread.php?t=675292)
+* [awesome!](http://ackack.eu/blog/awesome_.html)
 
-## December 2008
+## December 2007
 * [awesomeness in a package](http://www.lostwebsite.net/posts/debian/trying_awesome/)
 * [Playing with Awesome](http://www.paeps.cx/weblog/code/playing_with_awesome.html)
+* [Tiled window manager](http://kmandla.wordpress.com/2007/12/13/tiled-window-manager/)
+
+## November 2007
+* [awesome, a tiling window manager](http://mychael.gotdns.com/blog/2007/11/09/awesome-a-tiling-window-manager/)
 
 ## September 2007
 * [awesome jest super!](http://linuxnews.pl/awesome-jest-super/)
