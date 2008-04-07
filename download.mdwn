@@ -12,9 +12,8 @@
 
 # Upcoming stable
 
-Next stable version will be 2.3.
-
-There's no release candidate version for the time being.
+Release candidate of awesome 2.3 is available: [awesome 2.3-rc1](awesome-2.3-rc1.tar.gz)
+([tar.bz2](awesome-2.3-rc1.tar.bz2)) (codename: *Deep Inside*), released on 7 April 2008.
 
 # Stable
 
