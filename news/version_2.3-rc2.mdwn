@@ -1,0 +1,21 @@
+The second release candidate version of the upcoming 2.3 version is out, noted 2.3-rc2.
+To download it, see the [[download]] page.
+
+This release fixes some bugs, add some features. You can
+[[toggle text="see some changes" id="changelog"]] from 2.3-rc1.
+[[toggleable id="changelog" text="""
+* Documentation update;
+* Fix placement for maximized apps;
+* Give focus when clicking with Button1 on titlebars;
+* Use mwfact lower and upper limits in mouse;
+* Fix opacity focused issue;
+* Fix focus on arrange for multi head;
+* Allow multiple bindings for mouse events.
+"""]]
+
+Thanks to the [[toggle text="awesome contributors" id="contrib"]] we had on this release.
+[[toggleable id="contrib" text="""(marco candrian (16))."""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome!
