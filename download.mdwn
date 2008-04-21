@@ -12,8 +12,8 @@
 
 # Upcoming stable
 
-Release candidate of awesome 2.3 is available: [awesome 2.3-rc2](awesome-2.3-rc2.tar.gz)
-([tar.bz2](awesome-2.3-rc2.tar.bz2)) (codename: *Better Than*), released on 17 April 2008.
+Release candidate of awesome 2.3 is available: [awesome 2.3-rc3](awesome-2.3-rc3.tar.gz)
+([tar.bz2](awesome-2.3-rc3.tar.bz2)) (codename: *Dirty Boots*), released on 17 April 2008.
 
 # Stable
 
