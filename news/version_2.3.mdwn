@@ -2,7 +2,7 @@ The final release of the 2.3 version of awesome is out.
 To download it, see the [[download]] page.
 
 This release fixes some bugs, add some features. You can
-[[toggle text="see some changes" id="changelog"]] from 2.3-rc2.
+[[toggle text="see some changes" id="changelog"]] from 2.3-rc3.
 [[toggleable id="changelog" text="""
 * Fix cache invalidation when swapping clients
 * Fix handling of keycode and keysyms (FS#64)
