@@ -13,6 +13,9 @@ There's also a [wiki](/wiki/) you are free to use and modify.
 
 
 # awesome on the Web
+# May 2008
+* [ Stupid GUI Tricks: OpenBSD + Xinerama + x11/awesome](http://undeadly.org/cgi?action=article&sid=20080506180146)
+
 ## March 2008
 * [My perfect Arch - X and Awesome](http://www.jabberoo.net/index.php/2008/03/16/my-perfect-arch-x-and-awesome/)
 * [Awesome Awesome!](http://tamilinux.wordpress.com/2008/03/23/awesome-awesome/)
