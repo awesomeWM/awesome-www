@@ -48,10 +48,8 @@ In contrast to ion, larswm, wmii, or dwm, awesome is much, pick 2 from that list
 * Multihead support (XRandR, Xinerama or Zaphod mode).
 * EWMH support.
 * Some real transparency support (using Composite extension and xcompmgr for now).
-* No Lua integration, no 9P support, no editable tagbars.
 * No limit on its source size: *awesome* has features we want.
 * Doesn't distinguish between layers: there is no floating or tiled layer. Whether or not the clients of currently selected tag(s) are in tiled layout, you can rearrange them on the fly. Popup and fixed-size windows are always floating, however.
-* Customized through editing a configuration file, which makes it extremely easy to configure. You don't have to learn Lua/sh/ruby or some weird configuration file format (like X resource files), or recompile source code each time you do something: just edit the configuration file, for god's sake.
 * Each function for manipulating environment is bindable to keys shortcut, mouse buttons or executable remotely via a socket (*awesome-client*).
 
 This gonna be LEGEN... wait for it... DARY!
