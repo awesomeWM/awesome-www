@@ -5,7 +5,7 @@ IKIWIKI=ikiwiki
 endif
 
 push: output
-	rsync -Pavz html/ delmak.naquadah.org:/var/www/awesome.naquadah.org/
+	rsync -Pavz html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
 
 output:
 	$(IKIWIKI) `pwd` html -v --wikiname about --plugin=goodstuff --templatedir=templates \
