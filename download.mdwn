@@ -12,8 +12,9 @@
 
 # Stable
 
-Stable version is [2.3.2](awesome-2.3.2.tar.gz) ([tar.bz2](awesome-2.3.2.tar.bz2)) (codename: *Morning
-Yearning*), released on 24nd June 2008.
+Stable version is [2.3.3](awesome-2.3.3.tar.gz)
+([tar.bz2](awesome-2.3.3.tar.bz2)) (codename: *Pure Morning*), released on
+26th July 2008.
 
 # Developement
 

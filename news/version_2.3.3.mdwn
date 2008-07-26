@@ -1,0 +1,14 @@
+The third stable release of awesome is out: it updates the awesome-2 branch
+with a new release 2.3.3.
+To download it, see the [[download]] page.
+
+This release only fixes some bugs. You can
+[[toggle text="see some changes" id="changelog"]] from 2.3.2.
+[[toggleable id="changelog" text="""
+* Fix xterm -e in default config for other terminal ;
+* Give floating dialogs of maximised windows focus (FS#232).
+"""]]
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome, as always!
