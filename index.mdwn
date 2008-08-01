@@ -6,7 +6,7 @@
 manager for X. It is very fast, light and extensible and licensed under the
 [GNU GPLv2 license](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
-It is primarly targeted at power user, developer and any people dealing with
+It is primarly targeted at power users, developers and any people dealing with
 every day computing tasks and want to have fine-grained control on its
 graphical environment.
 
