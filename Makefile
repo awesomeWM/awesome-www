@@ -10,7 +10,7 @@ push: output luadoc
 
 output:
 	$(IKIWIKI) $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
-	    --exclude=html --exclude=Makefile --rss --url http://awesome.naquadah.org/newsite
+	    --exclude=html --exclude=Makefile --rss --url http://awesome.naquadah.org
 luadoc:
 	 make -C src build cmake luadoc
 
