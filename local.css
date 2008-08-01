@@ -10,12 +10,11 @@ body {
 	background: url(/newsite/images/top_bg.gif);
 	background-repeat: repeat-x;
 	font-family: Verdana, Arial, sans-serif;
-        font-size: 0.6em;
+        font-size: 0.8em;
 }
 
 p {
         text-align: justify;
-	line-height: 12px;
 	margin: 11px 0 10px 0;
 	padding: 0px;
 }
