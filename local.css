@@ -61,6 +61,7 @@ blockquote{
 
 
 #top {
+	font-size: 0.8em;
 	width: 100%;
 	height: 88px;
 	color: #fff;
@@ -71,7 +72,7 @@ blockquote{
 #top h2 {
 	color: White;
 	letter-spacing: 3px;
-	font-size: 2.4em;
+	font-size: 2.0em;
 	font-weight: normal;
 	position: relative;
 	margin: 0px;
