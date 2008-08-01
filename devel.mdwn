@@ -1,6 +1,0 @@
-Here is resources for *awesome* developers and contributors.
-
-- [Git repository](http://git.naquadah.org/?p=awesome.git;a=summary)
-- [Bug tracking system](/bugs/)
-
-<img src="/images/git_stats.png">

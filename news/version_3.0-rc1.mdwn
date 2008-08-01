@@ -1,0 +1,15 @@
+The first release candidate version of the upcoming major version 3.0 version
+is out, noted 3.0-rc1.
+To download it, see the [[download]] page.
+
+awesome 3 is the next major release of awesome, bringing a full new view of
+the window management.
+
+This release is not compatible at all with the 2.x versions. You need to
+rewrite your configuration file.
+
+Thanks to the awesome contributors we had on this release.
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome!

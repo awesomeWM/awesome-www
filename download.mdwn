@@ -1,24 +1,34 @@
-*awesome* is currently available in:
+# Upcoming stable
 
-* [Debian](http://packages.debian.org/awesome)
-* [Gentoo](http://gentoo-portage.com/x11-wm/awesome)
-* [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
-* [OpenBSD](http://openports.se/x11/awesome)
-* [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
-* [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038)
-* [SUSE](http://download.opensuse.org/repositories/home:/darix/)
-* [T2 SDE](http://t2-project.org/packages/awesome.html)
-* [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
+Latest upcoming stable version is version 3.0-rc1 (codename: *Time To Pretend*) released on 1st August 2008.
 
-# Stable
+* [awesome-3.0-rc1.tar.gz](awesome-3.0-rc1.tar.gz)
+* [awesome-3.0-rc1.tar.bz2](awesome-3.0-rc1.tar.bz2)
 
-Stable version is [2.3.3](awesome-2.3.3.tar.gz)
-([tar.bz2](awesome-2.3.3.tar.bz2)) (codename: *Pure Morning*), released on
-26th July 2008.
+# Old stable
+
+Latest stable version of **awesome** is version 2.3.3 (codename: *Pure Morning*) released on 26th July 2008.
+
+* [awesome-2.3.3.tar.gz](awesome-2.3.3.tar.gz)
+* [awesome-2.3.3.tar.bz2](awesome-2.3.3.tar.bz2)
 
 # Developement
 
-Developement versions of *awesome* can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
+Developement versions of **awesome** can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
 
 You can also grab a git copy by running:
-`git clone git://git.naquadah.org/awesome.git`
+
+  `git clone git://git.naquadah.org/awesome.git`
+
+# Packages
+**awesome** is currently available in:
+
+* [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038)
+* [Debian](http://packages.debian.org/awesome)
+* [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
+* [Gentoo](http://gentoo-portage.com/x11-wm/awesome)
+* [OpenBSD](http://openports.se/x11/awesome)
+* [openSUSE](http://download.opensuse.org/repositories/home:/darix/)
+* [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
+* [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
+* [T2 SDE](http://t2-project.org/packages/awesome.html)

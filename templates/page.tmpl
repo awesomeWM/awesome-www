@@ -12,91 +12,108 @@
 </head>
 <body>
 
-<div id="header">
-<h1></h1>
-<TMPL_IF NAME="SEARCHFORM">
-<TMPL_VAR SEARCHFORM>
-</TMPL_IF>
-<ul>
-    <li><a href="/wiki/">wiki</a></li>
-    <li><a href="/community/">community</a></li>
-    <li><a href="/screenshots/">screenshots</a></li>
-    <li><a href="/devel/">devel</a></li>
-    <li><a href="/download/">download</a></li>
-    <li><a href="/news/">news</a></li>
-    <li><a href="/">about</a></li>
-</ul>
-<div class="visual"></div>
+<div id="wrap">
+    <div id="top">
+        <h2><a href="#" title="Back to main page">awesome</a></h2>
+        <TMPL_IF NAME="SEARCHFORM">
+            <TMPL_VAR SEARCHFORM>
+        </TMPL_IF>
+        <div id="menu">
+            <ul>
+                <li><a href="/">home</a></li>
+                <li><a href="/news/">news</a></li>
+                <li><a href="/download/">download</a></li>
+                <li><a href="/community/">community</a></li>
+                <li><a href="/apidoc/">api doc</a></li>
+                <li><a href="/bugs/">bugs</a></li>
+                <li><a href="/wiki/">wiki</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <TMPL_IF NAME="HAVE_ACTIONS">
+        <div class="actions">
+        <ul>
+            <TMPL_IF NAME="EDITURL">
+                <li><a href="<TMPL_VAR EDITURL>">Edit</a></li>
+            </TMPL_IF>
+            <TMPL_IF NAME="RECENTCHANGESURL">
+                <li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
+            </TMPL_IF>
+            <TMPL_IF NAME="HISTORYURL">
+                <li><a href="<TMPL_VAR HISTORYURL>">History</a></li>
+            </TMPL_IF>
+            <TMPL_IF NAME="PREFSURL">
+                <li><a href="<TMPL_VAR PREFSURL>">Preferences</a></li>
+            </TMPL_IF>
+            <TMPL_IF NAME="DISCUSSIONLINK">
+                <li><TMPL_VAR DISCUSSIONLINK><br /></li>
+            </TMPL_IF>
+        </ul>
+        </div>
+    </TMPL_IF>
+
+    <TMPL_IF SIDEBAR>
+        <div id="sidebar">
+            <TMPL_VAR SIDEBAR>
+        </div>
+    </TMPL_IF>
+
+    <div id="content">
+    <!--    <h1><TMPL_VAR TITLE></h1> -->
+        <div id="left">
+            <TMPL_VAR CONTENT>
+        </div>
+        <!--
+        <div id="right">
+            <ul id="nav">
+                <li><a href="/">home</a></li>
+            </ul>
+            <div class="box">
+                <h2 style="margin-top:17px">Latest news</h2>
+                <ul>
+                    <li><a href="#">Recent Entries1</a> <i>01 Des 06</i></li>
+               </ul>
+            </div>
+       </div>
+        -->
+    </div>
 </div>
 
-<TMPL_IF NAME="HAVE_ACTIONS">
-<div class="actions">
-<ul>
-<TMPL_IF NAME="EDITURL">
-<li><a href="<TMPL_VAR EDITURL>">Edit</a></li>
-</TMPL_IF>
-<TMPL_IF NAME="RECENTCHANGESURL">
-<li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
-</TMPL_IF>
-<TMPL_IF NAME="HISTORYURL">
-<li><a href="<TMPL_VAR HISTORYURL>">History</a></li>
-</TMPL_IF>
-<TMPL_IF NAME="PREFSURL">
-<li><a href="<TMPL_VAR PREFSURL>">Preferences</a></li>
-</TMPL_IF>
-<TMPL_IF NAME="DISCUSSIONLINK">
-<li><TMPL_VAR DISCUSSIONLINK><br /></li>
-</TMPL_IF>
-</ul>
-</div>
-</TMPL_IF>
-
-<TMPL_IF SIDEBAR>
-<div id="sidebar">
-<TMPL_VAR SIDEBAR>
-</div>
-</TMPL_IF>
-
-<div id="content">
-<h1><TMPL_VAR TITLE></h1>
-<div id="text">
-<TMPL_VAR CONTENT>
-</div>
-</div>
+<div id="clear"></div></div>
 
 <div id="footer">
-<div id="pageinfo">
+    <div id="pageinfo">
 
-<TMPL_IF NAME="TAGS">
-<div class="tags">
-Tags:
-<TMPL_LOOP NAME="TAGS">
-<TMPL_VAR NAME=LINK>
-</TMPL_LOOP>
-</div>
-</TMPL_IF>
+    <TMPL_IF NAME="TAGS">
+        <div class="tags">
+            Tags:
+            <TMPL_LOOP NAME="TAGS">
+                <TMPL_VAR NAME=LINK>
+            </TMPL_LOOP>
+        </div>
+    </TMPL_IF>
 
+    <SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/8909/badge_js'></SCRIPT> 
+    <div class="copyright">
+        <a name="pagecopyright"></a>
+        <TMPL_IF COPYRIGHT>
+            <TMPL_VAR COPYRIGHT>
+        </TMPL_IF>
+        Copyleft 2007-2008, awesome project
+    </div>
+    <TMPL_IF LICENSE>
+        <div class="license">
+            <a name="pagelicense"></a>
+            License: <TMPL_VAR LICENSE>
+        </div>
+    </TMPL_IF>
 
-<SCRIPT type='text/javascript' language='JavaScript' src='http://www.ohloh.net/projects/8909/badge_js'></SCRIPT> 
-<div class="copyright">
-<a name="pagecopyright"></a>
-<TMPL_IF COPYRIGHT>
-<TMPL_VAR COPYRIGHT>
-</TMPL_IF>
-Copyleft 2007-2008, awesome project
-</div>
-<TMPL_IF LICENSE>
-<div class="license">
-<a name="pagelicense"></a>
-License: <TMPL_VAR LICENSE>
-</div>
-</TMPL_IF>
+    <div class="pagedate">
+        Last edited <TMPL_VAR NAME=MTIME>
+    </div>
 
-<div class="pagedate">
-Last edited <TMPL_VAR NAME=MTIME>
-</div>
-
-</div>
+    </div>
 <TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
 <!-- from <TMPL_VAR NAME=WIKINAME> -->
 </div>

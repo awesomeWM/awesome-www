@@ -1,8 +1,0 @@
-# Seeing is believing
-
-More [screenshots](http://awesome.naquadah.org/wiki/index.php/User_Contributed_Themes) on the wiki.
-
-[[img screenshots/0.png size="320x240" alt="awesome 20070907"]] [[img screenshots/calmar.png size="320x240" alt="calmar's screenshot"]] [[img screenshots/gigamo.png size="320x240" alt="awesome 2.2"]] [[img screenshots/2.png size="320x240" alt="awesome 2.0"]] [[img screenshots/photo0.jpg size="320x240" alt="awesome photo 0070925"]] [[img screenshots/blu3ness.png size="320x240" alt="blu3ness' screenshot"]]
-
-# awesome on Asustek EeePC
-[[img screenshots/photo1.jpg size="320x240" alt="awesome on EeeePC"]] [[img screenshots/photo2.jpg size="320x240" alt="awesome on EeePC"]]
