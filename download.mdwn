@@ -1,13 +1,17 @@
-# Upcoming stable
+# Branch 3.x (upcoming stable)
 
-Latest upcoming stable version is version 3.0-rc1 (codename: *Time To Pretend*) released on 1st August 2008.
+This is the main branch of **awesome** and gets all new features and bug fixes.
+
+Latest upcoming stable version of **awesome** is version 3.0-rc1 (codename: *Time To Pretend*) released on 1st August 2008.
 
 * [awesome-3.0-rc1.tar.gz](awesome-3.0-rc1.tar.gz)
 * [awesome-3.0-rc1.tar.bz2](awesome-3.0-rc1.tar.bz2)
 
-# Old stable
+# Branch 2.x (old stable)
 
-Latest stable version of **awesome** is version 2.3.3 (codename: *Pure Morning*) released on 26th July 2008.
+This branch of **awesome** is still maintained but get only bug fixes.
+
+Latest old stable version of **awesome** is version 2.3.3 (codename: *Pure Morning*) released on 26th July 2008.
 
 * [awesome-2.3.3.tar.gz](awesome-2.3.3.tar.gz)
 * [awesome-2.3.3.tar.bz2](awesome-2.3.3.tar.bz2)
