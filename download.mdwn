@@ -37,3 +37,4 @@ You can also grab a git copy by running:
 * [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
 * [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
 * [T2 SDE](http://t2-project.org/packages/awesome.html)
+* [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
