@@ -13,6 +13,7 @@ This branch of **awesome** is still maintained but get only bug fixes.
 
 Latest old stable version of **awesome** is version 2.3.3 (codename: *Pure Morning*) released on 26th July 2008.
 
+* [v2.3.3 changelog](/changelogs/v2.3.3) ([short](/changelogs/short/v2.3.3))
 * [awesome-2.3.3.tar.gz](awesome-2.3.3.tar.gz)
 * [awesome-2.3.3.tar.bz2](awesome-2.3.3.tar.bz2)
 
