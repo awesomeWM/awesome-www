@@ -4,7 +4,7 @@ else
 IKIWIKI=ikiwiki
 endif
 
-push: output luadoc
+push: output luadoc changelogs
 	rsync -Pavz --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
 	rsync -Pavz src/build/luadoc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/apidoc
 
@@ -17,3 +17,11 @@ luadoc:
 clean:
 	rm -rf .ikiwiki html
 
+changelogs:
+	test -d html/changelogs/short || mkdir -p html/changelogs/short
+	git --git-dir=src/.git tag | grep -v rc | sort -n | \
+	    (while read v; do \
+	    test -z "$$pv" && pv="`git --git-dir=src/.git rev-list HEAD | tail -n1`" ; \
+	    git --git-dir=src/.git shortlog $$pv..$$v > html/changelogs/short/$$v ; \
+	    git --git-dir=src/.git log $$pv..$$v > html/changelogs/$$v ; \
+	    pv=$$v; done)
