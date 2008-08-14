@@ -11,3 +11,9 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 # Wiki
 
 There's also a [wiki](/wiki/) you are free to use and modify.
+
+# Developement statistics
+
+<div align="center">
+<img src="/images/git_stats.png" alt="git stats"/>
+</div>
