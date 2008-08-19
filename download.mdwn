@@ -32,7 +32,7 @@ You can also grab a git copy by running:
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
-* [Gentoo](http://gentoo-portage.com/x11-wm/awesome)
+* [Gentoo](http://packages.gentoo.org/package/x11-wm/awesome)
 * [OpenBSD](http://openports.se/x11/awesome)
 * [openSUSE](http://download.opensuse.org/repositories/home:/darix/)
 * [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
