@@ -1,0 +1,6 @@
+The fourth release candidate version of the upcoming 3.0 version is out, noted
+3.0-rc4.  To download it, see the [[download]] page.
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome!

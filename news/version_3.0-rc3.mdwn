@@ -1,4 +1,4 @@
-The trhird release candidate version of the upcoming 3.0 version is out, noted
+The third release candidate version of the upcoming 3.0 version is out, noted
 3.0-rc3.  To download it, see the [[download]] page.
 
 Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
