@@ -11,11 +11,11 @@ Latest upcoming stable version of **awesome** is version 3.0-rc4 (codename: *Sca
 
 This branch of **awesome** is still maintained but get only bug fixes.
 
-Latest old stable version of **awesome** is version 2.3.3 (codename: *Pure Morning*) released on 26th July 2008.
+Latest old stable version of **awesome** is version 2.3.4 (codename: *Morning Trouble* released on 24th August 2008.
 
-* [v2.3.3 changelog](/changelogs/v2.3.3) ([short](/changelogs/short/v2.3.3))
-* [awesome-2.3.3.tar.gz](awesome-2.3.3.tar.gz)
-* [awesome-2.3.3.tar.bz2](awesome-2.3.3.tar.bz2)
+* [v2.3.4 changelog](/changelogs/v2.3.4) ([short](/changelogs/short/v2.3.4))
+* [awesome-2.3.4.tar.gz](awesome-2.3.4.tar.gz)
+* [awesome-2.3.4.tar.bz2](awesome-2.3.4.tar.bz2)
 
 # Developement
 
