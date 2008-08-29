@@ -2,10 +2,10 @@
 
 This is the main branch of **awesome** and gets all new features and bug fixes.
 
-Latest upcoming stable version of **awesome** is version 3.0-rc4 (codename: *Scared Of Girls*) released on 22th August 2008.
+Latest upcoming stable version of **awesome** is version 3.0-rc5 (codename: *Marshals Are Dead*) released on 29th August 2008.
 
-* [awesome-3.0-rc4.tar.gz](awesome-3.0-rc4.tar.gz)
-* [awesome-3.0-rc4.tar.bz2](awesome-3.0-rc4.tar.bz2)
+* [awesome-3.0-rc5.tar.gz](awesome-3.0-rc5.tar.gz)
+* [awesome-3.0-rc5.tar.bz2](awesome-3.0-rc5.tar.bz2)
 
 # Branch 2.x (old stable)
 
