@@ -12,7 +12,7 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 ## Developers
 * Subscribe: send mail to [awesome-devel-subscribe@naquadah.org](mailto:awesome-devel-subscribe@naquadah.org)
 * Unsubscribe: send mail to [awesome-devel-unsubscribe@naquadah.org](mailto:awesome-devel-unsubscribe@naquadah.org)
-* [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome-devel)
+* [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
 
 # Wiki
 
