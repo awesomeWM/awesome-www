@@ -17,9 +17,9 @@ Latest old stable version of **awesome** is version 2.3.4 (codename: *Morning Tr
 * [awesome-2.3.4.tar.gz](awesome-2.3.4.tar.gz)
 * [awesome-2.3.4.tar.bz2](awesome-2.3.4.tar.bz2)
 
-# Developement
+# Development
 
-Developement versions of **awesome** can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
+Development versions of **awesome** can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
 
 You can also grab a git copy by running:
 
