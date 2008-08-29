@@ -3,16 +3,21 @@
 # IRC
 You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network ([statistics](http://naquadah.org/~jd/irc/awesome.html)).
 
-# Mailing list
+# Mailing lists
+## User
 * Subscribe: send mail to [awesome-subscribe@naquadah.org](mailto:awesome-subscribe@naquadah.org)
 * Unsubscribe: send mail to [awesome-unsubscribe@naquadah.org](mailto:awesome-unsubscribe@naquadah.org)
 * [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome)
+
+## Development
+* Subscribe: send mail to [awesome-devel-subscribe@naquadah.org](mailto:awesome-devel-subscribe@naquadah.org)
+* Unsubscribe: send mail to [awesome-devel-unsubscribe@naquadah.org](mailto:awesome-devel-unsubscribe@naquadah.org)
 
 # Wiki
 
 There's also a [wiki](/wiki/) you are free to use and modify.
 
-# Developement statistics
+# Development statistics
 
 <div align="center">
 <img src="/images/git_stats.png" alt="git stats"/>
