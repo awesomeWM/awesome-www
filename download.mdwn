@@ -4,8 +4,8 @@ This is the main branch of **awesome** and gets all new features and bug fixes.
 
 Latest upcoming stable version of **awesome** is version 3.0-rc6 (codename: *Elect The Dead*) released on 5th September 2008.
 
-* [awesome-3.0-rc6.tar.gz](awesome-3.0-rc5.tar.gz)
-* [awesome-3.0-rc6.tar.bz2](awesome-3.0-rc5.tar.bz2)
+* [awesome-3.0-rc6.tar.gz](awesome-3.0-rc6.tar.gz)
+* [awesome-3.0-rc6.tar.bz2](awesome-3.0-rc6.tar.bz2)
 
 # Branch 2.x (old stable)
 
