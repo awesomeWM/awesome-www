@@ -4,6 +4,7 @@ This is the main branch of **awesome** and gets all new features and bug fixes.
 
 Latest upcoming stable version of **awesome** is version 3.0 (codename: *Fake Plastic Trees*) released on 18th September 2008.
 
+* [v3.0 changelog](/changelogs/v3.0) ([short](/changelogs/short/v3.0))
 * [awesome-3.0.tar.gz](awesome-3.0.tar.gz)
 * [awesome-3.0.tar.bz2](awesome-3.0.tar.bz2)
 
