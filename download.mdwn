@@ -1,15 +1,15 @@
-# Branch 3.x (upcoming stable)
+# Branch 3.x (stable)
 
 This is the main branch of **awesome** and gets all new features and bug fixes.
 
-Latest upcoming stable version of **awesome** is version 3.0-rc6 (codename: *Elect The Dead*) released on 5th September 2008.
+Latest upcoming stable version of **awesome** is version 3.0 (codename: *Fake Plastic Trees*) released on 18th September 2008.
 
-* [awesome-3.0-rc6.tar.gz](awesome-3.0-rc6.tar.gz)
-* [awesome-3.0-rc6.tar.bz2](awesome-3.0-rc6.tar.bz2)
+* [awesome-3.0.tar.gz](awesome-3.0.tar.gz)
+* [awesome-3.0.tar.bz2](awesome-3.0.tar.bz2)
 
 # Branch 2.x (old stable)
 
-This branch of **awesome** is still maintained but get only bug fixes.
+This branch of **awesome** is deprecated. But bug fixes are still welcome.
 
 Latest old stable version of **awesome** is version 2.3.4 (codename: *Morning Trouble*) released on 24th August 2008.
 
