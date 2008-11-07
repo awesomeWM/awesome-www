@@ -1,0 +1,6 @@
+The first release candidate version of the upcoming 3.1 version is out, noted
+3.1-rc1.  To download it, see the [[download]] page.
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Have fun and be awesome!
