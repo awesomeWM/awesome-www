@@ -16,14 +16,14 @@ Changelog:
  * placement (smart, under_mouse, etc) has been move into awful;
  * statusbars and titlebars has been merged in a common type: wibox;
  * wibox can be floating (i.e. you can now write your own conky-like with
- * wiboxes);
- * _NET_WM_STRUT_PARTIAL is now supported so panel and dock automagically puts
+   wiboxes);
+ * \_NET\_WM\_STRUT\_PARTIAL is now supported so panel and dock automagically puts
    padding around the screen;
  * sticky windows are handled like sticky windows and are not tagged anymore;
  * windows that get reparented are now unmanaged (that fixes view of PDF etc in
    your browser);
  * a new image type has been introduced so you can manipulate image directly in
- * awesome and use them;
+   awesome and use them;
  * a new imagebox widget has been (re)introduced to use image objects;
  * a real minimize/iconify state is now available;
  * awesome gets a --check to check Lua syntax file; restart is now also checked
