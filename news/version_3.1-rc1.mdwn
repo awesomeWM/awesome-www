@@ -29,7 +29,7 @@ Changelog:
  * awesome gets a --check to check Lua syntax file; restart is now also checked
    for syntax file by default.
  * Text can now be spread across multiple lines, using pango ability to wrap
- * text;
+   text;
  * New full screen layout;
  * awful.clients.swap.bydirection function;
  * Images get crop_and_scale() method;
