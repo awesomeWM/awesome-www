@@ -2,7 +2,7 @@
 
 This is the main branch of **awesome** and gets all new features and bug fixes.
 
-Latest upcoming stable version of **awesome** is version 3.0 (codename: *Fake Plastic Trees*) released on 18th September 2008.
+Latest stable version of **awesome** is version 3.0 (codename: *Fake Plastic Trees*) released on 18th September 2008.
 
 * [v3.0 changelog](/changelogs/v3.0) ([short](/changelogs/short/v3.0))
 * [awesome-3.0.tar.gz](awesome-3.0.tar.gz)
@@ -10,7 +10,7 @@ Latest upcoming stable version of **awesome** is version 3.0 (codename: *Fake Pl
 
 # Branch 2.x (old stable)
 
-This branch of **awesome** is deprecated. But bug fixes are still welcome.
+This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
 Latest old stable version of **awesome** is version 2.3.4 (codename: *Morning Trouble*) released on 24th August 2008.
 
