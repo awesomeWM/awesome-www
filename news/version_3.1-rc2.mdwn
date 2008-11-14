@@ -1,0 +1,25 @@
+The second release candidate version of the upcoming 3.1 version is out, noted
+3.1-rc2.  To download it, see the [[download]] page.
+
+Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
+
+Changelog:
+
+ * awful.menu is now more object compliant;
+ * XDG_CONFIG_DIR is always in package path;
+ * invaders: add pause button;
+ * invaders: fix highscore display;
+ * reorganize themes dir;
+ * reduce transient client flickering;
+ * imagebox: don't draw anything is not enough space (FS#368);
+ * client: add support for transient_for in Lua
+ * keygrabber: add stop() method
+ * client: add lower() method
+ * sky-theme: Initial import and integration
+ * tile: evenly distribute slave clients over slave columns
+ * beautiful: merge awful.beautiful, stop registering system
+ * awful.prompt add in history also on 'j' and 'm'
+ * luaa: use fg/bg as keys for colors
+ * revelation: import
+
+Have fun and be awesome!
