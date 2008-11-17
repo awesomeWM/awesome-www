@@ -7,7 +7,7 @@ manager for X. It is very fast, extensible and licensed under the
 [GNU GPLv2 license](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
 It is primarly targeted at power users, developers and any people dealing with
-every day computing tasks and who want to have fine-grained control on its
+every day computing tasks and who want to have fine-grained control on theirs
 graphical environment.
 
 <div id="screenshot">
