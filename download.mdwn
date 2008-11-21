@@ -8,10 +8,10 @@ Latest stable version of **awesome** is version 3.0 (codename: *Fake Plastic Tre
 * [awesome-3.0.tar.gz](awesome-3.0.tar.gz)
 * [awesome-3.0.tar.bz2](awesome-3.0.tar.bz2)
 
-Latest release candidate version is 3.1-rc2 (codename: *When She Believes*) released on 14th November 2008.
+Latest release candidate version is 3.1-rc3 (codename: *When Doves Cry*) released on 21th November 2008.
 
-* [awesome-3.1-rc2.tar.gz](awesome-3.1-rc2.tar.gz)
-* [awesome-3.1-rc2.tar.bz2](awesome-3.1-rc2.tar.bz2)
+* [awesome-3.1-rc3.tar.gz](awesome-3.1-rc3.tar.gz)
+* [awesome-3.1-rc3.tar.bz2](awesome-3.1-rc3.tar.bz2)
 
 # Branch 2.x (old stable)
 
