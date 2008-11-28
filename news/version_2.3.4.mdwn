@@ -1,9 +1,0 @@
-The third stable release of awesome is out: it updates the awesome-2 branch
-with a new release 2.3.4.
-To download it, see the [[download]] page.
-
-Changelog is available [here](/changelogs/v2.3.4).
-
-Don't hesitate to report bugs and ask or write enhancements on [awesome BTS](/bugs/).
-
-Have fun and be awesome, as always!

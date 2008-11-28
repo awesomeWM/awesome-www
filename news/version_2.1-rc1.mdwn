@@ -1,8 +1,0 @@
-Version 2.1-rc1 of *awesome* is available. To download it, see the [[download]] page.
-This is the first release candidate version of the upcoming 2.1 version.
-
-This release fixes bugs, adds a lot of new features and brings a new widget system for the statusbar.
-
-Don't hesitate to report bugs and ask or write enhancements on awesome [bug tracking system](/bugs/) or [awesome list](/community/).
-
-Have fun!
