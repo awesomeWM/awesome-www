@@ -2,16 +2,11 @@
 
 This is the main branch of **awesome** and gets all new features and bug fixes.
 
-Latest stable version of **awesome** is version 3.0 (codename: *Fake Plastic Trees*) released on 18th September 2008.
+Latest stable version of **awesome** is version 3.1 (codename: *Helicopter*) released on 12th December 2008.
 
-* [v3.0 changelog](/changelogs/v3.0) ([short](/changelogs/short/v3.0))
-* [awesome-3.0.tar.gz](awesome-3.0.tar.gz)
-* [awesome-3.0.tar.bz2](awesome-3.0.tar.bz2)
-
-Latest release candidate version is 3.1-rc5 (codename: *Face*) released on 5th December 2008.
-
-* [awesome-3.1-rc5.tar.gz](awesome-3.1-rc5.tar.gz)
-* [awesome-3.1-rc5.tar.bz2](awesome-3.1-rc5.tar.bz2)
+* [v3.1 changelog](/changelogs/v3.1) ([short](/changelogs/short/v3.1))
+* [awesome-3.1.tar.gz](awesome-3.1.tar.gz)
+* [awesome-3.1.tar.bz2](awesome-3.1.tar.bz2)
 
 # Branch 2.x (old stable)
 
