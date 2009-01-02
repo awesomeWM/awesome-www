@@ -12,11 +12,11 @@ Latest stable version of **awesome** is version 3.1 (codename: *Helicopter*) rel
 
 This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
-Latest old stable version of **awesome** is version 2.3.4 (codename: *Morning Trouble*) released on 24th August 2008.
+Latest old stable version of **awesome** is version 2.3.5 (codename: *New Morning*) released on 2nd January 2009.
 
-* [v2.3.4 changelog](/changelogs/v2.3.4) ([short](/changelogs/short/v2.3.4))
-* [awesome-2.3.4.tar.gz](awesome-2.3.4.tar.gz)
-* [awesome-2.3.4.tar.bz2](awesome-2.3.4.tar.bz2)
+* [v2.3.5 changelog](/changelogs/v2.3.5) ([short](/changelogs/short/v2.3.5))
+* [awesome-2.3.5.tar.gz](awesome-2.3.5.tar.gz)
+* [awesome-2.3.5.tar.bz2](awesome-2.3.5.tar.bz2)
 
 # Development
 
