@@ -2,7 +2,7 @@
 
 This is the main branch of **awesome** and gets all new features and bug fixes.
 
-Latest stable version of **awesome** is version 3.1.1 (codename: *Ring My Bell*) released on 8th January 2008.
+Latest stable version of **awesome** is version 3.1.1 (codename: *Ring My Bell*) released on 8th January 2009.
 
 * [v3.1.1 changelog](/changelogs/v3.1.1) ([short](/changelogs/short/v3.1.1))
 * [awesome-3.1.1.tar.gz](awesome-3.1.1.tar.gz)
