@@ -8,9 +8,19 @@ push: output luadoc changelogs
 	rsync -Pavz --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
 	rsync -Pavz src/build/luadoc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/apidoc
 
-output:
+output: authors.mdwn
 	$(IKIWIKI) $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
 	    --exclude=html --exclude=Makefile --rss --url http://awesome.naquadah.org
+
+authors.mdwn:
+	echo '## Primary' > authors.mdwn
+	echo '<pre>' >> authors.mdwn
+	git --git-dir=src/.git shortlog -n -s | head -n 10 | column -x -c 80 >> authors.mdwn
+	echo '</pre>' >> authors.mdwn
+	echo '## Contributors' >> authors.mdwn
+	echo '<pre>' >> authors.mdwn
+	git --git-dir=src/.git shortlog -n -s | tail -n +11 | column -x -c 80 >> authors.mdwn
+	echo '</pre>' >> authors.mdwn
 luadoc:
 	 make -C src build cmake all
 
@@ -25,3 +35,5 @@ changelogs:
 	    git --git-dir=src/.git shortlog $$pv..$$v > html/changelogs/short/$$v ; \
 	    git --git-dir=src/.git log $$pv..$$v > html/changelogs/$$v ; \
 	    pv=$$v; done)
+
+.PHONY: authors.mdwn changelogs

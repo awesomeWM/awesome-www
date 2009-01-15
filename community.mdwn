@@ -20,6 +20,9 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 
 There's also a [wiki](/wiki/) you are free to use and modify.
 
+# Authors
+[[!inline pages="authors" raw="yes" rss="no"]]
+
 # Development statistics
 
 <div align="center">
