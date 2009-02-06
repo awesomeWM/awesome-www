@@ -1,5 +1,5 @@
 <div id="logo">
-[[!!img images/icons/aw_64_shadow.png alt="awesome logo"]]
+[[!img images/icons/aw_64_shadow.png alt="awesome logo"]]
 </div>
 
 **awesome** is a highly configurable, next generation framework window
