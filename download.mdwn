@@ -1,6 +1,11 @@
-# Branch 3.x (stable)
+# Testing
 
-This is the main branch of **awesome** and gets all new features and bug fixes.
+Latest testing version of **awesome** is version 3.2-rc1 (codename: *Candyman*) released on 6th February 2009.
+
+* [awesome-3.2-rc1.tar.gz](awesome-3.2-rc1.tar.gz)
+* [awesome-3.2-rc1.tar.bz2](awesome-3.2-rc1.tar.bz2)
+
+# Stable
 
 Latest stable version of **awesome** is version 3.1.2 (codename: *Nobody Came*) released on 5th February 2009.
 
@@ -8,7 +13,7 @@ Latest stable version of **awesome** is version 3.1.2 (codename: *Nobody Came*) 
 * [awesome-3.1.2.tar.gz](awesome-3.1.2.tar.gz)
 * [awesome-3.1.2.tar.bz2](awesome-3.1.2.tar.bz2)
 
-# Branch 2.x (old stable)
+# Old stable
 
 This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
