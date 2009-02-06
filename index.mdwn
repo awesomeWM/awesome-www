@@ -1,5 +1,5 @@
 <div id="logo">
-[[img images/icons/aw_64_shadow.png alt="awesome logo"]]
+[[!!img images/icons/aw_64_shadow.png alt="awesome logo"]]
 </div>
 
 **awesome** is a highly configurable, next generation framework window
@@ -11,7 +11,7 @@ every day computing tasks and who want to have fine-grained control on theirs
 graphical environment.
 
 <div id="screenshot">
-[[img images/screen.png alt="awesome screenshot" size="320x240"]]
+[[!img images/screen.png alt="awesome screenshot" size="320x240"]]
 </div>
 
 # Concepts
@@ -76,7 +76,7 @@ The widgets are contained inside statusbars or titlebars and displays
 various informations in form of text, image, progress bar, graph, etc…
 
 <div id="screenshot">
-[[img images/4mon.png alt="awesome running on 4 monitors" size="320x240"]]
+[[!img images/4mon.png alt="awesome running on 4 monitors" size="320x240"]]
 </div>
 
 # Features and non-features
