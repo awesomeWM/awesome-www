@@ -87,13 +87,15 @@ various informations in form of text, image, progress bar, graph, etc…
   any other window manager;
 * Very well documented source code and API;
 * No mouse needed: everything can be performed with keyboard;
-* Real multihead support (XRandR, Xinerama or Zaphod mode);
+* Real multihead support (XRandR, Xinerama or Zaphod mode) with per screen
+  desktops (tags);
 * Implement many [Freedesktop](http://www.freedesktop.org) standards:
   [EWMH](http://standards.freedesktop.org/wm-spec/wm-spec-latest.html),
   [XDG Base Directory](http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html),
   [XEmbed](http://standards.freedesktop.org/xembed-spec/xembed-spec-latest.html),
+  [Desktop Notification](http://www.galago-project.org/specs/notification/),
   [System Tray](http://standards.freedesktop.org/systemtray-spec/systemtray-spec-latest.html);
-* Some real transparency support (using Composite extension and *xcompmgr*);
+* Real transparency support (using Composite extension and *xcompmgr*);
 * Doesn't distinguish between layers: there is no floating or tiled layer;
 * Whether or not the clients of currently selected tag(s) are in tiled layout,
   you can rearrange them on the fly. Popup and fixed-size windows are
