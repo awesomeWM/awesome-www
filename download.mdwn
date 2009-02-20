@@ -1,9 +1,9 @@
 # Testing
 
-Latest testing version of **awesome** is version 3.2-rc2 (codename: *Hunting For Witches*) released on 13th February 2009.
+Latest testing version of **awesome** is version 3.2-rc3 (codename: *Chocolate*) released on 20th February 2009.
 
-* [awesome-3.2-rc2.tar.gz](awesome-3.2-rc2.tar.gz)
-* [awesome-3.2-rc2.tar.bz2](awesome-3.2-rc2.tar.bz2)
+* [awesome-3.2-rc3.tar.gz](awesome-3.2-rc3.tar.gz)
+* [awesome-3.2-rc3.tar.bz2](awesome-3.2-rc3.tar.bz2)
 
 # Stable
 
