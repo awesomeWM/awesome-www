@@ -1,17 +1,10 @@
-# Testing
-
-Latest testing version of **awesome** is version 3.2-rc4 (codename: *Faith*) released on 27th February 2009.
-
-* [awesome-3.2-rc4.tar.gz](awesome-3.2-rc4.tar.gz)
-* [awesome-3.2-rc4.tar.bz2](awesome-3.2-rc4.tar.bz2)
-
 # Stable
 
-Latest stable version of **awesome** is version 3.1.2 (codename: *Nobody Came*) released on 5th February 2009.
+Latest stable version of **awesome** is version 3.2 (codename: *Accidental Babies*) released on 13th March 2009.
 
-* [v3.1.2 changelog](/changelogs/v3.1.2) ([short](/changelogs/short/v3.1.2))
-* [awesome-3.1.2.tar.gz](awesome-3.1.2.tar.gz)
-* [awesome-3.1.2.tar.bz2](awesome-3.1.2.tar.bz2)
+* [v3.2 changelog](/changelogs/v3.2) ([short](/changelogs/short/v3.2))
+* [awesome-3.2.tar.gz](awesome-3.2.tar.gz)
+* [awesome-3.2.tar.bz2](awesome-3.2.tar.bz2)
 
 # Old stable
 
