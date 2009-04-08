@@ -33,7 +33,6 @@ You can also grab a git copy by running:
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
 * [Gentoo](http://packages.gentoo.org/package/x11-wm/awesome)
 * [OpenBSD](http://openports.se/x11/awesome)
-* [openSUSE](http://download.opensuse.org/repositories/home:/darix/)
 * [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
 * [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
 * [T2 SDE](http://t2-project.org/packages/awesome.html)
