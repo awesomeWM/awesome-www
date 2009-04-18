@@ -10,11 +10,11 @@ Latest stable version of **awesome** is version 3.2.1 (codename: *Complicated*) 
 
 This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
-Latest old stable version of **awesome** is version 2.3.5 (codename: *New Morning*) released on 2nd January 2009.
+Latest old stable version of **awesome** is version 2.3.6 (codename: *Tomorrow Morning*) released on 18th April 2009.
 
-* [v2.3.5 changelog](/changelogs/v2.3.5) ([short](/changelogs/short/v2.3.5))
-* [awesome-2.3.5.tar.gz](awesome-2.3.5.tar.gz)
-* [awesome-2.3.5.tar.bz2](awesome-2.3.5.tar.bz2)
+* [v2.3.6 changelog](/changelogs/v2.3.6) ([short](/changelogs/short/v2.3.6))
+* [awesome-2.3.6.tar.gz](awesome-2.3.6.tar.gz)
+* [awesome-2.3.6.tar.bz2](awesome-2.3.6.tar.bz2)
 
 # Development
 
