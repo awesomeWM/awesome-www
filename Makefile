@@ -4,9 +4,10 @@ else
 IKIWIKI=ikiwiki
 endif
 
-push: output luadoc changelogs
+push: output luadoc changelogs manpages
 	rsync -Pavz --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
-	rsync -Pavz src/build/luadoc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/apidoc
+	rsync -Pavz --delete src/build/luadoc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/api
+	rsync -Pavz /usr/share/asciidoc/icons awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/manpages/icons
 
 output: authors.mdwn
 	$(IKIWIKI) $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
@@ -36,4 +37,10 @@ changelogs:
 	    git --git-dir=src/.git log $$pv..$$v > html/changelogs/$$v ; \
 	    pv=$$v; done)
 
-.PHONY: authors.mdwn changelogs
+manpages:
+	mkdir -p html/doc/manpages
+	cd src; for manpage in *.?.txt; \
+	    do asciidoc -a icons -b xhtml11 -o ../html/doc/manpages/`basename $${manpage} .txt`.html $$manpage; \
+	    done
+
+.PHONY: authors.mdwn changelogs manpages
