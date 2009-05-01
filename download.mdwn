@@ -1,6 +1,12 @@
+# Testing
+
+Latest testing version of **awesome** is version 3.3-rc1 (*The Lightning Strike*) released on 1st May 2009.
+* [awesome-3.3-rc1.tar.gz](awesome-3.3-rc1.tar.gz)
+* [awesome-3.3-rc1.tar.bz2](awesome-3.3-rc1.tar.bz2)
+
 # Stable
 
-Latest stable version of **awesome** is version 3.2.1 (codename: *Complicated*) released on 04th April 2009.
+Latest stable version of **awesome** is version 3.2.1 (*Complicated*) released on 04th April 2009.
 
 * [v3.2.1 changelog](/changelogs/v3.2.1) ([short](/changelogs/short/v3.2.1))
 * [awesome-3.2.1.tar.gz](awesome-3.2.1.tar.gz)
@@ -10,7 +16,7 @@ Latest stable version of **awesome** is version 3.2.1 (codename: *Complicated*) 
 
 This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
-Latest old stable version of **awesome** is version 2.3.6 (codename: *Tomorrow Morning*) released on 18th April 2009.
+Latest old stable version of **awesome** is version 2.3.6 (*Tomorrow Morning*) released on 18th April 2009.
 
 * [v2.3.6 changelog](/changelogs/v2.3.6) ([short](/changelogs/short/v2.3.6))
 * [awesome-2.3.6.tar.gz](awesome-2.3.6.tar.gz)
