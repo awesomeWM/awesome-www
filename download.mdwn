@@ -1,8 +1,8 @@
 # Testing
 
-Latest testing version of **awesome** is version 3.3-rc1 (*The Lightning Strike*) released on 1st May 2009.
-* [awesome-3.3-rc1.tar.gz](awesome-3.3-rc1.tar.gz)
-* [awesome-3.3-rc1.tar.bz2](awesome-3.3-rc1.tar.bz2)
+Latest testing version of **awesome** is version 3.3-rc2 (*Bad Boyfriend*) released on 8th May 2009.
+* [awesome-3.3-rc2.tar.gz](awesome-3.3-rc2.tar.gz)
+* [awesome-3.3-rc2.tar.bz2](awesome-3.3-rc2.tar.bz2)
 
 # Stable
 
