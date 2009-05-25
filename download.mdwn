@@ -46,3 +46,4 @@ You can also grab a git copy by running:
 * [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
 * [Mandriva](http://sophie.zarb.org/rpmfind?distrib=&version=&arch=&search=awesome&st=rpmname)
 * [AuroraUX](http://wiki.auroraux.blastwave.org/)
+* [openSUSE](http://download.opensuse.org/repositories/home://llipavsky/openSUSE_Factory/)
