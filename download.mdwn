@@ -1,9 +1,9 @@
 # Testing
 
-Latest testing version of **awesome** is version 3.3-rc3 (*Uniform*) released on 18th May 2009.
+Latest testing version of **awesome** is version 3.3-rc4 (*Breath*) released on 26th May 2009.
 
-* [awesome-3.3-rc3.tar.gz](awesome-3.3-rc3.tar.gz)
-* [awesome-3.3-rc3.tar.bz2](awesome-3.3-rc3.tar.bz2)
+* [awesome-3.3-rc4.tar.gz](awesome-3.3-rc4.tar.gz)
+* [awesome-3.3-rc4.tar.bz2](awesome-3.3-rc4.tar.bz2)
 
 # Stable
 
