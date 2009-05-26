@@ -10,11 +10,19 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 * [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome)
 * [The Mail Archive](http://www.mail-archive.com/awesome@naquadah.org/)
 
+<div align="center">
+<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org-eoc_subscribers_count_awesome_naquadah_org-year.png"/>
+</div>
+
 ## Developers
 * Subscribe: send mail to [awesome-devel-subscribe@naquadah.org](mailto:awesome-devel-subscribe@naquadah.org)
 * Unsubscribe: send mail to [awesome-devel-unsubscribe@naquadah.org](mailto:awesome-devel-unsubscribe@naquadah.org)
 * [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
 * [The Mail Archive](http://www.mail-archive.com/awesome-devel@naquadah.org/)
+
+<div align="center">
+<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org-eoc_subscribers_count_awesome_devel_naquadah_org-year.png"/>
+</div>
 
 # Wiki
 
