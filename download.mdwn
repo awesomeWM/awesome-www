@@ -1,10 +1,10 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.3 (*Stellar*) released on 04th June 2009.
+Latest stable version of **awesome** is version 3.3.1 (*Bionic*) released on 18th June 2009.
 
-* [v3.3 changelog](/changelogs/v3.3) ([short](/changelogs/short/v3.3))
-* [awesome-3.3.tar.gz](awesome-3.3.tar.gz)
-* [awesome-3.3.tar.bz2](awesome-3.3.tar.bz2)
+* [v3.3.1 changelog](/changelogs/v3.3.1) ([short](/changelogs/short/v3.3.1))
+* [awesome-3.3.1.tar.gz](awesome-3.3.1.tar.gz)
+* [awesome-3.3.1.tar.bz2](awesome-3.3.1.tar.bz2)
 
 # Old stable
 
@@ -27,7 +27,7 @@ You can also grab a git copy by running:
 # Packages
 **awesome** is currently available in:
 
-* [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13038)
+* [ArchLinux](http://aur.archlinux.org/packages.php?do_Details=1&ID=13.3.18)
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
