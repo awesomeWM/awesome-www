@@ -1,10 +1,10 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.3.3 (*Firelight*) released on 25th August 2009.
+Latest stable version of **awesome** is version 3.3.4 (*Mercury*) released on 7th September 2009.
 
-* [v3.3.3 changelog](/changelogs/v3.3.3) ([short](/changelogs/short/v3.3.3))
-* [awesome-3.3.3.tar.gz](awesome-3.3.3.tar.gz)
-* [awesome-3.3.3.tar.bz2](awesome-3.3.3.tar.bz2)
+* [v3.3.4 changelog](/changelogs/v3.3.4) ([short](/changelogs/short/v3.3.4))
+* [awesome-3.3.4.tar.gz](awesome-3.3.4.tar.gz)
+* [awesome-3.3.4.tar.bz2](awesome-3.3.4.tar.bz2)
 
 # Old stable
 
