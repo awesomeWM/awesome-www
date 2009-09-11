@@ -23,7 +23,8 @@ authors.mdwn:
 	git --git-dir=src/.git shortlog -n -s | tail -n +11 | column -x -c 80 >> authors.mdwn
 	echo '</pre>' >> authors.mdwn
 luadoc:
-	 make -C src build cmake all
+	rm -f src/build
+	make -C src build cmake luadoc
 
 clean:
 	rm -rf .ikiwiki html

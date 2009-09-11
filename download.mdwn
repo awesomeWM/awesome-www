@@ -1,3 +1,10 @@
+# Testing
+
+Latest testing version of **awesome** is version 3.4-rc1 (*Uprising*) released on 11th September 2009.
+
+* [awesome-3.4-rc1.tar.gz](awesome-3.4-rc1.tar.gz)
+* [awesome-3.4-rc1.tar.bz2](awesome-3.4-rc1.tar.bz2)
+
 # Stable
 
 Latest stable version of **awesome** is version 3.3.4 (*Mercury*) released on 7th September 2009.
