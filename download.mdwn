@@ -47,3 +47,4 @@ You can also grab a git copy by running:
 * [Mandriva](http://sophie.zarb.org/rpmfind?distrib=&version=&arch=&search=awesome&st=rpmname)
 * [AuroraUX](http://www.auroraux.org)
 * [openSUSE](http://download.opensuse.org/repositories/home://llipavsky/openSUSE_Factory/)
+* [PLD Linux](http://pld-linux.org)
