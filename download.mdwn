@@ -1,9 +1,9 @@
 # Testing
 
-Latest testing version of **awesome** is version 3.4-rc2 (*Piku*) released on 28th September 2009.
+Latest testing version of **awesome** is version 3.4-rc3 (*Black Star*) released on 9th October 2009.
 
-* [awesome-3.4-rc2.tar.gz](awesome-3.4-rc2.tar.gz)
-* [awesome-3.4-rc2.tar.bz2](awesome-3.4-rc2.tar.bz2)
+* [awesome-3.4-rc3.tar.gz](awesome-3.4-rc3.tar.gz)
+* [awesome-3.4-rc3.tar.bz2](awesome-3.4-rc3.tar.bz2)
 
 # Stable
 
