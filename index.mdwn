@@ -31,60 +31,16 @@ It's extremely fast, small, dynamic and heavily extensible using the
 We provide an easily usable and very-well documented API to configure and
 define the behaviour of your window manager.
 
-## Tag
-Windows are grouped by tags. Each window can be tagged with one or multiple
-tags.
-Selecting certain tags displays all windows with those tags. Each tag can have
-its own layout.
-
-Tags can be compared to virtual desktops, but it's more powerful: you can
-quickly merge and show several tags at the same time,
-and go back to only one tag after.
-
-## Layout
-A layout is a function which organize windows according to the space available
-on the screen.
-
-### Tiled
-With tiled layout, windows are managed in a master and a stacking area.
-The master area contains the windows which currently need most attention,
-whereas the stacking area contains all other windows.
-The master area can be splited in several rows and column, as you want.
-
-### Max
-Each window is resized to take full screen space.
-
-### Magnifier
-All windows are stacked behind the focused window.
-This one is centered in your screen and takes most of the available space.
-
-### Floating
-In floating layout, windows can be resized and moved freely, just like a usual
-window manager.
-Dialog windows are always managed floating, regardless of the layout selected.
-
-## Statusbar
-A statusbar is a bar which is displayed on top, bottom, left or right edge of
-the screen. It contains one or several widgets.
-
-## Titlebar
-Like statusbar, but this ones are displayed around a window: top, bottom, left
-or right edge or also usable.
-
-## Widget
-The widgets are contained inside statusbars or titlebars and displays
-various informations in form of text, image, progress bar, graph, etc…
-
 <div id="screenshot">
 [[!img images/4mon.png alt="awesome running on 4 monitors" size="320x240"]]
 </div>
 
 # Features and non-features
-* Very stable, fast, small and simple;
-* Only window manager using asynchronous [XCB](http://xcb.freedesktop.org)
+* Very stable, fast and small codebase and footprint;
+* First window manager using asynchronous [XCB](http://xcb.freedesktop.org)
   library instead of the old synchronous
-  [Xlib](http://en.wikipedia.org/wiki/Xlib): make **awesome** faster than
-  any other window manager;
+  [Xlib](http://en.wikipedia.org/wiki/Xlib): make **awesome** less subject to
+  latency than many window managers;
 * Very well documented source code and API;
 * No mouse needed: everything can be performed with keyboard;
 * Real multihead support (XRandR, Xinerama or Zaphod mode) with per screen
@@ -95,17 +51,11 @@ various informations in form of text, image, progress bar, graph, etc…
   [XEmbed](http://standards.freedesktop.org/xembed-spec/xembed-spec-latest.html),
   [Desktop Notification](http://www.galago-project.org/specs/notification/),
   [System Tray](http://standards.freedesktop.org/systemtray-spec/systemtray-spec-latest.html);
-* Real transparency support (using Composite extension and *xcompmgr*);
 * Doesn't distinguish between layers: there is no floating or tiled layer;
-* Whether or not the clients of currently selected tag(s) are in tiled layout,
-  you can rearrange them on the fly. Popup and fixed-size windows are
-  automatically floating.
-* Layout handling: automatically manage your windows placement according to
-  the chosen policy for each tag;
 * Use tags instead of workspaces: allow to place clients on several tags, and
   display several tags at the same time;
 * A lot of Lua extensions to add features: dynamic tagging, widget feeding,
-  tabs, …;
+  tabs, layouts …;
 * [D-Bus](http://dbus.freedesktop.org) support;
 * And more.
 
