@@ -41,3 +41,4 @@ You can also grab a git copy by running:
 * [AuroraUX](http://www.auroraux.org)
 * [openSUSE](http://download.opensuse.org/repositories/home://llipavsky/openSUSE_Factory/)
 * [PLD Linux](http://pld-linux.org)
+* [MOPSLinux](http://mopslinux.org)
