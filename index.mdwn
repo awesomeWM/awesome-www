@@ -32,7 +32,7 @@ We provide an easily usable and very-well documented API to configure and
 define the behaviour of your window manager.
 
 <div id="screenshot">
-[[!img images/4mon.png alt="awesome running on 4 monitors" size="320x240"]]
+[[!img images/6mon.small.png link="images/6mon.medium.png" alt="awesome running on 6 monitors"]]
 </div>
 
 # Features and non-features
