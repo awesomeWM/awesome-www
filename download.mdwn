@@ -1,10 +1,10 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.1 (*Ego Rock*) released on 9th November 2009.
+Latest stable version of **awesome** is version 3.4.2 (*For The Restless*) released on 26th November 2009.
 
-* [v3.4.1 changelog](/changelogs/v3.4.1) ([short](/changelogs/short/v3.4.1))
-* [awesome-3.4.1.tar.gz](awesome-3.4.1.tar.gz)
-* [awesome-3.4.1.tar.bz2](awesome-3.4.1.tar.bz2)
+* [v3.4.2 changelog](/changelogs/v3.4.2) ([short](/changelogs/short/v3.4.2))
+* [awesome-3.4.2.tar.bz2](awesome-3.4.2.tar.bz2)
+* [awesome-3.4.2.tar.xz](awesome-3.4.2.tar.xz)
 
 # Old stable
 
