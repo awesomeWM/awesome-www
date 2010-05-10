@@ -1,10 +1,10 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.4 (*Jet Sex*) released on 2nd March 2010.
+Latest stable version of **awesome** is version 3.4.5 (*Close To You*) released on 10th May2010.
 
-* [v3.4.4 changelog](/changelogs/v3.4.4) ([short](/changelogs/short/v3.4.4))
-* [awesome-3.4.4.tar.bz2](awesome-3.4.4.tar.bz2)
-* [awesome-3.4.4.tar.xz](awesome-3.4.4.tar.xz)
+* [v3.4.5 changelog](/changelogs/v3.4.5) ([short](/changelogs/short/v3.4.5))
+* [awesome-3.4.5.tar.bz2](awesome-3.4.5.tar.bz2)
+* [awesome-3.4.5.tar.xz](awesome-3.4.5.tar.xz)
 
 # Old stable
 
