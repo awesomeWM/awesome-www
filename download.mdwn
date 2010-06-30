@@ -39,6 +39,6 @@ You can also grab a git copy by running:
 * [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
 * [Mandriva](http://sophie.zarb.org/rpmfind?distrib=&version=&arch=&search=awesome&st=rpmname)
 * [AuroraUX](http://www.auroraux.org)
-* [openSUSE](http://download.opensuse.org/repositories/home://llipavsky/openSUSE_Factory/)
+* [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
 * [PLD Linux](http://pld-linux.org)
 * [MOPSLinux](http://mopslinux.org)
