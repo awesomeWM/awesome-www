@@ -1,10 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.5 (*Close To You*) released on 10th May 2010.
+Latest stable version of **awesome** is version 3.4.6 (*Hootch*) released on
+14th July 2010.
 
-* [v3.4.5 changelog](/changelogs/v3.4.5) ([short](/changelogs/short/v3.4.5))
-* [awesome-3.4.5.tar.bz2](awesome-3.4.5.tar.bz2)
-* [awesome-3.4.5.tar.xz](awesome-3.4.5.tar.xz)
+* [v3.4.6 changelog](/changelogs/v3.4.6) ([short](/changelogs/short/v3.4.6))
+* [awesome-3.4.6.tar.bz2](awesome-3.4.6.tar.bz2)
+* [awesome-3.4.6.tar.xz](awesome-3.4.6.tar.xz)
 
 # Old stable
 
