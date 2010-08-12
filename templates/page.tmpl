@@ -9,6 +9,18 @@
 <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
 <TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
 <TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+    (function() {
+        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+        
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'http://api.flattr.com/js/0.5.0/load.js?mode=auto';
+        
+        t.parentNode.insertBefore(s, t);
+    })();//--><!]]>
+</script>
 </head>
 <body>
 
@@ -61,7 +73,11 @@
     <div id="content">
     <!--    <h1><TMPL_VAR TITLE></h1> -->
         <div id="left">
-            <TMPL_VAR CONTENT>
+          <div class="flattr">
+            <a class="FlattrButton" style="display:none;"
+               href="http://awesome.naquadah.org"></a>
+          </div>
+          <TMPL_VAR CONTENT>
         </div>
         <!--
         <div id="right">
@@ -107,6 +123,8 @@
 <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
+<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
+href="http://awesome.naquadah.org"></a>
     <div class="copyright">
         <a name="pagecopyright"></a>
         <TMPL_IF COPYRIGHT>
@@ -129,16 +147,5 @@
 <TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
 <!-- from <TMPL_VAR NAME=WIKINAME> -->
 </div>
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-11739807-1");
-pageTracker._trackPageview();
-} catch(err) {}</script>
-
 </body>
 </html>
