@@ -1,6 +1,6 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.6 (*Hootch*) released on
+Latest stable version of **awesome** is version 3.4.6 (*Hooch*) released on
 14th July 2010.
 
 * [v3.4.6 changelog](/changelogs/v3.4.6) ([short](/changelogs/short/v3.4.6))
