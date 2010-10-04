@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.7 (*Left Of Center*) released on
-25th August 2010.
+Latest stable version of **awesome** is version 3.4.8 (*Never Know*) released on
+4th October 2010.
 
-* [v3.4.7 changelog](/changelogs/v3.4.7) ([short](/changelogs/short/v3.4.7))
-* [awesome-3.4.7.tar.bz2](awesome-3.4.7.tar.bz2)
-* [awesome-3.4.7.tar.xz](awesome-3.4.7.tar.xz)
+* [v3.4.8 changelog](/changelogs/v3.4.8) ([short](/changelogs/short/v3.4.8))
+* [awesome-3.4.8.tar.bz2](awesome-3.4.8.tar.bz2)
+* [awesome-3.4.8.tar.xz](awesome-3.4.8.tar.xz)
 
 # Old stable
 
