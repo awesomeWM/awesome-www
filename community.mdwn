@@ -11,7 +11,7 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 * [The Mail Archive](http://www.mail-archive.com/awesome@naquadah.org/)
 
 <div align="center">
-<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org-eoc_subscribers_count_awesome_naquadah_org-year.png"/>
+<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org/eoc_subscribers_count_awesome_naquadah_org-year.png"/>
 </div>
 
 ## Developers
@@ -21,7 +21,7 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 * [The Mail Archive](http://www.mail-archive.com/awesome-devel@naquadah.org/)
 
 <div align="center">
-<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org-eoc_subscribers_count_awesome_devel_naquadah_org-year.png"/>
+<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org/eoc_subscribers_count_awesome_devel_naquadah_org-year.png"/>
 </div>
 
 # Wiki
