@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.11 (*Pickapart*) released on
-23th November 2011.
+Latest stable version of **awesome** is version 3.4.12 (*Starlight*) released on
+11th June 2012.
 
-* [v3.4.11 changelog](/changelogs/v3.4.11) ([short](/changelogs/short/v3.4.11))
-* [awesome-3.4.11.tar.bz2](awesome-3.4.11.tar.bz2)
-* [awesome-3.4.11.tar.xz](awesome-3.4.11.tar.xz)
+* [v3.4.12 changelog](/changelogs/v3.4.12) ([short](/changelogs/short/v3.4.12))
+* [awesome-3.4.12.tar.bz2](awesome-3.4.12.tar.bz2)
+* [awesome-3.4.12.tar.xz](awesome-3.4.12.tar.xz)
 
 # Old stable
 
