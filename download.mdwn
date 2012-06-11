@@ -28,7 +28,7 @@ You can also grab a git copy by running:
 # Packages
 **awesome** is currently available in:
 
-* [ArchLinux](http://aur.archlinux.org/packages.php?O=0&K=awesome)
+* [Arch Linux](http://www.archlinux.org/packages/community/i686/awesome/)
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
