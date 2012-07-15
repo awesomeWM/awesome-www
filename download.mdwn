@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.4.12 (*Starlight*) released on
-11th June 2012.
+Latest stable version of **awesome** is version 3.4.13 (*Octopus*) released on
+15th July 2012.
 
-* [v3.4.12 changelog](/changelogs/v3.4.12) ([short](/changelogs/short/v3.4.12))
-* [awesome-3.4.12.tar.bz2](awesome-3.4.12.tar.bz2)
-* [awesome-3.4.12.tar.xz](awesome-3.4.12.tar.xz)
+* [v3.4.13 changelog](/changelogs/v3.4.13) ([short](/changelogs/short/v3.4.13))
+* [awesome-3.4.13.tar.bz2](awesome-3.4.13.tar.bz2)
+* [awesome-3.4.13.tar.xz](awesome-3.4.13.tar.xz)
 
 # Old stable
 
