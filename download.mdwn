@@ -3,7 +3,7 @@
 Latest testing version of **awesome** is version 3.5-rc1 (*Dirty Magic*) released on 24th November 2012.
 
 * [awesome-3.5-rc1.tar.bz2](awesome-3.5-rc1.tar.bz2)
-* [awesome-3.5-rc1.tar.gz](awesome-3.5-rc1.tar.xz)
+* [awesome-3.5-rc1.tar.xz](awesome-3.5-rc1.tar.xz)
 
 # Stable
 
