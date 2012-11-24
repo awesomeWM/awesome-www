@@ -4,7 +4,7 @@ else
 IKIWIKI=ikiwiki
 endif
 
-push: output luadoc changelogs manpages
+push: output ldoc changelogs manpages
 	rsync -Pavz --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
 	rsync -Pavz --delete src/build/luadoc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/api
 	rsync -Pavz /usr/share/asciidoc/icons awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/manpages/icons
@@ -22,9 +22,9 @@ authors.mdwn:
 	echo '<pre>' >> authors.mdwn
 	git --git-dir=src/.git shortlog -n -s | tail -n +11 | column -x -c 80 >> authors.mdwn
 	echo '</pre>' >> authors.mdwn
-luadoc:
+ldoc:
 	rm -f src/build
-	make -C src build cmake luadoc
+	make -C src build cmake ldoc
 
 clean:
 	rm -rf .ikiwiki html
