@@ -1,9 +1,9 @@
 # Testing
 
-Latest testing version of **awesome** is version 3.5-rc1 (*Dirty Magic*) released on 24th November 2012.
+Latest testing version of **awesome** is version 3.5-rc2 (*I'll Kill Her*) released on 14th December 2012.
 
-* [awesome-3.5-rc1.tar.bz2](awesome-3.5-rc1.tar.bz2)
-* [awesome-3.5-rc1.tar.xz](awesome-3.5-rc1.tar.xz)
+* [awesome-3.5-rc2.tar.bz2](awesome-3.5-rc2.tar.bz2)
+* [awesome-3.5-rc2.tar.xz](awesome-3.5-rc2.tar.xz)
 
 # Stable
 
