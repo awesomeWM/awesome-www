@@ -1,18 +1,11 @@
-# Testing
-
-Latest testing version of **awesome** is version 3.5-rc2 (*I'll Kill Her*) released on 14th December 2012.
-
-* [awesome-3.5-rc2.tar.bz2](awesome-3.5-rc2.tar.bz2)
-* [awesome-3.5-rc2.tar.xz](awesome-3.5-rc2.tar.xz)
-
 # Stable
 
-Latest stable version of **awesome** is version 3.4.13 (*Octopus*) released on
-15th July 2012.
+Latest stable version of **awesome** is version 3.5 (*Octopus*) released on
+21th July 2012.
 
-* [v3.4.13 changelog](/changelogs/v3.4.13) ([short](/changelogs/short/v3.4.13))
-* [awesome-3.4.13.tar.bz2](awesome-3.4.13.tar.bz2)
-* [awesome-3.4.13.tar.xz](awesome-3.4.13.tar.xz)
+* [v3.5 changelog](/changelogs/v3.5) ([short](/changelogs/short/v3.5))
+* [awesome-3.5.tar.bz2](awesome-3.5.tar.bz2)
+* [awesome-3.5.tar.xz](awesome-3.5.tar.xz)
 
 # Old stable
 
