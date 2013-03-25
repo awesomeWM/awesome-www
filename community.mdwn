@@ -46,7 +46,7 @@ You can help by:
 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"> 
 </form> 
 
-- [Bitcoin](http://www.bitcoin.org): 1BnJERBvSSDCqskpFqjStZSwJ8jxcfBtZV
+- [Bitcoin](http://www.bitcoin.org): 14WjZ4wo7KujaGmAT5bFQBZdZKts53YNK3
 
 - [Flattr](https://flattr.com/thing/48025/awesome-window-manager)
 
