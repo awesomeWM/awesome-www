@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.5 (*Last Christmas*) released on
-21th December 2012.
+Latest stable version of **awesome** is version 3.5.1 (*Ruby Tuesday*) released on
+1st April 2013.
 
-* [v3.5 changelog](/changelogs/v3.5) ([short](/changelogs/short/v3.5))
-* [awesome-3.5.tar.bz2](awesome-3.5.tar.bz2)
-* [awesome-3.5.tar.xz](awesome-3.5.tar.xz)
+* [v3.5.1 changelog](/changelogs/v3.5.1) ([short](/changelogs/short/v3.5.1))
+* [awesome-3.5.1.tar.bz2](awesome-3.5.1.tar.bz2)
+* [awesome-3.5.1.tar.xz](awesome-3.5.1.tar.xz)
 
 # Old stable
 
