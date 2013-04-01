@@ -1,7 +1,7 @@
 push: output ldoc changelogs manpages
-	rsync -Pavz --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
-	rsync -Pavz --delete src/build/doc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/api
-	rsync -Pavz /usr/share/asciidoc/icons awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/manpages/icons
+	rsync -Pavz --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
+	rsync -Pavz --chmod=u=rwX,g=rwX,o=rX,Dg+s --delete src/build/doc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/api
+	rsync -Pavz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/manpages/icons
 
 output: authors.mdwn
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
