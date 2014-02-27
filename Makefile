@@ -35,7 +35,7 @@ changelogs:
 manpages:
 	mkdir -p html/doc/manpages
 	cd src/manpages; for manpage in *.?.txt; \
-	    do asciidoc -a icons -b xhtml11 -o ../../html/doc/manpages/`basename $${manpage} .txt`.html $$manpage; \
+	    do asciidoc -a icons -b xhtml11 -o ../../html/doc/manpages/`basename $${manpage} .txt`.html $$manpage || exit 1; \
 	    done
 
 .PHONY: authors.mdwn changelogs manpages
