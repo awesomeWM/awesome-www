@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.5.2 (*The Fox*) released on
-12th October 2013.
+Latest stable version of **awesome** is version 3.5.3 (*Crazy*) released on
+29 March 2014.
 
-* [v3.5.2 changelog](/changelogs/v3.5.2) ([short](/changelogs/short/v3.5.2))
-* [awesome-3.5.2.tar.bz2](awesome-3.5.2.tar.bz2)
-* [awesome-3.5.2.tar.xz](awesome-3.5.2.tar.xz)
+* [v3.5.3 changelog](/changelogs/v3.5.3) ([short](/changelogs/short/v3.5.3))
+* [awesome-3.5.3.tar.bz2](awesome-3.5.3.tar.bz2)
+* [awesome-3.5.3.tar.xz](awesome-3.5.3.tar.xz)
 
 # Old stable
 
