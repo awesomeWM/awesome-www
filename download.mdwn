@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.5.4 (*Brown Paper Bag*) released on
-2 April 2014.
+Latest stable version of **awesome** is version 3.5.5 (*Kansas City Shuffle*) released on
+11 April 2014.
 
-* [v3.5.4 changelog](/changelogs/v3.5.4) ([short](/changelogs/short/v3.5.4))
-* [awesome-3.5.4.tar.bz2](awesome-3.5.4.tar.bz2)
-* [awesome-3.5.4.tar.xz](awesome-3.5.4.tar.xz)
+* [v3.5.5 changelog](/changelogs/v3.5.5) ([short](/changelogs/short/v3.5.5))
+* [awesome-3.5.5.tar.bz2](awesome-3.5.5.tar.bz2)
+* [awesome-3.5.5.tar.xz](awesome-3.5.5.tar.xz)
 
 # Old stable
 
