@@ -19,11 +19,11 @@ Latest old stable version of **awesome** is version 2.3.6 (*Tomorrow Morning*) r
 
 # Development
 
-Development versions of **awesome** can be downloaded as tarballs using git snapshot [here](http://git.naquadah.org/?p=awesome.git;a=summary).
+Development versions of **awesome** can be downloaded as tarballs using git snapshot [here](https://github.com/awesomeWM/awesome).
 
 You can also grab a git copy by running:
 
-  `git clone git://git.naquadah.org/awesome.git`
+  `git clone https://github.com/awesomeWM/awesome.git
 
 # Packages
 **awesome** is currently available in:
