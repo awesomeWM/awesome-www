@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.5.5 (*Kansas City Shuffle*) released on
-11 April 2014.
+Latest stable version of **awesome** is version 3.5.6 (*For Those About To Rock*) released on
+10 January 2015.
 
-* [v3.5.5 changelog](/changelogs/v3.5.5) ([short](/changelogs/short/v3.5.5))
-* [awesome-3.5.5.tar.bz2](awesome-3.5.5.tar.bz2)
-* [awesome-3.5.5.tar.xz](awesome-3.5.5.tar.xz)
+* [v3.5.6 changelog](/changelogs/v3.5.6) ([short](/changelogs/short/v3.5.6))
+* [awesome-3.5.6.tar.bz2](awesome-3.5.6.tar.bz2)
+* [awesome-3.5.6.tar.xz](awesome-3.5.6.tar.xz)
 
 # Old stable
 
