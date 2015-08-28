@@ -40,5 +40,4 @@ You can also grab a git copy by running:
 * [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
 * [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
 * [PLD Linux](http://pld-linux.org)
-* [MOPSLinux](http://mopslinux.org)
 * [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
