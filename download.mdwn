@@ -23,7 +23,7 @@ Development versions of **awesome** can be downloaded as tarballs using git snap
 
 You can also grab a git copy by running:
 
-  `git clone https://github.com/awesomeWM/awesome.git
+  `git clone https://github.com/awesomeWM/awesome.git`
 
 # Packages
 **awesome** is currently available in:
