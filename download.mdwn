@@ -1,11 +1,11 @@
 # Stable
 
-Latest stable version of **awesome** is version 3.5.8 (*Major Tom*) released on
-30 January 2016.
+Latest stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*) released on
+6 March 2016.
 
-* [v3.5.8 changelog](/changelogs/v3.5.8) ([short](/changelogs/short/v3.5.8))
-* [awesome-3.5.8.tar.bz2](awesome-3.5.8.tar.bz2)
-* [awesome-3.5.8.tar.xz](awesome-3.5.8.tar.xz)
+* [v3.5.9 changelog](/changelogs/v3.5.9) ([short](/changelogs/short/v3.5.9))
+* [awesome-3.5.9.tar.bz2](awesome-3.5.9.tar.bz2)
+* [awesome-3.5.9.tar.xz](awesome-3.5.9.tar.xz)
 
 # Old stable
 
