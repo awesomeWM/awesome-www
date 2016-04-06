@@ -45,9 +45,3 @@ You can help by:
 
 # Authors
 [[!inline pages="authors" raw="yes" rss="no"]]
-
-# Development statistics
-
-<div align="center">
-<img src="/images/git_stats.png" alt="git stats"/>
-</div>
