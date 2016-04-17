@@ -1,0 +1,38 @@
+addons:
+        apt:
+                packages:
+                        - ikiwiki
+                        - asciidoc
+                        - imagemagick
+                        - luarocks
+                        - cmake
+                        - libxcb-randr0-dev
+                        - libxcb-xtest0-dev
+                        - libxcb-xinerama0-dev
+                        - libxcb-shape0-dev
+                        - libxcb-util0-dev
+                        - libxcb-keysyms1-dev
+                        - libxcb-icccm4-dev
+                        - libxdg-basedir-dev
+                        - libstartup-notification0-dev
+                          # Dependencies for xcb-util-cursor
+                        - libxcb-render-util0-dev
+                        - libxcb-image0-dev
+
+install:
+        # libxcb-cursor-dev is not available in Ubuntu Ancient
+        - travis_retry wget --no-check-certificate https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.3.tar.bz2 -O /tmp/util-cursor.tar.bz2
+        - (cd /tmp && tar -xvjf util-cursor.tar.bz2 && cd xcb-util-cursor* && ./configure --prefix=$HOME/install && make && make install)
+
+        # ldoc is not available in Ubuntu Ancient
+        - travis_retry luarocks --local install ldoc
+        - luarocks path --bin
+        - eval `luarocks path --bin`
+        # Of course Ubuntu's Luarocks version is too old for --bin
+        - PATH="$PATH:$HOME/.luarocks/bin"
+
+script:
+        - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make push
+
+after_success:
+        - echo TODO: update the gh-pages here (if on the right branch, not a PR etc)
