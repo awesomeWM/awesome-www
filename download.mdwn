@@ -1,34 +1,42 @@
-# Stable
+# Download
 
-Latest stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*) released on
-6 March 2016.
+## Stable
+
+Latest stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
+released on 6 March 2016.
 
 * [v3.5.9 changelog](/changelogs/v3.5.9) ([short](/changelogs/short/v3.5.9))
 * [awesome-3.5.9.tar.bz2](awesome-3.5.9.tar.bz2)
 * [awesome-3.5.9.tar.xz](awesome-3.5.9.tar.xz)
 
-# Old stable
+## Old stable
 
 This branch of **awesome** is deprecated. However bug fixes are still welcome.
 
-Latest old stable version of **awesome** is version 2.3.6 (*Tomorrow Morning*) released on 18th April 2009.
+Latest old stable version of **awesome** is version 2.3.6 (*Tomorrow Morning*)
+released on 18th April 2009.
 
 * [v2.3.6 changelog](/changelogs/v2.3.6) ([short](/changelogs/short/v2.3.6))
 * [awesome-2.3.6.tar.gz](awesome-2.3.6.tar.gz)
 * [awesome-2.3.6.tar.bz2](awesome-2.3.6.tar.bz2)
 
-# Development
+## Development
 
-Development versions of **awesome** can be downloaded as tarballs using git snapshot [here](https://github.com/awesomeWM/awesome).
-
-You can also grab a git copy by running:
+The Git repository can be cloned from Github:
 
   `git clone https://github.com/awesomeWM/awesome.git`
 
-# Packages
+Alternatively, development versions can be downloaded as ZIP files through the
+[Github web interface](https://github.com/awesomeWM/awesome).
+
+## Packages
+
 **awesome** is currently available in:
 
-* [Arch Linux](http://www.archlinux.org/packages/community/i686/awesome/)
+* Arch Linux:
+  * stable: [x86\_64](https://www.archlinux.org/packages/community/x86_64/awesome/)
+    / [i686](https://www.archlinux.org/packages/community/i686/awesome/)
+  * [awesome-git in AUR](https://aur.archlinux.org/packages/awesome-git)
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
