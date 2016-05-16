@@ -11,6 +11,7 @@ addons:
       - ikiwiki
       - asciidoc
       - imagemagick
+      - perlmagick
       - luarocks
       - cmake
       - libxcb-randr0-dev
