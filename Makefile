@@ -5,7 +5,7 @@ push: output ldoc changelogs manpages
 
 output: authors.mdwn
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
-	    --exclude=html --exclude=Makefile --rss --url http://awesome.naquadah.org
+	  --exclude=html --exclude=Makefile --rss --url https://awesomewm.org/
 
 authors.mdwn:
 	echo '## Primary' > authors.mdwn
