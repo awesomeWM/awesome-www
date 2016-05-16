@@ -1,4 +1,5 @@
 # Make git not use user's config.
+OLD_HOME:=$(HOME)
 HOME:=/dev/null
 
 all: output ldoc changelogs manpages
@@ -18,7 +19,7 @@ authors.mdwn:
 	echo '</pre>' >> authors.mdwn
 ldoc:
 	rm -f src/build
-	make -C src build cmake ldoc
+	HOME=$(OLD_HOME) make -C src build cmake ldoc
 
 clean:
 	rm -rf .ikiwiki html
