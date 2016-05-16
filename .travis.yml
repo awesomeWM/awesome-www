@@ -1,38 +1,76 @@
+branches:
+  only:
+    - master
+env:
+  global:
+    - BUILD_WEB=/tmp/build-web
+    - secure: dMquVRuM4Wi/N3oZJaNIWSW5mpehxVuzDiDnC51OwfMtdNfdyWV7qKJQY44MjbveuyQd7eA/AuTLE+loaAFxiRfBXl2yI5NkAOrJwbbDyw/lAN9Og2FmNi+QLaTsNhpbYZ4zaUNEEqRWs9gIajGaXcWdO/HNYiKHHrk7+XXNDeM=
 addons:
-        apt:
-                packages:
-                        - ikiwiki
-                        - asciidoc
-                        - imagemagick
-                        - luarocks
-                        - cmake
-                        - libxcb-randr0-dev
-                        - libxcb-xtest0-dev
-                        - libxcb-xinerama0-dev
-                        - libxcb-shape0-dev
-                        - libxcb-util0-dev
-                        - libxcb-keysyms1-dev
-                        - libxcb-icccm4-dev
-                        - libxdg-basedir-dev
-                        - libstartup-notification0-dev
-                          # Dependencies for xcb-util-cursor
-                        - libxcb-render-util0-dev
-                        - libxcb-image0-dev
+  apt:
+    packages:
+      - ikiwiki
+      - asciidoc
+      - imagemagick
+      - luarocks
+      - cmake
+      - libxcb-randr0-dev
+      - libxcb-xtest0-dev
+      - libxcb-xinerama0-dev
+      - libxcb-shape0-dev
+      - libxcb-util0-dev
+      - libxcb-keysyms1-dev
+      - libxcb-icccm4-dev
+      - libxdg-basedir-dev
+      - libstartup-notification0-dev
+        # Dependencies for xcb-util-cursor
+      - libxcb-render-util0-dev
+      - libxcb-image0-dev
+
+# Clone the awesomeWM.github.io repo before building, so that in case of
+# concurrent builds, the push will fail later.
+# Stderr is redirected to not reveal the token.
+before_install:
+  - |
+    set -e
+    git clone --quiet \
+      https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
+      "$BUILD_WEB" 2>/dev/null
+    if [ "$TRAVIS_PULL_REQUEST" = false ]; then
+      branch="$TRAVIS_BRANCH"
+    else
+      branch="pr-$TRAVIS_PULL_REQUEST"
+    fi
+    if [ "$branch" != master ]; then
+      cd $BUILD_WEB
+      if ! git checkout -b "$branch" "origin/$branch"; then
+        git checkout -b "$branch"
+      fi
+      cd -
+    fi
 
 install:
-        # libxcb-cursor-dev is not available in Ubuntu Ancient
-        - travis_retry wget --no-check-certificate https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.3.tar.bz2 -O /tmp/util-cursor.tar.bz2
-        - (cd /tmp && tar -xvjf util-cursor.tar.bz2 && cd xcb-util-cursor* && ./configure --prefix=$HOME/install && make && make install)
+  # libxcb-cursor-dev is not available in Ubuntu Ancient
+  - travis_retry wget --no-check-certificate https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.3.tar.bz2 -O /tmp/util-cursor.tar.bz2
+  - (cd /tmp && tar -xvjf util-cursor.tar.bz2 && cd xcb-util-cursor* && ./configure --prefix=$HOME/install && make && make install)
 
-        # ldoc is not available in Ubuntu Ancient
-        - travis_retry luarocks --local install ldoc
-        - luarocks path --bin
-        - eval `luarocks path --bin`
-        # Of course Ubuntu's Luarocks version is too old for --bin
-        - PATH="$PATH:$HOME/.luarocks/bin"
+    # ldoc is not available in Ubuntu Ancient
+  - travis_retry luarocks --local install ldoc
+  - luarocks path --bin
+  - eval `luarocks path --bin`
+    # Of course Ubuntu's Luarocks version is too old for --bin
+  - PATH="$PATH:$HOME/.luarocks/bin"
 
 script:
-        - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make push
+  - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_travis
 
 after_success:
-        - echo TODO: update the gh-pages here (if on the right branch, not a PR etc)
+  - |
+    set -e
+    commit_hash=$(git rev-parse --short HEAD)
+    cd $BUILD_WEB
+    git config user.name "awesome-robot on Travis CI"
+    git config user.email "awesome-robot@users.noreply.github.com"
+    git add --all .
+    git commit -m "Update from Travis for awesome-www@${commit_hash}"
+    git show --stat
+    git push origin "$(git symbolic-ref --quiet HEAD)" 2>/dev/null

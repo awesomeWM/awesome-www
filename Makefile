@@ -1,7 +1,7 @@
-push: output ldoc changelogs manpages
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ awesome.naquadah.org:/var/www/awesome.naquadah.org/
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --delete src/build/doc/ awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/api
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons awesome.naquadah.org:/var/www/awesome.naquadah.org/doc/manpages/icons
+# Make git not use user's config.
+HOME:=/dev/null
+
+all: output ldoc changelogs manpages
 
 output: authors.mdwn
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff --templatedir=templates \
@@ -37,5 +37,13 @@ manpages:
 	cd src/manpages; for manpage in *.?.txt; \
 	    do asciidoc -a icons -b xhtml11 -o ../../html/doc/manpages/`basename $${manpage} .txt`.html $$manpage || exit 1; \
 	    done
+
+build_for_travis: all
+	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
+	  $${BUILD_WEB}
+	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --delete src/build/doc/ \
+	  $${BUILD_WEB}/doc/api
+	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
+	  $${BUILD_WEB}/doc/manpages/icons
 
 .PHONY: authors.mdwn changelogs manpages
