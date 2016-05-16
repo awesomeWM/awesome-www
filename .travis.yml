@@ -32,21 +32,23 @@ addons:
 # Stderr is redirected to not reveal the token.
 before_install:
   - |
-    set -e
-    git clone \
-      https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
-      "$BUILD_WEB" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
-    if [ "$TRAVIS_PULL_REQUEST" = false ]; then
-      branch="$TRAVIS_BRANCH"
-    else
-      branch="pr-$TRAVIS_PULL_REQUEST"
-    fi
-    if [ "$branch" != master ]; then
-      cd $BUILD_WEB
-      if ! git checkout -b "$branch" "origin/$branch"; then
-        git checkout -b "$branch"
+    if [ -n "$GH_APIDOC_TOKEN" ]; then
+      set -e
+      git clone \
+        https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
+        "$BUILD_WEB" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
+      if [ "$TRAVIS_PULL_REQUEST" = false ]; then
+        branch="$TRAVIS_BRANCH"
+      else
+        branch="pr-$TRAVIS_PULL_REQUEST"
       fi
-      cd -
+      if [ "$branch" != master ]; then
+        cd $BUILD_WEB
+        if ! git checkout -b "$branch" "origin/$branch"; then
+          git checkout -b "$branch"
+        fi
+        cd -
+      fi
     fi
 
 install:
@@ -66,12 +68,14 @@ script:
 
 after_success:
   - |
-    set -e
-    commit_hash=$(git rev-parse --short HEAD)
-    cd $BUILD_WEB
-    git config user.name "awesome-robot on Travis CI"
-    git config user.email "awesome-robot@users.noreply.github.com"
-    git add --all .
-    git commit -m "Update from Travis for awesome-www@${commit_hash}"
-    git show --stat
-    git push origin "$(git symbolic-ref --quiet HEAD)" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
+    if [ -n "$GH_APIDOC_TOKEN" ]; then
+      set -e
+      commit_hash=$(git rev-parse --short HEAD)
+      cd $BUILD_WEB
+      git config user.name "awesome-robot on Travis CI"
+      git config user.email "awesome-robot@users.noreply.github.com"
+      git add --all .
+      git commit -m "Update from Travis for awesome-www@${commit_hash}"
+      git show --stat
+      git push origin "$(git symbolic-ref --quiet HEAD)" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
+    fi
