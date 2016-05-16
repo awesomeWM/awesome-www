@@ -1,4 +1,8 @@
-* [Lua API documentation](api) built by [ldoc](http://stevedonovan.github.io/ldoc/)
+# Documentation
+
+* LUA API documentation built by [ldoc](http://stevedonovan.github.io/ldoc/)
+  * [Lua API documentation for the stable release](api)
+  * [Lua API documentation for Git master (development version)](/apidoc/)
 * [awesome(1) manpage](manpages/awesome.1.html)
 * [awesomerc(5) manpage](manpages/awesomerc.5.html)
 * [awesome-client(1) manpage](manpages/awesome-client.1.html)
