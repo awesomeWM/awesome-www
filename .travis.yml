@@ -27,30 +27,6 @@ addons:
       - libxcb-render-util0-dev
       - libxcb-image0-dev
 
-# Clone the awesomeWM.github.io repo before building, so that in case of
-# concurrent builds, the push will fail later.
-# Stderr is redirected to not reveal the token.
-before_install:
-  - |
-    if [ -n "$GH_APIDOC_TOKEN" ]; then
-      set -e
-      git clone \
-        https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
-        "$BUILD_WEB" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
-      if [ "$TRAVIS_PULL_REQUEST" = false ]; then
-        branch="$TRAVIS_BRANCH"
-      else
-        branch="pr-$TRAVIS_PULL_REQUEST"
-      fi
-      if [ "$branch" != master ]; then
-        cd $BUILD_WEB
-        if ! git checkout -b "$branch" "origin/$branch"; then
-          git checkout -b "$branch"
-        fi
-        cd -
-      fi
-    fi
-
 install:
   # libxcb-cursor-dev is not available in Ubuntu Ancient
   - travis_retry wget --no-check-certificate https://xcb.freedesktop.org/dist/xcb-util-cursor-0.1.3.tar.bz2 -O /tmp/util-cursor.tar.bz2
@@ -71,7 +47,21 @@ after_success:
     if [ -n "$GH_APIDOC_TOKEN" ]; then
       set -e
       commit_hash=$(git rev-parse --short HEAD)
+
+      git clone \
+        https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
+        "$BUILD_WEB" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
       cd $BUILD_WEB
+      if [ "$TRAVIS_PULL_REQUEST" = false ]; then
+        branch="$TRAVIS_BRANCH"
+      else
+        branch="pr-$TRAVIS_PULL_REQUEST"
+      fi
+      if [ "$branch" != master ]; then
+        if ! git checkout -b "$branch" "origin/$branch"; then
+          git checkout -b "$branch"
+        fi
+      fi
       git config user.name "awesome-robot on Travis CI"
       git config user.email "awesome-robot@users.noreply.github.com"
       git add --all .
