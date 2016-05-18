@@ -6,7 +6,8 @@ all: output ldoc changelogs manpages
 
 output: authors.mdwn
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff \
-	  --templatedir=templates --exclude=html --exclude=Makefile
+	  --templatedir=templates \
+	  --exclude=html --exclude=Makefile --exclude=README.md
 
 authors.mdwn:
 	echo '## Primary' > authors.mdwn
