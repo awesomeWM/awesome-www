@@ -147,5 +147,24 @@ href="http://awesome.naquadah.org"></a>
 <TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
 <!-- from <TMPL_VAR NAME=WIKINAME> -->
 </div>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.awesomewm.org"]);
+  _paq.push(["setDomains", ["*.awesomewm.org"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://piwik.awesomewm.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 26]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="https://piwik.awesomewm.org/piwik.php?idsite=26" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
 </body>
 </html>
