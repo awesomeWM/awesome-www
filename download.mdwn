@@ -29,6 +29,10 @@ The Git repository can be cloned from Github:
 Alternatively, development versions can be downloaded as ZIP files through the
 [Github web interface](https://github.com/awesomeWM/awesome).
 
+## History
+
+A list of of old releases [[is available here|releases]].
+
 ## Packages
 
 **awesome** is currently available in:
