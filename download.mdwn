@@ -5,7 +5,7 @@
 Latest stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
 released on 6 March 2016.
 
-* [v3.5.9 changelog](/changelogs/v3.5.9) ([short](/changelogs/short/v3.5.9))
+* [v3.5.9 changelog](../changelogs/v3.5.9) ([short](../changelogs/short/v3.5.9))
 * [awesome-3.5.9.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.bz2)
 * [awesome-3.5.9.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.xz)
 
@@ -16,7 +16,7 @@ This branch of **awesome** is deprecated. However bug fixes are still welcome.
 Latest old stable version of **awesome** is version 2.3.6 (*Tomorrow Morning*)
 released on 18th April 2009.
 
-* [v2.3.6 changelog](/changelogs/v2.3.6) ([short](/changelogs/short/v2.3.6))
+* [v2.3.6 changelog](../changelogs/v2.3.6) ([short](../changelogs/short/v2.3.6))
 * [awesome-2.3.6.tar.gz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-2.3.6.tar.gz)
 * [awesome-2.3.6.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-2.3.6.tar.bz2)
 
