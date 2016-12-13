@@ -6,7 +6,7 @@
 
 
 body {
-	background: url(/images/top_bg.gif);
+	background: url(images/top_bg.gif);
 	background-repeat: repeat-x;
 	font-family: Verdana, Arial, sans-serif;
         font-size: 0.8em;
@@ -28,7 +28,7 @@ h2 {
 ul {
 	margin:0;
 	padding:0;
-	list-style-image: url(/images/bullet.gif);
+	list-style-image: url(images/bullet.gif);
 }
 
 a {
@@ -64,7 +64,7 @@ blockquote{
 	width: 100%;
 	height: 68px;
 	color: #fff;
-	/*background: #000 url(/images/top_bg.gif);*/
+	/*background: #000 url(images/top_bg.gif);*/
 	overflow:hidden;
 }
 
@@ -78,7 +78,7 @@ blockquote{
 	top:33px;
 	display:block;
 	float:left;
-	background: url(/images/bg_t.gif) no-repeat;
+	background: url(images/bg_t.gif) no-repeat;
 	padding-left: 10px;
 }
 
@@ -122,13 +122,13 @@ blockquote{
 * html #menu a {width:1%;}
 
 #menu li a:hover {
-	background: url(/images/bg_menu.gif);
+	background: url(images/bg_menu.gif);
 }
 
 #menu li a.current {
 	letter-spacing: 1px;
 	color: gray;
-	background: url(/images/bg_menu.gif);
+	background: url(images/bg_menu.gif);
 }
 
 #menu li a.current:hover {
@@ -239,7 +239,7 @@ blockquote{
 
 #nav a:hover{
 	color: #1a1a1a;
-	background: url(/images/bg_t.gif) no-repeat;
+	background: url(images/bg_t.gif) no-repeat;
 	background-color: #fff;
 	font-weight: bold;
 	}	
