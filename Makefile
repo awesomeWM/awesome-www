@@ -4,20 +4,11 @@ HOME:=/dev/null
 
 all: output ldoc changelogs manpages
 
-output: authors.mdwn
+output:
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff \
 	  --templatedir=templates \
 	  --exclude=html --exclude=Makefile --exclude=README.md
 
-authors.mdwn:
-	echo '## Primary' > authors.mdwn
-	echo '<pre>' >> authors.mdwn
-	git --git-dir=src/.git shortlog -n -s | head -n 10 | column -x -c 80 >> authors.mdwn
-	echo '</pre>' >> authors.mdwn
-	echo '## Contributors' >> authors.mdwn
-	echo '<pre>' >> authors.mdwn
-	git --git-dir=src/.git shortlog -n -s | tail -n +11 | column -x -c 80 >> authors.mdwn
-	echo '</pre>' >> authors.mdwn
 ldoc:
 	rm -f src/build
 	HOME=$(OLD_HOME) make -C src build cmake ldoc
@@ -48,4 +39,4 @@ build_for_travis: all
 	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
 	  $${BUILD_WEB}/doc/manpages/icons
 
-.PHONY: authors.mdwn changelogs manpages
+.PHONY: changelogs manpages
