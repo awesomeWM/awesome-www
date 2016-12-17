@@ -44,4 +44,4 @@ You can help by:
 - [Flattr](https://flattr.com/thing/48025/awesome-window-manager)
 
 # Authors
-[[!inline pages="authors" raw="yes" rss="no"]]
+[See our GitHub page](https://github.com/awesomeWM/awesome/graphs/contributors)
