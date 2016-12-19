@@ -41,6 +41,7 @@ A list of of old releases [[is available here|releases]].
   * stable: [x86\_64](https://www.archlinux.org/packages/community/x86_64/awesome/)
     / [i686](https://www.archlinux.org/packages/community/i686/awesome/)
   * [awesome-git in AUR](https://aur.archlinux.org/packages/awesome-git)
+  * [awesome-luajit-git in AUR](https://aur.archlinux.org/packages/awesome-luajit-git/)
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
