@@ -17,19 +17,12 @@ and ask questions.
 Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/). You can follow (watch)
 us there, contribute to our decision making and help triage issues.
 
-# Mailing lists
-* Subscribe: send mail to [awesome-subscribe@naquadah.org](mailto:awesome-subscribe@naquadah.org)
-* Unsubscribe: send mail to [awesome-unsubscribe@naquadah.org](mailto:awesome-unsubscribe@naquadah.org)
-* [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome)
+# Old mailing list (now closed)
+
 * [The Mail Archive](http://www.mail-archive.com/awesome@naquadah.org/)
-
-<div align="center">
-<img src="http://mon.naquadah.org/naquadah.org/prometheus.naquadah.org/eoc_subscribers_count_awesome_naquadah_org-year.png"/>
-</div>
-
-## Old developers list (now closed)
-* [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
-* [The Mail Archive](http://www.mail-archive.com/awesome-devel@naquadah.org/)
+* [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome)
+* [Gmane developers list archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
+* [The Mail Archive developers list](http://www.mail-archive.com/awesome-devel@naquadah.org/)
 
 # Authors
 [See our GitHub page](https://github.com/awesomeWM/awesome/graphs/contributors)
