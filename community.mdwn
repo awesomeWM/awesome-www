@@ -3,6 +3,15 @@
 # IRC
 You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network.
 
+# Stack Overflow
+
+You can ask questions [on Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm)
+
+# Reddit
+
+We also have a [subreddit](https://www.reddit.com/r/awesomewm/) where you can share your work
+and ask questions.
+
 # Mailing lists
 * Subscribe: send mail to [awesome-subscribe@naquadah.org](mailto:awesome-subscribe@naquadah.org)
 * Unsubscribe: send mail to [awesome-unsubscribe@naquadah.org](mailto:awesome-unsubscribe@naquadah.org)
