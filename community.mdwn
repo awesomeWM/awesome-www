@@ -17,9 +17,5 @@ You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC n
 * [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
 * [The Mail Archive](http://www.mail-archive.com/awesome-devel@naquadah.org/)
 
-# Wiki
-
-There's also a [wiki](/wiki/) you are free to use and modify.
-
 # Authors
 [See our GitHub page](https://github.com/awesomeWM/awesome/graphs/contributors)
