@@ -12,6 +12,11 @@ You can ask questions [on Stack Overflow](http://stackoverflow.com/questions/tag
 We also have a [subreddit](https://www.reddit.com/r/awesomewm/) where you can share your work
 and ask questions.
 
+# GitHub
+
+Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/). You can follow (watch)
+us there, contribute to our decision making and help triage issues.
+
 # Mailing lists
 * Subscribe: send mail to [awesome-subscribe@naquadah.org](mailto:awesome-subscribe@naquadah.org)
 * Unsubscribe: send mail to [awesome-unsubscribe@naquadah.org](mailto:awesome-unsubscribe@naquadah.org)
