@@ -11,7 +11,7 @@ every day computing tasks and who want to have fine-grained control on theirs
 graphical environment.
 
 <div id="screenshot">
-[[!img images/screen.png alt="awesome screenshot" size="320x240"]]
+[[!img images/screen.png alt="awesome screenshot" size="382x216"]]
 </div>
 
 # Concepts
