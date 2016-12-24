@@ -1,4 +1,3 @@
-sudo: required
 dist: trusty
 branches:
   only:
@@ -78,7 +77,6 @@ script:
 
 after_success:
   - |
-    if [ -n "$GH_APIDOC_TOKEN" ]; then
       set -e
       commit_hash=$(git rev-parse --short HEAD)
       cd $BUILD_WEB
@@ -86,6 +84,4 @@ after_success:
       git config user.email "awesome-robot@users.noreply.github.com"
       git add --all .
       git commit -m "Update from Travis for awesome-www@${commit_hash}"
-      git show --stat
-      git push origin "$(git symbolic-ref --quiet HEAD)" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
-    fi
+      git show 
