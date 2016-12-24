@@ -1,0 +1,46 @@
+## How to do a release
+
+### Local preparations
+
+The following steps are done in a checkout of the *awesome* git repository.
+
+* The codename:
+  * Pick some codename that  is not already listed in [[Releases]].
+  * jd always picked a song title, you should do the same.
+  * Edit `awesomeConfig.cmake` and change the argument in `set(CODENAME "Foo")`.
+  * `git commit -sm 'change codename' awesomeConfig.cmake`
+* Git sign with `git tag -s vX.Y -m 'awesome vX.Y`'
+* Run `make dist` to create tarballs. You need to have GPG set up correctly, because the tarballs will be signed.
+* Copy the tarballs and the signatures into the awesome-releases repository and
+  commit the result.
+
+The following steps are done in a checkout of the *awesome-www* git repository.
+
+* Create a release-branch via `git checkout -b release`.
+* Add the release version and date to [[Releases]].
+* Update `download.mdwn` to add version information and links.
+* Go into the 'src' submodule, and update it to vX.Y with `git pull
+  path/to/your/awesome/repo tag vX.Y && git checkout vX.Y`.
+* Commit `download.mdwn` and `src` with `git commit -sm 'vX.Y' download.mdwn src`.
+
+### The final steps
+
+* Push the new commits
+  * In the awesome-releases repository
+  * In the awesome-www repository (push just the release branch!)
+  * In the awesome repository (make sure the tag is also pushed!)
+* Create a pull request to the awesome-www repository for the release branch.
+  This makes sure that the Travis build will be successful when merging into the
+  master branch.
+* Create the release on GitHub:
+  * Go to the GitHub release page <https://github.com/awesomeWM/awesome/releases/new>.
+  * Enter `vX.Y` into the "Tag version"-field. GitHub should recognize this as
+    an existing tag.
+  * Enter `Awesome vX.Y` into the "Release title" field.
+  * Come up with something good for the description field. A nice idea is to
+    mention some highlights and to link to a porting document.
+  * Attach the tarballs and signatures created by `make dist`.
+* Check the links to the downloads on the webpage.
+* Change the topic on IRC.
+* Verify the pull request to the awesome-www repository built successful and
+  merge it into the master branch.
