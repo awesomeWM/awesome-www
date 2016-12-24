@@ -40,8 +40,8 @@ before_install:
   - |
       set -e
       git clone \
-        https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
-        "$BUILD_WEB" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
+        https://github.com/awesomeWM/awesomeWM.github.io.git \
+        "$BUILD_WEB"
       if [ "$TRAVIS_PULL_REQUEST" = false ]; then
         branch="$TRAVIS_BRANCH"
       else
