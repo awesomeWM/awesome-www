@@ -28,6 +28,7 @@ addons:
       - libxkbcommon-dev
       - libxkbcommon-x11-dev
       - lua-lgi
+      - gir1.2-pango-1.0
         # Dependencies for xcb-util-cursor
       - libxcb-render-util0-dev
       - libxcb-image0-dev
