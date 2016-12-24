@@ -38,7 +38,6 @@ addons:
 # working copy to be there for updating already.
 before_install:
   - |
-    if [ -n "$GH_APIDOC_TOKEN" ]; then
       set -e
       git clone \
         https://${GH_APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
@@ -55,7 +54,6 @@ before_install:
         fi
         cd -
       fi
-    fi
 
 install:
   # libxcb-cursor-dev is not available in Ubuntu Ancient
