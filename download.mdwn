@@ -6,8 +6,8 @@ Latest stable version of **awesome** is version 4.0 (*Harder, Better, Faster,
 Stronger*) released on 25 December 2016.
 
 * [v4.0 changelog](../changelogs/v4.0) ([short](../changelogs/short/v4.0))
-* [awesome-4.0.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.bz2)
-* [awesome-4.0.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.xz)
+* [awesome-4.0.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.bz2) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.bz2.asc))
+* [awesome-4.0.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.xz) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.xz.asc))
 
 ## Old stable
 
