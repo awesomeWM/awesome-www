@@ -21,7 +21,8 @@ The following steps are done in a checkout of the *awesome-www* git repository.
 * Update `download.mdwn` to add version information and links.
 * Go into the 'src' submodule, and update it to vX.Y with `git pull
   path/to/your/awesome/repo tag vX.Y && git checkout vX.Y`.
-* Commit `download.mdwn` and `src` with `git commit -sm 'vX.Y' download.mdwn src`.
+* Commit `download.mdwn`, `releases.mdwn`, and `src` with `git commit -sm 'vX.Y'
+  download.mdwn src`.
 
 ### The final steps
 
@@ -40,7 +41,7 @@ The following steps are done in a checkout of the *awesome-www* git repository.
   * Come up with something good for the description field. A nice idea is to
     mention some highlights and to link to a porting document.
   * Attach the tarballs and signatures created by `make dist`.
-* Check the links to the downloads on the webpage.
-* Change the topic on IRC.
 * Verify the pull request to the awesome-www repository built successful and
   merge it into the master branch.
+* Change the topic on IRC.
+* Check the links to the downloads on the webpage.
