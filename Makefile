@@ -21,8 +21,8 @@ changelogs:
 	git --git-dir=src/.git tag | grep -v rc | sort -n | \
 	    (while read v; do \
 	    test -z "$$pv" && pv="`git --git-dir=src/.git rev-list HEAD | tail -n1`" ; \
-	    git --git-dir=src/.git shortlog $$pv..$$v > html/changelogs/short/$$v ; \
-	    git --git-dir=src/.git log $$pv..$$v > html/changelogs/$$v ; \
+	    git --git-dir=src/.git shortlog --no-merges $$pv..$$v > html/changelogs/short/$$v ; \
+	    git --git-dir=src/.git log --no-merges $$pv..$$v > html/changelogs/$$v ; \
 	    pv=$$v; done)
 
 manpages:
