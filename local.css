@@ -6,6 +6,7 @@
 
 
 body {
+	margin: 0px;
 	background: url(images/top_bg.gif);
 	background-repeat: repeat-x;
 	font-family: Verdana, Arial, sans-serif;
@@ -62,7 +63,7 @@ blockquote{
 #top {
 	font-size: 0.8em;
 	width: 100%;
-	height: 68px;
+	height: 88px;
 	color: #fff;
 	/*background: #000 url(images/top_bg.gif);*/
 	overflow:hidden;
@@ -75,7 +76,7 @@ blockquote{
 	font-weight: bold;
 	position: relative;
 	margin: 0px;
-	top:33px;
+	top:25px;
 	display:block;
 	float:left;
 	background: url(images/bg_t.gif) no-repeat;
@@ -113,7 +114,7 @@ blockquote{
 
 #menu li a {
 	display: block;
-	padding: 15px 10px 12px 10px;
+	padding: 20px 15px 50px 15px;
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
