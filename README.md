@@ -5,7 +5,9 @@
 This is the main source of the
 [website for the awesome window manager](https://awesomewm.org/).
 
-The website is based on [ikiwiki](https://ikiwiki.info/).
+The website is based on [ikiwiki](https://ikiwiki.info/). You can build the web
+page locally by running `make`. The result will be in `html/`. Besides ikiwiki,
+you will also need [PerlMagick](https://www.imagemagick.org/script/perl-magick.php).
 
 ## Publishing
 
