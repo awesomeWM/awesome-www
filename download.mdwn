@@ -2,7 +2,18 @@
 
 ## Stable
 
-Latest stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
+Latest stable version of **awesome** is version 4.0 (*Harder, Better, Faster,
+Stronger*) released on 25 December 2016.
+
+* [v4.0 changelog](../changelogs/v4.0) ([short](../changelogs/short/v4.0))
+* [awesome-4.0.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.bz2)
+* [awesome-4.0.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.0.tar.xz)
+
+## Old stable
+
+This branch of **awesome** is deprecated.
+
+Latest old stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
 released on 6 March 2016.
 
 * [v3.5.9 changelog](../changelogs/v3.5.9) ([short](../changelogs/short/v3.5.9))

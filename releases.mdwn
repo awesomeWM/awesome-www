@@ -2,6 +2,13 @@
 
 This page provides an overview over all releases of awesome.
 
+## Version 4
+
+[[!table data="""
+Date                 |Version        |Codename
+**25 December 2016** |**awesome 4.0**|**Harder, Better, Faster, Stronger**
+"""]]
+
 ## Version 3
 
 [[!table data="""
