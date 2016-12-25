@@ -9,16 +9,6 @@
 <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
 <TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
 <TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();//--><!]]>
-</script>
 </head>
 <body>
 
@@ -71,10 +61,6 @@
     <div id="content">
     <!--    <h1><TMPL_VAR TITLE></h1> -->
         <div id="left">
-          <div class="flattr">
-            <a class="FlattrButton" style="display:none;"
-               href="https://awesomewm.org"></a>
-          </div>
           <TMPL_VAR CONTENT>
         </div>
         <!--
@@ -109,8 +95,6 @@
 
     <script type='text/javascript' src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
 
-<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-href="https//awesomewm.org"></a>
     <div class="copyright">
         <a name="pagecopyright"></a>
         <TMPL_IF COPYRIGHT>
