@@ -33,11 +33,11 @@ manpages:
 	    done
 
 build_for_travis: all
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
+	rsync -PaOvz --delete --exclude=.git --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
 	  $${BUILD_WEB}
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --delete src/build/doc/ \
+	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s src/build/doc/ \
 	  $${BUILD_WEB}/doc/api
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
+	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
 	  $${BUILD_WEB}/doc/manpages/icons
 
 .PHONY: changelogs manpages
