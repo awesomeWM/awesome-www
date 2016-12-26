@@ -1,7 +1,9 @@
 **awesome** has an active and growing community.
 
 # IRC
-You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network.
+You can join us in the `#awesome` channel on the [`OFTC`](http://www.oftc.net) IRC network.
+
+[IRC Webchat](https://webchat.oftc.net/?channels=awesome)
 
 # Stack Overflow
 
