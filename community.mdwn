@@ -28,5 +28,10 @@ triage issues.  Also pull requests and issues are welcome there.
 * [Gmane developers list archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
 * [The Mail Archive developers list](http://www.mail-archive.com/awesome-devel@naquadah.org/)
 
+# Old wiki
+
+The old wiki has been shut down, but can be still viewed at
+[archive.org](https://web.archive.org/web/20160701200046/https://awesome.naquadah.org/wiki/Main_Page).
+
 # Authors
 [See our GitHub page](https://github.com/awesomeWM/awesome/graphs/contributors)
