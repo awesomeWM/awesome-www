@@ -8,6 +8,7 @@ output:
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff \
 	  --templatedir=templates \
 	  --exclude=html --exclude=Makefile --exclude=README.md
+	echo awesomewm.org > html/CNAME
 
 ldoc:
 	rm -f src/build
