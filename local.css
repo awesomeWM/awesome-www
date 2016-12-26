@@ -278,6 +278,6 @@ blockquote{
 	padding: 0;
 }
 
-.flattr {
-    float: right;
+div#donate {
+  margin: 1em 0;
 }

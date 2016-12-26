@@ -9,16 +9,6 @@
 <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
 <TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
 <TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-    (function() {
-        var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
-        t.parentNode.insertBefore(s, t);
-    })();//--><!]]>
-</script>
 </head>
 <body>
 
@@ -71,10 +61,6 @@
     <div id="content">
     <!--    <h1><TMPL_VAR TITLE></h1> -->
         <div id="left">
-          <div class="flattr">
-            <a class="FlattrButton" style="display:none;"
-               href="https://awesomewm.org"></a>
-          </div>
           <TMPL_VAR CONTENT>
         </div>
         <!--
@@ -109,21 +95,10 @@
 
     <script type='text/javascript' src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="julien@danjou.info">
-<input type="hidden" name="item_name" value="awesome window manager">
-<input type="hidden" name="no_shipping" value="0">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="currency_code" value="EUR">
-<input type="hidden" name="tax" value="0">
-<input type="hidden" name="lc" value="FR">
-<input type="hidden" name="bn" value="PP-DonationsBF">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-href="https//awesomewm.org"></a>
+    <div id="donate">
+      <strong>Donate:</strong> Bitcoin: 1A2LsrF81rWEEJ7qnXdkCUJpdCYUxqfQoP
+    </div>
+
     <div class="copyright">
         <a name="pagecopyright"></a>
         <TMPL_IF COPYRIGHT>
