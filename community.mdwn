@@ -7,17 +7,19 @@ You can join us in the `#awesome` channel on the [`OFTC`](http://www.oftc.net) I
 
 # Stack Overflow
 
-You can ask questions [on Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm)
+You can ask questions on
+[Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm).
 
 # Reddit
 
-We also have a [subreddit](https://www.reddit.com/r/awesomewm/) where you can share your work
-and ask questions.
+We also have a [awesome subreddit](https://www.reddit.com/r/awesomewm/) where
+you can share your work and ask questions.
 
 # GitHub
 
-Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/). You can follow (watch)
-us there, contribute to our decision making and help triage issues.
+Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/).
+You can follow (watch) us there, contribute to our decision making and help
+triage issues.  Also pull requests and issues are welcome there.
 
 # Old mailing list (now closed)
 
