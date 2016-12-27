@@ -278,6 +278,10 @@ blockquote{
 	padding: 0;
 }
 
-div#donate {
+#donate {
   margin: 1em 0;
+  text-align: center;
+}
+#donate p, #donate div {
+  text-align: center;
 }
