@@ -7,15 +7,14 @@
 
 body {
 	margin: 0px;
-	width: 100%;
-	background: url(images/top_bg.gif);
-	background-repeat: repeat-x;
+	width: 100%;	
+	color: black;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 0.8em;
 }
 
 p {
-        text-align: justify;
+    text-align: justify;
 	margin: 11px 0 10px 0;
 	padding: 0px;
 }
@@ -216,7 +215,11 @@ blockquote{
 }
 
 #right .box a {
+<<<<<<< HEAD
 	margin: 10px 0 10px 0;
+=======
+	margin: 10px 0 10px 0;	
+>>>>>>> b9468c9... first redesign of the page: making a cleaner tab menu and adapting colors to match the current docs page
 	font-size: 10px;
 }
 
