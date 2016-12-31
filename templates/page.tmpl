@@ -24,12 +24,13 @@
 
 <div id="wrap">
     <div id="top">
-        <h2><a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">awesome</a></h2>
-        <TMPL_IF NAME="SEARCHFORM">
-            <TMPL_VAR SEARCHFORM>
+      <TMPL_IF NAME="SEARCHFORM">
+        <TMPL_VAR SEARCHFORM>
         </TMPL_IF>
         <div id="menu">
-            <ul>
+          <h2><a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">awesome</a></h2>
+          
+          <ul>
                 <li><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
                 <li><a href="<TMPL_VAR BASEURL>download/">download</a></li>
                 <li><a href="<TMPL_VAR BASEURL>community/">community</a></li>
