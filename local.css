@@ -7,10 +7,11 @@
 
 body {
 	margin: 0px;
+	width: 100%;
 	background: url(images/top_bg.gif);
 	background-repeat: repeat-x;
 	font-family: Verdana, Arial, sans-serif;
-        font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 p {
@@ -51,9 +52,9 @@ blockquote{
 
 
 #wrap {
-       margin-left: auto;
-       margin-right: auto;
-       width: 730px;
+       margin-left: 25%;
+       margin-right: 25%;
+       width: 100%;
 }
 
 
@@ -63,10 +64,10 @@ blockquote{
 #top {
 	font-size: 0.8em;
 	width: 100%;
-	height: 88px;
 	color: #fff;
 	/*background: #000 url(images/top_bg.gif);*/
 	overflow:hidden;
+	display: inline-block;
 }
 
 #top h2 {
@@ -76,7 +77,7 @@ blockquote{
 	font-weight: bold;
 	position: relative;
 	margin: 0px;
-	top:25px;
+	top:10px;
 	display:block;
 	float:left;
 	background: url(images/bg_t.gif) no-repeat;
@@ -97,7 +98,9 @@ blockquote{
 
 
 #menu {
-	display: block;
+    display: inline-block;
+    width: 100%;
+    margin-right: 0px;
 	float:right;
 }
 
@@ -184,7 +187,7 @@ blockquote{
 
 
 #right {
-	width: 0px; 
+	width: 0px;
 	float: right;
 	display:block;
 	margin-top: 10px;
@@ -243,7 +246,7 @@ blockquote{
 	background: url(images/bg_t.gif) no-repeat;
 	background-color: #fff;
 	font-weight: bold;
-	}	
+	}
 
 /**** Clear Div ***/
 
