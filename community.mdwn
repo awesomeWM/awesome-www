@@ -1,4 +1,6 @@
-# Community
+<h1 id="page-id">
+    Community
+</h1>
 
 **awesome** has an active and growing community.
 

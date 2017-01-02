@@ -14,7 +14,7 @@ body {
 }
 
 p {
-    text-align: justify;
+        text-align: justify;
 	margin: 11px 0 10px 0;
 	padding: 0px;
 }
@@ -112,9 +112,9 @@ blockquote{
 
 #menu ul {
         overflow: auto;
-	    display: flex;
+	display: flex;
     	justify-content: center;
-	    width: 100%;
+	width: 100%;
 }
 
 #menu ul {
@@ -158,7 +158,7 @@ blockquote{
 }
 
 #content h2 {
-	margin: 0;
+	margin: 0;	
 	padding: 10px 0 10px 0;
 }
 
@@ -215,11 +215,7 @@ blockquote{
 }
 
 #right .box a {
-<<<<<<< HEAD
 	margin: 10px 0 10px 0;
-=======
-	margin: 10px 0 10px 0;	
->>>>>>> b9468c9... first redesign of the page: making a cleaner tab menu and adapting colors to match the current docs page
 	font-size: 10px;
 }
 
