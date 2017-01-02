@@ -21,6 +21,11 @@ Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/).
 You can follow (watch) us there, contribute to our decision making and help
 triage issues.  Also pull requests and issues are welcome there.
 
+This web page also is [on GitHub](https://github.com/awesomeWM/awesome-www) and
+can be changed via pull requests. To locally test your changes, the web page can
+be build with `make`. For this, you need to have
+[ikiwiki](https://ikiwiki.info/) installed.
+
 # Old mailing list (now closed)
 
 * [The Mail Archive](http://www.mail-archive.com/awesome@naquadah.org/)
