@@ -158,24 +158,6 @@ href="https//awesomewm.org"></a>
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-
-<script type="text/javascript">
-var ul = document.getElementById("menu-tabs");
-var items = ul.getElementsByTagName("li");
-var active = document.getElementById("page-id").innerHTML;
-
-for (var i = 0; i < items.length; i++) {
-    var element = items[i].getElementsByTagName("a")[0];
-
-    var sA = element.innerHTML.toLowerCase().trim();
-    var sB = active.toLowerCase().trim();
-
-    if (sA === sB) {
-        console.log("found");
-	element.style.color = "black";
-    }
-}
-</script>
 <noscript><p><img src="https://piwik.awesomewm.org/piwik.php?idsite=26" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
 

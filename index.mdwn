@@ -1,8 +1,6 @@
 # Home
 
-<h1 id="page-id">
-    Home
-</h1>
+# Home
 
 **awesome** is a highly configurable, next generation framework window
 manager for X. It is very fast, extensible and licensed under the

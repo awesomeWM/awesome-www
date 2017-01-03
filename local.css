@@ -118,6 +118,10 @@ blockquote{
 }
 
 #menu ul {
+        float: right;
+}
+
+#menu ul {
 	list-style: none;
 }
 

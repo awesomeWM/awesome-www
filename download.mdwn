@@ -1,6 +1,4 @@
-<h1 id="page-id">
-    Download
-</h1>
+# Download
 
 ## Stable
 
