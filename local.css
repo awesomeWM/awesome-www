@@ -19,13 +19,6 @@ p {
 	padding: 0px;
 }
 
-h2 {
-	color: #006699;
-	margin:0px;
-	padding:0px;
-	font-size: 15px;
-}
-
 ul {
 	margin:0;
 	padding:0;
@@ -63,7 +56,7 @@ blockquote{
 
 #wrap {     
        width: 100%;
-       height: 50px;
+       height: 100%;
 }
 
 
@@ -71,9 +64,9 @@ blockquote{
 
 
 #top {
-	font-size: 0.8em;
-	width: 80%;
-	margin-left: 10%;
+	font-size: 1.0em;
+	width: 100%;
+	margin-left: 0;
 	overflow:hidden;
 	display: inline-block;
 }
@@ -107,7 +100,20 @@ blockquote{
     width: 100%;
     margin-right: 0px;
     float:right;
-    height: 50px;
+    height: 110px;
+}
+
+#menu img {
+        float: left;
+        /*! padding-right: 10px; */
+        padding-top: 10px;
+        height: 45%;
+        width: 20%;
+        margin-left: 20px;
+}
+
+#menu ul {
+        float: right;
 }
 
 #menu ul {
@@ -122,7 +128,7 @@ blockquote{
 
 #menu li a {
 	display: block;
-	font-size: 1.1em;
+	font-size: 0.99em;
 	padding: 20px 15px 50px 15px;
 	text-decoration: none;	
 	font-weight: bold;
@@ -167,6 +173,10 @@ blockquote{
 #logo { float: right; margin: 32px 32px 32px 32px; }
 #screenshot { text-align: center; margin: 32px 32px 32px 32px; }
 #screenshot img { border: 2px solid #347272; }
+
+#screenshot p {
+        padding-left: 80px;
+}
 
 #left ul {
 	padding: 15px 0 15px 35px;
@@ -282,6 +292,10 @@ blockquote{
 	padding: 0;
 }
 
-.flattr {
-    float: right;
+#donate {
+        margin: 1em 0;
+	text-align: center;
+}
+#donate p, #donate div {
+        text-align: center;
 }

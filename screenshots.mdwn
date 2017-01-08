@@ -3,4 +3,7 @@
 <div id="screenshot">
 [[!img images/screen.png alt="Screenshot 1" size="382x216"]]      
 [[!img images/screenshots/ss1.png alt="Screenshot 2" size="382x216"]]
+<p>
+awesome v4.x + lain + multicolor theme
+</p>
 </div>
