@@ -27,10 +27,12 @@
       <TMPL_IF NAME="SEARCHFORM">
         <TMPL_VAR SEARCHFORM>
         </TMPL_IF>
-        <div id="menu">
-          <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
+	<div id="center-logo">
+	  <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
 	    <img src="<TMPL_VAR BASEURL>images/awesome-logo.svg">
-	    </a>
+	  </a>
+	</div>
+        <div id="menu">
           <ul class="active-menu-<TMPL_VAR NAME="title">">
             <li class="menu-about"><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
             <li class="menu-download"><a href="<TMPL_VAR BASEURL>download/">download</a></li>

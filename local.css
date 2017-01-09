@@ -91,6 +91,15 @@ blockquote{
 	color: black;        
 }
 
+/**** Center Logo ****/
+
+#center-logo img {
+        padding-top: 20px;
+        width: 20%;
+        margin-left: 40%;
+
+}
+
 
 /**** Main Menu ***/
 
@@ -98,22 +107,14 @@ blockquote{
 #menu {
     display: inline-block;
     width: 100%;
-    margin-right: 0px;
-    float:right;
     height: 110px;
 }
 
-#menu img {
-        float: left;
-        /*! padding-right: 10px; */
-        padding-top: 10px;
-        height: 45%;
-        width: 20%;
-        margin-left: 20px;
-}
-
-#menu ul {
-        float: right;
+#menu ul {    
+        overflow: auto;
+	    display: flex;
+    	justify-content: center;
+	    width: 100%;
 }
 
 #menu ul {
@@ -123,7 +124,6 @@ blockquote{
 #menu li {
 	display: block;
 	float: left;
-	white-space: nowrap;
 }
 
 #menu li a {
