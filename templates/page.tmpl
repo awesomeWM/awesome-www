@@ -9,8 +9,28 @@
 <link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
 <TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
 <TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
+<script type="text/javascript"> 
+function fixLinks() {
+  var scheme = location.protocol;
+  if (scheme != "file:") return;
+  var links = document.getElementsByTagName("a");
+  for (var i = links.length; --i >= 0; ) {
+    var link = links[i];
+    var href = link.href;
+    var anchor = "";
+    var anchorIndex = href.indexOf("#");
+    if (anchorIndex != -1) {
+      anchor = href.substring(anchorIndex);
+      href = href.substring(0, anchorIndex);
+    };
+    var hlen = href.length;
+    if (hlen > 0 && link.protocol==scheme && href.charAt(hlen-1) == "/")
+      links[i].href = href + "index.html" + anchor;
+  }
+}
+</script>
 </head>
-<body>
+<body onload="javascript:fixLinks();">
 
 <div id="wrap">
     <a href="https://github.com/awesomeWM/awesome"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
