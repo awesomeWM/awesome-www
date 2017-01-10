@@ -14,9 +14,11 @@ This is the main source of the
 ## Hacking
 
 You can build the web page locally by running `make`, which will generate the
-output in `html/`, where `html/index.html` is the start page.
+output in `html/`.
 
-You can run a simple webserver using Python:
+To view it, open `html/index.html` in your web browser.
+
+You can simulate running a web server using Python (not necessary):
 
     $ cd html
     $ python3 -m http.server -b localhost 8000 &
