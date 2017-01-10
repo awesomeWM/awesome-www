@@ -1,7 +1,5 @@
 # Home
 
-# Home
-
 **awesome** is a highly configurable, next generation framework window
 manager for X. It is very fast, extensible and licensed under the
 [GNU GPLv2 license](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
