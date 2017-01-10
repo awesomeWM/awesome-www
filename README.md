@@ -5,9 +5,21 @@
 This is the main source of the
 [website for the awesome window manager](https://awesomewm.org/).
 
-The website is based on [ikiwiki](https://ikiwiki.info/). You can build the web
-page locally by running `make`. The result will be in `html/`. Besides ikiwiki,
-you will also need [PerlMagick](https://www.imagemagick.org/script/perl-magick.php).
+## Requirements
+
+- [ikiwiki](https://ikiwiki.info/)
+- [PerlMagick](https://www.imagemagick.org/script/perl-magick.php) (optional,
+  for images)
+
+## Hacking
+
+You can build the web page locally by running `make`, which will generate the
+output in `html/`, where `html/index.html` is the start page.
+
+You can run a simple webserver using Python:
+
+    $ cd html
+    $ python3 -m http.server -b localhost 8000 &
 
 ## Publishing
 
@@ -18,7 +30,7 @@ through [Github's Organization Pages](https://github.com/awesomeWM/awesomeWM.git
 ## Other resources
 
 The API documentation for the master branch at
-[/apidoc](https://awesomewm.org/apidoc/) is served through [Github's Project
+[/apidoc](https://awesomewm.org/apidoc/) is viewable at [Github's Project
 Pages for the apidoc repo](https://github.com/awesomeWM/apidoc), where it gets
 pushed to from successful builds in [the awesome main
 repo](https://github.com/awesomeWM/awesome/).
