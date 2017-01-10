@@ -7,7 +7,7 @@
 
 body {
 	margin: 0px;
-	width: 100%;	
+	width: 100%;
 	color: black;
 	font-family: Verdana, Arial, sans-serif;
 	font-size: 0.8em;
@@ -54,7 +54,7 @@ blockquote{
 /**** Main Container ***/
 
 
-#wrap {     
+#wrap {
        width: 100%;
        height: 100%;
 }
@@ -83,12 +83,12 @@ blockquote{
 	float:left;
 }
 
-#top h2 a {	
+#top h2 a {
 	text-decoration: none;
 }
 
 #top h2 a:hover {
-	color: black;        
+	color: black;
 }
 
 /**** Center Logo ****/
@@ -105,12 +105,12 @@ blockquote{
 
 
 #menu {
-    display: inline-block;
-    width: 100%;
-    height: 110px;
+        display: inline-block;
+        width: 100%;
+        height: 110px;
 }
 
-#menu ul {    
+#menu ul {
         overflow: auto;
 	    display: flex;
     	justify-content: center;
@@ -130,7 +130,7 @@ blockquote{
 	display: block;
 	font-size: 0.99em;
 	padding: 20px 15px 50px 15px;
-	text-decoration: none;	
+	text-decoration: none;
 	font-weight: bold;
 }
 
@@ -142,15 +142,10 @@ blockquote{
 
 #menu li a.current {
 	letter-spacing: 1px;
-	color: gray;	
+	color: gray;
 }
-
-#menu li a.current:hover {	
-}
-
 
 /**** Content Container ***/
-
 
 #content {
 	width: 100%;
@@ -163,7 +158,7 @@ blockquote{
 }
 
 #content h2 {
-	margin: 0;	
+	margin: 0;
 	padding: 10px 0 10px 0;
 }
 
@@ -191,7 +186,7 @@ blockquote{
 	width: 60%;
 	float:left;
 	display: block;
-    margin-left: 20%;
+        margin-left: 20%;
 	display: inline;
 }
 
@@ -221,7 +216,7 @@ blockquote{
 }
 
 #right .box a {
-	margin: 10px 0 10px 0;	
+	margin: 10px 0 10px 0;
 	font-size: 10px;
 }
 
@@ -246,7 +241,7 @@ blockquote{
 	height: 2.0em;
 	padding: 0.3em 0.3em 0.3em 0.8em;
 	border-bottom: 2px; /*solid #1a1a1a*/
-	border-top: 2px; /*solid #1a1a1a*/	
+	border-top: 2px; /*solid #1a1a1a*/
 	background-color: #F7F9FB;
 	font-weight: bold;
 	text-decoration: none;
@@ -294,7 +289,7 @@ blockquote{
 
 #donate {
         margin: 1em 0;
-	text-align: center;
+        text-align: center;
 }
 #donate p, #donate div {
         text-align: center;
