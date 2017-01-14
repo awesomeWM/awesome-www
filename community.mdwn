@@ -3,21 +3,30 @@
 **awesome** has an active and growing community.
 
 # IRC
-You can join us on channel `#awesome` on the [`OFTC`](http://www.oftc.net) IRC network.
+You can join us in the `#awesome` channel on the [`OFTC`](http://www.oftc.net) IRC network.
+
+[IRC Webchat](https://webchat.oftc.net/?channels=awesome)
 
 # Stack Overflow
 
-You can ask questions [on Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm)
+You can ask questions on
+[Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm).
 
 # Reddit
 
-We also have a [subreddit](https://www.reddit.com/r/awesomewm/) where you can share your work
-and ask questions.
+We also have a [awesome subreddit](https://www.reddit.com/r/awesomewm/) where
+you can share your work and ask questions.
 
 # GitHub
 
-Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/). You can follow (watch)
-us there, contribute to our decision making and help triage issues.
+Awesome is [developed on GitHub](https://github.com/awesomeWM/awesome/).
+You can follow (watch) us there, contribute to our decision making and help
+triage issues.  Also pull requests and issues are welcome there.
+
+This web page also is [on GitHub](https://github.com/awesomeWM/awesome-www) and
+can be changed via pull requests. To locally test your changes, the web page can
+be build with `make`. For this, you need to have
+[ikiwiki](https://ikiwiki.info/) installed.
 
 # Old mailing list (now closed)
 
@@ -25,6 +34,11 @@ us there, contribute to our decision making and help triage issues.
 * [Gmane archive](http://dir.gmane.org/gmane.comp.window-managers.awesome)
 * [Gmane developers list archive](http://dir.gmane.org/gmane.comp.window-managers.awesome.devel)
 * [The Mail Archive developers list](http://www.mail-archive.com/awesome-devel@naquadah.org/)
+
+# Old wiki
+
+The old wiki has been shut down, but can be still viewed at
+[archive.org](https://web.archive.org/web/20160701200046/https://awesome.naquadah.org/wiki/Main_Page).
 
 # Authors
 [See our GitHub page](https://github.com/awesomeWM/awesome/graphs/contributors)

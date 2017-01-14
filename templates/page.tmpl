@@ -67,10 +67,6 @@
     <div id="content">
     <!--    <h1><TMPL_VAR TITLE></h1> -->
         <div id="left">
-          <div class="flattr">
-            <a class="FlattrButton" style="display:none;"
-               href="https://awesomewm.org"></a>
-          </div>
           <TMPL_VAR CONTENT>
         </div>
         <!--
@@ -105,27 +101,20 @@
 
     <script type='text/javascript' src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
-<input type="hidden" name="cmd" value="_donations">
-<input type="hidden" name="business" value="julien@danjou.info">
-<input type="hidden" name="item_name" value="awesome window manager">
-<input type="hidden" name="no_shipping" value="0">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="currency_code" value="EUR">
-<input type="hidden" name="tax" value="0">
-<input type="hidden" name="lc" value="FR">
-<input type="hidden" name="bn" value="PP-DonationsBF">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - la solution de paiement en ligne la plus simple et la plus sécurisée !">
-<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
-<a class="FlattrButton" style="display:none;" rev="flattr;button:compact;"
-href="https//awesomewm.org"></a>
+    <div id="donate">
+      <strong>Donations:</strong>
+      <div>
+      <script id='fbirvwx'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='https://button.flattr.com/view/?fid=mqwonm&button=compact&url=https%3A%2F%2Fawesomewm.org%2F';f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbirvwx');</script>
+      </div>
+      <p>Bitcoin: 1A2LsrF81rWEEJ7qnXdkCUJpdCYUxqfQoP</p>
+    </div>
+
     <div class="copyright">
         <a name="pagecopyright"></a>
         <TMPL_IF COPYRIGHT>
             <TMPL_VAR COPYRIGHT>
         </TMPL_IF>
-        Copyleft 2007-2015, awesome project
+        Copyleft 2007-2017, awesome project
     </div>
     <TMPL_IF LICENSE>
         <div class="license">

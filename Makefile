@@ -8,6 +8,7 @@ output:
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff \
 	  --templatedir=templates \
 	  --exclude=html --exclude=Makefile --exclude=README.md
+	echo awesomewm.org > html/CNAME
 
 ldoc:
 	rm -f src/build
@@ -21,8 +22,8 @@ changelogs:
 	git --git-dir=src/.git tag | grep -v rc | sort -n | \
 	    (while read v; do \
 	    test -z "$$pv" && pv="`git --git-dir=src/.git rev-list HEAD | tail -n1`" ; \
-	    git --git-dir=src/.git shortlog --no-merges $$pv..$$v > html/changelogs/short/$$v ; \
-	    git --git-dir=src/.git log --no-merges $$pv..$$v > html/changelogs/$$v ; \
+	    git --git-dir=src/.git shortlog --no-merges $$pv..$$v > html/changelogs/short/$$v.txt ; \
+	    git --git-dir=src/.git log --no-merges $$pv..$$v > html/changelogs/$$v.txt ; \
 	    pv=$$v; done)
 
 manpages:
@@ -32,11 +33,11 @@ manpages:
 	    done
 
 build_for_travis: all
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
+	rsync -PaOvz --delete --exclude=.git --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
 	  $${BUILD_WEB}
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s --delete src/build/doc/ \
+	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s src/build/doc/ \
 	  $${BUILD_WEB}/doc/api
-	rsync -PaOvz --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
+	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
 	  $${BUILD_WEB}/doc/manpages/icons
 
 .PHONY: changelogs manpages
