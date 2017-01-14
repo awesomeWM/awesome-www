@@ -17,6 +17,7 @@ To contribute with Screenshots:
 * Add your image to the folder images/screenshots with an appropiated name.
 * Add a new <figure> tag in the bottom of *screenshots.mdwn*,
 * Inside the new tag, add the screenshots with a <img> tag and use the <figcaption> to add caption to the image, explaining what is being used on the screenshot.
+contribute with screenshots
 
 ## Publishing
 
