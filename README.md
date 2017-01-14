@@ -9,6 +9,15 @@ The website is based on [ikiwiki](https://ikiwiki.info/). You can build the web
 page locally by running `make`. The result will be in `html/`. Besides ikiwiki,
 you will also need [PerlMagick](https://www.imagemagick.org/script/perl-magick.php).
 
+## Contribution Guide
+
+### Screenshots
+
+To contribute with Screenshots:
+* Add your image to the folder images/screenshots with an appropiated name.
+* Add a new <figure> tag in the bottom of *screenshots.mdwn*,
+* Inside the new tag, add the screenshots with a <img> tag and use the <figcaption> to add caption to the image, explaining what is being used on the screenshot.
+
 ## Publishing
 
 The master branch gets built by
