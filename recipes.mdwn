@@ -1,0 +1,9 @@
+# Recipes
+
+The recipes section is where you can find useful snippets and tutorials on how to improve your Awesome setup.
+
+* [My First Awesome Setup](https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html#)
+
+## Widgets
+
+* [Lain Widget Library](https://github.com/copycat-killer/lain)

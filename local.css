@@ -35,9 +35,11 @@ a {
 
 ul.active-menu-about li.menu-about,
 ul.active-menu-download li.menu-download,
-ul.active-menu-doc li.menu-doc,
 ul.active-menu-community li.menu-community,
+ul.active-menu-recipes li.menu-recipes,
 ul.active-menu-screenshots li.menu-screenshots {
+ul.active-menu-doc li.menu-doc,
+
         text-decoration: underline;
 }
 
