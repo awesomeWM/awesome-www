@@ -29,6 +29,8 @@ open `index.html` when following a link to a directory:
 1. Fork this repository and create a new branch with a name relevant to the information you will be adding to the site.
 If you have doubts in how to Fork and Branch, take a look in this cheat-sheet [here](https://www.git-tower.com/blog/git-cheat-sheet/)
 
+The process of editing files can be done inside GitHub's interface, more information [here](https://help.github.com/articles/github-flow/)
+
 #### With external Link
 
 1. Create a new link in markdown format `[Link Name](Real Link)` in the appropiated section in `recipes.mdwn` file.
