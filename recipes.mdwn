@@ -2,6 +2,10 @@
 
 The recipes section is where you can find useful snippets and tutorials on how to improve your Awesome setup.
 
+* [How to contribute to Recipes](https://github.com/awesomeWM/awesome-www#contributing-to-recipes-section)
+
+## Setups
+
 * [My First Awesome Setup](https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html#)
 
 ## Widgets
