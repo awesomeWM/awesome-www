@@ -7,10 +7,10 @@
 
 body {
 	margin: 0px;
-	background: url(images/top_bg.gif);
-	background-repeat: repeat-x;
+	width: 100%;
+	color: black;
 	font-family: Verdana, Arial, sans-serif;
-        font-size: 0.8em;
+	font-size: 0.8em;
 }
 
 p {
@@ -19,21 +19,28 @@ p {
 	padding: 0px;
 }
 
-h2 {
-	color: #347272;
-	margin:0px;
-	padding:0px;
-	font-size: 15px;
-}
-
 ul {
 	margin:0;
 	padding:0;
 	list-style-image: url(images/bullet.gif);
 }
 
+h1 {
+	color: #3f4c4b;
+}
+
 a {
-	color: #347272;
+	color: #006699;
+}
+
+ul.active-menu-about li.menu-about,
+ul.active-menu-download li.menu-download,
+ul.active-menu-community li.menu-community,
+ul.active-menu-recipes li.menu-recipes,
+ul.active-menu-screenshots li.menu-screenshots {
+ul.active-menu-doc li.menu-doc,
+
+        text-decoration: underline;
 }
 
 a:hover {
@@ -46,14 +53,12 @@ blockquote{
 	padding: 10px;
 }
 
-
 /**** Main Container ***/
 
 
 #wrap {
-       margin-left: auto;
-       margin-right: auto;
-       width: 730px;
+       width: 100%;
+       height: 100%;
 }
 
 
@@ -61,35 +66,57 @@ blockquote{
 
 
 #top {
-	font-size: 0.8em;
+	font-size: 1.0em;
 	width: 100%;
-	height: 88px;
-	color: #fff;
-	/*background: #000 url(images/top_bg.gif);*/
+	margin-left: 0;
 	overflow:hidden;
+	display: inline-block;
 }
 
 #top h2 {
-	color: White;
 	letter-spacing: 3px;
-	font-size: 2.0em;
+	font-size: 3.0em;
 	font-weight: bold;
 	position: relative;
-	margin: 0px;
-	top:25px;
+	/* margin: 0px; */
+	top: 5px;
+	margin-right: 20px;
 	display:block;
 	float:left;
-	background: url(images/bg_t.gif) no-repeat;
-	padding-left: 10px;
 }
 
 #top h2 a {
-	color: white;
 	text-decoration: none;
 }
 
 #top h2 a:hover {
-        color: #347272;
+	color: black;
+}
+
+/**** Center Logo ****/
+
+#center-logo img {
+        padding-top: 20px;
+        width: 20%;
+        margin-left: 40%;
+
+}
+
+/**** Center Logo ****/
+
+#center-logo img {
+        padding-top: 20px;
+        width: 20%;
+        margin-left: 40%;
+}
+
+/**** Center Logo ****/
+
+#center-logo img {
+        padding-top: 20px;
+        width: 20%;
+        margin-left: 40%;
+
 }
 
 
@@ -97,48 +124,51 @@ blockquote{
 
 
 #menu {
-	display: block;
-	float:right;
+        display: inline-block;
+        width: 100%;
+        height: 110px;
 }
 
 #menu ul {
-	margin: 0;
+        overflow: auto;
+	display: flex;
+    	justify-content: center;
+	width: 100%;
+}
+
+#menu ul {
+        float: right;
+}
+
+#menu ul {
 	list-style: none;
 }
 
 #menu li {
 	display: block;
 	float: left;
-	white-space: nowrap;
 }
 
 #menu li a {
 	display: block;
+	font-size: 0.99em;
 	padding: 20px 15px 50px 15px;
 	text-decoration: none;
-	color: #fff;
 	font-weight: bold;
 }
 
 * html #menu a {width:1%;}
 
 #menu li a:hover {
-	background: url(images/bg_menu.gif);
+	color: black;
 }
 
 #menu li a.current {
 	letter-spacing: 1px;
 	color: gray;
-	background: url(images/bg_menu.gif);
 }
-
-#menu li a.current:hover {
-	color: #fff;
-}
-
 
 /**** Content Container ***/
-
 
 #content {
 	width: 100%;
@@ -158,9 +188,12 @@ blockquote{
 
 /**** Content ***/
 
-#logo { float: right; margin: 32px 32px 32px 32px; }
 #screenshot { text-align: center; margin: 32px 32px 32px 32px; }
 #screenshot img { border: 2px solid #347272; }
+
+#screenshot p {
+        padding-left: 80px;
+}
 
 #left ul {
 	padding: 15px 0 15px 35px;
@@ -172,10 +205,10 @@ blockquote{
 }
 
 #left {
-	width: 700px;
+	width: 60%;
 	float:left;
 	display: block;
-        margin-left: 20px;
+        margin-left: 20%;
 	display: inline;
 }
 
@@ -184,7 +217,7 @@ blockquote{
 
 
 #right {
-	width: 0px; 
+	width: 0px;
 	float: right;
 	display:block;
 	margin-top: 10px;
@@ -206,7 +239,6 @@ blockquote{
 
 #right .box a {
 	margin: 10px 0 10px 0;
-	color: #347272;
 	font-size: 10px;
 }
 
@@ -232,7 +264,6 @@ blockquote{
 	padding: 0.3em 0.3em 0.3em 0.8em;
 	border-bottom: 2px; /*solid #1a1a1a*/
 	border-top: 2px; /*solid #1a1a1a*/
-	color: #347272;
 	background-color: #F7F9FB;
 	font-weight: bold;
 	text-decoration: none;
@@ -243,7 +274,7 @@ blockquote{
 	background: url(images/bg_t.gif) no-repeat;
 	background-color: #fff;
 	font-weight: bold;
-	}	
+	}
 
 /**** Clear Div ***/
 
@@ -279,9 +310,9 @@ blockquote{
 }
 
 #donate {
-  margin: 1em 0;
-  text-align: center;
+        margin: 1em 0;
+        text-align: center;
 }
 #donate p, #donate div {
-  text-align: center;
+        text-align: center;
 }

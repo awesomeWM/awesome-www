@@ -13,20 +13,26 @@
 <body>
 
 <div id="wrap">
+    <a href="https://github.com/awesomeWM/awesome"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
     <div id="top">
-        <h2><a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">awesome</a></h2>
-        <TMPL_IF NAME="SEARCHFORM">
-            <TMPL_VAR SEARCHFORM>
+      <TMPL_IF NAME="SEARCHFORM">
+        <TMPL_VAR SEARCHFORM>
         </TMPL_IF>
+	<div id="center-logo">
+	  <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
+	    <img src="<TMPL_VAR BASEURL>images/awesome-logo.svg">
+	  </a>
+	</div>
         <div id="menu">
-            <ul>
-                <li><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
-                <li><a href="<TMPL_VAR BASEURL>download/">download</a></li>
-                <li><a href="<TMPL_VAR BASEURL>community/">community</a></li>
-                <li><a href="<TMPL_VAR BASEURL>recipes/">recipes</a></li>
-                <li><a href="<TMPL_VAR BASEURL>apidoc/">doc (git/master)</a></li>
-                <li><a href="<TMPL_VAR BASEURL>doc/">doc (v4.0)</a></li>
-                <li><a href="https://github.com/awesomeWM/awesome/issues">bugs/issues</a></li>
+          <ul class="active-menu-<TMPL_VAR NAME="title">">
+            <li class="menu-about"><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
+            <li class="menu-download"><a href="<TMPL_VAR BASEURL>download/">download</a></li>
+            <li class="menu-community"><a href="<TMPL_VAR BASEURL>community/">community</a></li>
+            <li class="menu-recipes"><a href="<TMPL_VAR BASEURL>recipes/">recipes</a></li>
+            <li class="menu-screenshots"><a href="<TMPL_VAR BASEURL>screenshots/">screenshots</a></li>
+            <li class="menu-doc-git"><a href="<TMPL_VAR BASEURL>apidoc/">doc (git/master)</a></li>
+            <li class="menu-doc"><a href="<TMPL_VAR BASEURL>doc/">doc (v4.0)</a></li>
+            <li class="menu-issues"><a href="https://github.com/awesomeWM/awesome/issues">bugs/issues</a></li>
             </ul>
         </div>
     </div>

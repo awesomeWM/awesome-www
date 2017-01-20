@@ -24,6 +24,13 @@ open `index.html` when following a link to a directory:
     $ cd html
     $ python3 -m http.server -b localhost 8000 &
 
+## Contributing to the Screenshots Section
+
+To contribute with Screenshots:
+1. Add your image to the folder images/screenshots with an appropiated name.
+2. Add a new <figure> tag in the bottom of *screenshots.mdwn*,
+3. Inside the new tag, add the screenshots with a <img> tag and use the <figcaption> to add caption to the image, explaining what is being used on the screenshot.
+
 ## Contributing to Recipes Section
 
 1. Fork this repository and create a new branch with a name relevant to the information you will be adding to the site.

@@ -1,0 +1,8 @@
+# Screenshots
+
+<div id="screenshot">
+<figure>
+    [[!img images/screen.png alt="Screenshot 1" size="382x216"]]
+    <figcaption>awesome v4.x + lain + multicolor theme</figcaption>
+</figure>
+</div>
