@@ -8,7 +8,7 @@ It is primarly targeted at power users, developers and any people dealing with
 every day computing tasks and who want to have fine-grained control on theirs
 graphical environment.
 
-<div id="screenshot">
+<div class="screenshot">
 [[!img images/screen.png alt="awesome screenshot" size="382x216"]]
 </div>
 
@@ -29,7 +29,7 @@ It's extremely fast, small, dynamic and heavily extensible using the
 We provide an easily usable and very-well documented API to configure and
 define the behaviour of your window manager.
 
-<div id="screenshot">
+<div class="screenshot">
 [[!img images/6mon.small.png link="images/6mon.medium.png" alt="awesome running on 6 monitors"]]
 </div>
 
