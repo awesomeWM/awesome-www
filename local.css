@@ -188,10 +188,10 @@ blockquote{
 
 /**** Content ***/
 
-#screenshot { text-align: center; margin: 32px 32px 32px 32px; }
-#screenshot img { border: 2px solid #347272; }
+.screenshot { text-align: center; margin: 32px 32px 32px 32px; }
+.screenshot img { border: 2px solid #347272; }
 
-#screenshot p {
+.screenshot p {
         padding-left: 80px;
 }
 
