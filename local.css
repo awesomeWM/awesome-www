@@ -126,7 +126,7 @@ blockquote{
 #menu {
         display: inline-block;
         width: 100%;
-        height: 110px;
+        height: 50px;
 }
 
 #menu ul {
@@ -172,7 +172,6 @@ blockquote{
 
 #content {
 	width: 100%;
-	margin-top:30px;
 }
 
 #content h1 {
