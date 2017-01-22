@@ -300,4 +300,9 @@ blockquote{
   text-align: center;
 }
 
+.standout {
+  font-size:larger;
+  font-weight:bold;
+}
+
 /* vim: set sw=2 et: */
