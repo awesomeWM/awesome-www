@@ -1,0 +1,70 @@
+# MPD integration
+
+This page describes an integration with the [Music Player
+Daemon](https://www.musicpd.org/). This consists of two parts: A [[pure Lua
+library for talking to mpc|mpc.lua]] and an example on how to use this for a
+widget with awesome.
+
+## The library
+
+The library provides a function `mpc.new` that creates a new object representing
+a connection to MPD. It can be used as follows:
+
+    local connection = require("mpc").new(host, port, password, error_handler, idle_commands...)
+
+This will establish a TCP connection to the given host and port and, if a
+password is given, log in to the MPD server. Whenever an error happens (for
+example the connection is lost or the password is rejected), the given error
+handler function is called with the error as its argument. The next time the
+connection is used, an automatic reconnection is attempted.
+
+A description of the MPD protocol can be fined
+[here](https://www.musicpd.org/doc/protocol/). This library only provides
+low-level access to the protocol. However, special support for the idle command
+is provided via extra arguments to the `new` function. This will be made clear
+in an example below.
+
+For example, to get information about the currently playing song:
+
+    connection:send("currentsong", function(success, data)
+        if not success then print("command failed") end
+        print("Information about the current song:")
+        require("gears.debug").dump(data)
+    end)
+
+## A sample widget
+
+The following keeps a textbox up-to-date with the MPD status. It automatically
+updates when the current MPD state changes.
+
+    local mpc = require("mpc")
+    local textbox = require("wibox.widget.textbox")
+    local mpd_widget = textbox()
+    local state, title, artist, file = "stop", "", "", ""
+    local function update_widget()
+        local text = "Current MPD status: "
+        text = text .. tostring(artist or "") .. " - " .. tostring(title or "")
+        if state == "pause" then
+            text = text .. " (paused)"
+        end
+        if state == "stop" then
+            text = text .. " (stopped)"
+        end
+        mpd_widget.text = text
+    end
+    local function error_handler(err)
+        mpd_widget:set_text("Error: " .. tostring(err))
+    end
+    local connection = mpc.new("localhost", 6600, "", error_handler,
+        "status", function(_, result)
+            state = result.state
+        end,
+        "currentsong", function(_, result)
+            title, artist, file = result.title, result.artist, result.file
+            pcall(update_widget)
+        end)
+
+If you actually want to be able to control MPD's behaviour, you could for
+example do the following to pause/unpause when clicking on the widget:
+
+    mpd_widget:buttons(awful.button({}, 1, function() connection:toggle_play() end))
