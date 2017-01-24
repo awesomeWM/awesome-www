@@ -303,6 +303,11 @@ blockquote{
 .standout {
   font-size:larger;
   font-weight:bold;
+  color: #A94442;
+}
+
+.standout a {
+    color: red;
 }
 
 /* vim: set sw=2 et: */

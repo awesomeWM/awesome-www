@@ -7,8 +7,8 @@
 * [awesomerc(5) manpage](manpages/awesomerc.5.html)
 * [awesome-client(1) manpage](manpages/awesome-client.1.html)
 
-<a name="v4"></a>
-## awesome 4.0
+<a id="v4"></a>
+# Awesome 4.0
 
 * [News / breaking changes](https://awesomewm.org/apidoc/documentation/89-NEWS.md.html#v4)
 * [Configuration porting tips](https://awesomewm.org/apidoc/documentation/17-porting-tips.md.html#v4)

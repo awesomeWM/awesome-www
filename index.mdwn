@@ -1,10 +1,11 @@
 # News
 
 <p class="standout">
-awesome 4.0 has been released on 2016-12-25.
-<br />
+Awesome 4.0 has been released on 2016-12-25.
+</br>
+</br>
 Please refer to the <a href="doc/#v4">documentation section</a> for
-NEWS/changes and porting tips for your configuration.
+news/changes and porting tips for your configuration.
 </p>
 
 # What is the awesome?
