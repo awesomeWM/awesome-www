@@ -11,6 +11,7 @@ The recipes section is where you can find useful snippets and tutorials on how t
 ## Widgets
 
 * [Lain Widget Library](https://github.com/copycat-killer/lain)
+* [Vicious](https://github.com/Mic92/vicious)
 * [[MPD current song|recipes/mpc]]
 
 ## Others 
