@@ -14,5 +14,9 @@ The recipes section is where you can find useful snippets and tutorials on how t
 * [Vicious](https://github.com/Mic92/vicious)
 * [[MPD current song|recipes/mpc]]
 
+## Themes
+
+* [Awesome-Copycats Themes](https://github.com/copycat-killer/awesome-copycats)
+
 ## Others 
 * [[Swap Monitor Snippet|recipes/xrandr]]
