@@ -5,7 +5,7 @@ Using this snippet you can set a keybinding where you swap to all possible arran
 
 The process of setting up this script goes as follow:
 
-1. Create a file called `xrandr.lua` in your file system (preferably in awesome's folder) with the [script](../xrandr.lua) content.
+1. Create a file called `xrandr.lua` in your file system (preferably in awesome's folder) with the [[script|xrandr.lua]] content.
 
 2. Import the script in your `rc.lua`
 
