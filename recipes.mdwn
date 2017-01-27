@@ -12,3 +12,6 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 * [Lain Widget Library](https://github.com/copycat-killer/lain)
 * [[MPD current song|recipes/mpc]]
+
+## Others 
+* [[Swap Monitor Snippet|recipes/xrandr]]
