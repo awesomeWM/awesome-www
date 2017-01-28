@@ -20,3 +20,4 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 ## Others 
 * [[Swap Monitor Snippet|recipes/xrandr]]
+* [Awesome-Revelation - Mac OSX like 'Expose' view of all clients.](https://github.com/guotsuan/awesome-revelation)
