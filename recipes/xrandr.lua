@@ -81,9 +81,7 @@ local function menu()
          end
       end
 
-      menu[#menu + 1] = { label,
-                          cmd,
-                          icon_path}
+      menu[#menu + 1] = { label, cmd }
    end
 
    return menu
@@ -106,18 +104,18 @@ local function xrandr()
    end
 
    -- Select one and display the appropriate notification
-   local label, action, icon
+   local label, action
    local next  = state.menu[state.index]
    state.index = state.index + 1
 
    if not next then
-      label, icon = "Keep the current configuration", icon_path
+      label = "Keep the current configuration"
       state.index = nil
    else
-      label, action, icon = unpack(next)
+      label, action = unpack(next)
    end
    state.cid = naughty.notify({ text = label,
-                                icon = icon,
+                                icon = icon_path,
                                 timeout = 4,
                                 screen = mouse.screen,
                                 replaces_id = state.cid }).id
