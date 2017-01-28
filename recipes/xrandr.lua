@@ -2,7 +2,6 @@
 
 local awful     = require("awful")
 local naughty   = require("naughty")
-local beautiful = require("beautiful");
 
 -- A path to a fancy icon
 local icon_path = ""
@@ -121,7 +120,6 @@ local function xrandr()
                                 icon = icon,
                                 timeout = 4,
                                 screen = mouse.screen,
-                                font = beautiful.font,
                                 replaces_id = state.cid }).id
 
    -- Setup the timer
