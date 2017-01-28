@@ -88,15 +88,20 @@ local function menu()
 end
 
 -- Display xrandr notifications from choices
-local state = { timer = nil,
-                cid = nil }
-local function xrandr()
-   -- Stop any previous timer
-   if state.timer then
-      state.timer:stop()
-      state.timer = nil
-   end
+local state = { cid = nil }
 
+local function naughty_destroy_callback(reason)
+  if reason == naughty.notificationClosedReason.expired or
+     reason == naughty.notificationClosedReason.dismissedByUser then
+    local action = state.index and state.menu[state.index - 1][2]
+    if action then
+      awful.util.spawn(action, false)
+      state.index = nil
+    end
+  end
+end
+
+local function xrandr()
    -- Build the list of choices
    if not state.index then
       state.menu = menu()
@@ -118,19 +123,8 @@ local function xrandr()
                                 icon = icon_path,
                                 timeout = 4,
                                 screen = mouse.screen,
-                                replaces_id = state.cid }).id
-
-   -- Setup the timer
-   state.timer = timer { timeout = 4 }
-   state.timer:connect_signal("timeout",
-                              function()
-                                 state.timer:stop()
-                                 state.index = nil
-                                 if action then
-                                    awful.util.spawn(action, false)
-                                 end
-   end)
-   state.timer:start()
+                                replaces_id = state.cid,
+                                destroy = naughty_destroy_callback}).id
 end
 
 return {
