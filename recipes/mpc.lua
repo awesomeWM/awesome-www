@@ -76,9 +76,9 @@ function mpc:_connect()
 		self._input:read_line_async(GLib.PRIORITY_DEFAULT, nil, function(obj, res)
 			local line, err = obj:read_line_finish(res)
 			-- Ugly API. On success we get string, length-of-string
-			-- and on error we get nil, error
-			--if tostring(line) == "" and err == 1 then
-			if tostring(line) == "" then
+			-- and on error we get nil, error. Other versions of lgi
+			-- behave differently.
+			if line == nil or tostring(line) == "" then
 				err = "Connection closed"
 			end
 			if type(err) ~= "number" then
