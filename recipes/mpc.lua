@@ -95,9 +95,10 @@ function mpc:_connect()
 					else
 						arg = { line }
 					end
-					self._reply_handlers[1](success, arg)
+					local handler = self._reply_handlers[1]
 					table.remove(self._reply_handlers, 1)
 					self._pending_reply = {}
+					handler(success, arg)
 				else
 					local _, _, key, value = string.find(line, "([^:]+):%s(.+)")
 					if key then
