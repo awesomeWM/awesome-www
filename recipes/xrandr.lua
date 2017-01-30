@@ -2,7 +2,6 @@
 
 local awful     = require("awful")
 local naughty   = require("naughty")
-local beautiful = require("beautiful");
 
 -- A path to a fancy icon
 local icon_path = ""
@@ -82,24 +81,27 @@ local function menu()
          end
       end
 
-      menu[#menu + 1] = { label,
-                          cmd,
-                          icon_path}
+      menu[#menu + 1] = { label, cmd }
    end
 
    return menu
 end
 
 -- Display xrandr notifications from choices
-local state = { timer = nil,
-                cid = nil }
-local function xrandr()
-   -- Stop any previous timer
-   if state.timer then
-      state.timer:stop()
-      state.timer = nil
-   end
+local state = { cid = nil }
 
+local function naughty_destroy_callback(reason)
+  if reason == naughty.notificationClosedReason.expired or
+     reason == naughty.notificationClosedReason.dismissedByUser then
+    local action = state.index and state.menu[state.index - 1][2]
+    if action then
+      awful.util.spawn(action, false)
+      state.index = nil
+    end
+  end
+end
+
+local function xrandr()
    -- Build the list of choices
    if not state.index then
       state.menu = menu()
@@ -107,34 +109,22 @@ local function xrandr()
    end
 
    -- Select one and display the appropriate notification
-   local label, action, icon
+   local label, action
    local next  = state.menu[state.index]
    state.index = state.index + 1
 
    if not next then
-      label, icon = "Keep the current configuration", icon_path
+      label = "Keep the current configuration"
       state.index = nil
    else
-      label, action, icon = unpack(next)
+      label, action = unpack(next)
    end
    state.cid = naughty.notify({ text = label,
-                                icon = icon,
+                                icon = icon_path,
                                 timeout = 4,
                                 screen = mouse.screen,
-                                font = beautiful.font,
-                                replaces_id = state.cid }).id
-
-   -- Setup the timer
-   state.timer = timer { timeout = 4 }
-   state.timer:connect_signal("timeout",
-                              function()
-                                 state.timer:stop()
-                                 state.index = nil
-                                 if action then
-                                    awful.util.spawn(action, false)
-                                 end
-   end)
-   state.timer:start()
+                                replaces_id = state.cid,
+                                destroy = naughty_destroy_callback}).id
 end
 
 return {
