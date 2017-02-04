@@ -55,7 +55,7 @@ updates when the current MPD state changes.
     local function error_handler(err)
         mpd_widget:set_text("Error: " .. tostring(err))
     end
-    local connection = mpc.new("localhost", 6600, "", error_handler,
+    local connection = mpc.new(nil, nil, nil, error_handler,
         "status", function(_, result)
             state = result.state
         end,
