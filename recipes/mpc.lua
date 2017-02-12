@@ -3,7 +3,22 @@ local GLib = lgi.GLib
 local Gio = lgi.Gio
 
 local mpc = {}
+
+local function parse_password(host)
+	-- This function is based on mpd_parse_host_password() from libmpdclient
+	local position = string.find(host, "@")
+	if not position then
+		return host
+	end
+	return string.sub(host, position + 1), string.sub(host, 1, position - 1)
+end
+
 function mpc.new(host, port, password, error_handler, ...)
+	host = host or os.getenv("MPD_HOST") or "localhost"
+	port = port or os.getenv("MPD_PORT") or 6600
+	if not password then
+		host, password = parse_password(host)
+	end
 	local self = setmetatable({
 		_host = host,
 		_port = port,
@@ -177,13 +192,13 @@ function mpc:toggle_play()
 	end)
 end
 
-return mpc
-
 --[[
 
 -- Example on how to use this (standalone)
 
-local m = mpc.new("localhost", 6600, nil, "status", function(success, status) print("status is", status) end)
+local host, port, password = nil, nil, nil
+local m = mpc.new(host, port, password, error,
+	"status", function(success, status) print("status is", status.state) end)
 
 GLib.timeout_add(GLib.PRIORITY_DEFAULT, 1000, function()
 	-- Test command submission
@@ -198,3 +213,5 @@ end)
 
 GLib.MainLoop():run()
 --]]
+
+return mpc
