@@ -14,6 +14,12 @@ The recipes section is where you can find useful snippets and tutorials on how t
 * [Vicious](https://github.com/Mic92/vicious)
 * [[MPD current song|recipes/mpc]]
 
+## Libraries
+
+* [Radical Menu Library](https://github.com/Elv13/radical) 
+* [Collision](https://github.com/Elv13/collision)
+* [Tyrannical](https://github.com/Elv13/tyrannical)
+
 ## Themes
 
 * [Awesome-Copycats Themes](https://github.com/copycat-killer/awesome-copycats)
