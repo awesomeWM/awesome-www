@@ -16,9 +16,10 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 ## Libraries
 
-* [Radical Menu Library](https://github.com/Elv13/radical) 
-* [Collision](https://github.com/Elv13/collision)
-* [Tyrannical](https://github.com/Elv13/tyrannical)
+* [Radical Menu Library](https://github.com/Elv13/radical) (menu framework)
+* [Collision](https://github.com/Elv13/collision) (navigation keybindings)
+* [Tyrannical](https://github.com/Elv13/tyrannical) (dynamic tagging)
+* [Repetitive](https://github.com/Elv13/repetitive) (dynamic keybindings)
 
 ## Themes
 
