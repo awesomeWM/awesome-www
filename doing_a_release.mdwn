@@ -22,7 +22,7 @@ The following steps are done in a checkout of the *awesome-www* git repository.
 * Go into the 'src' submodule, and update it to vX.Y with `git pull
   path/to/your/awesome/repo tag vX.Y && git checkout vX.Y`.
 * Commit `download.mdwn`, `releases.mdwn`, and `src` with `git commit -sm 'vX.Y'
-  download.mdwn src`.
+  download.mdwn releases.mdwn src`.
 
 ### The final steps
 
