@@ -31,13 +31,14 @@ addons:
       - libxcb-xkb-dev
       - libxkbcommon-dev
       - libxkbcommon-x11-dev
-      - lua-lgi
       - gir1.2-pango-1.0
         # Dependencies for xcb-util-cursor
       - libxcb-render-util0-dev
       - libxcb-image0-dev
         # Dependencies for xcb-util-xrm
       - xutils-dev
+        # Dependencies for lgi
+      - libgirepository1.0-dev
 
 # Clone the awesomeWM.github.io repo before building, because we need the
 # working copy to be there for updating already.
@@ -76,6 +77,9 @@ install:
   - eval `luarocks path --bin`
     # Of course Ubuntu's Luarocks version is too old for --bin
   - PATH="$PATH:$HOME/.luarocks/bin"
+
+  # lgi is too old
+  - travis_retry luarocks --local install lgi
 
 script:
   - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_travis
