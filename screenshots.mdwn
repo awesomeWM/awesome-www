@@ -1,8 +1,7 @@
 # Screenshots
 
-<div id="screenshot">
-<figure>
-    [[!img images/screen.png alt="Screenshot 1" size="382x216"]]
-    <figcaption>awesome v4.x + lain + multicolor theme</figcaption>
-</figure>
-</div>
+Screenshots of different AwesomeWM configurations are available
+[at GitHub](https://github.com/awesomeWM/awesome/issues/1395).
+
+Feel free to add your own screenshots in the thread along with configuration
+details.
