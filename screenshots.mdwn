@@ -2,4 +2,4 @@
 
 Screenshots of different AwesomeWM configurations are available [here](https://github.com/awesomeWM/awesome/issues/1395).
 
-Feel free to add your own Screenshot in the thread along with it's configuration details. 
+Feel free to add your own screenshots in the thread along with it configuration details. 
