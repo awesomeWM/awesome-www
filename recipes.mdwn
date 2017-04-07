@@ -10,10 +10,11 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 ## Widgets
 
-* [Lain Widget Library](https://github.com/copycat-killer/lain)
+* [Lain](https://github.com/copycat-killer/lain)
 * [Vicious](https://github.com/Mic92/vicious)
 * [[Countdown|recipes/countdown]]
 * [[MPD current song|recipes/mpc]]
+* [[Watchers|recipes/watch]]
 
 ## Libraries
 
@@ -24,8 +25,9 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 ## Themes
 
-* [Awesome-Copycats Themes](https://github.com/copycat-killer/awesome-copycats)
+* [awesome-copycats](https://github.com/copycat-killer/awesome-copycats)
 
-## Others 
+## Others
+
 * [[Swap Monitor Snippet|recipes/xrandr]]
 * [Awesome-Revelation - Mac OSX like 'Expose' view of all clients.](https://github.com/guotsuan/awesome-revelation)
