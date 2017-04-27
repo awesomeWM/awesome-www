@@ -1,6 +1,7 @@
 # Recipes
 
-The recipes section is where you can find useful snippets and tutorials on how to improve your Awesome setup.
+The recipes section is where you can find useful snippets and tutorials on how
+to improve your Awesome setup.
 
 * [How to contribute to Recipes](https://github.com/awesomeWM/awesome-www#contributing-to-recipes-section)
 
@@ -27,8 +28,12 @@ The recipes section is where you can find useful snippets and tutorials on how t
 
 * [awesome-copycats](https://github.com/copycat-killer/awesome-copycats)
 
+## Window management
+
+* [Awesome-Revelation - Mac OSX like 'Expose' view of all clients](https://github.com/guotsuan/awesome-revelation)
+* [awesome-cyclefocus - sensible Alt-Tab behavior](https://github.com/blueyed/awesome-cyclefocus/)
+
 ## Others
 
 * [[Swap Monitor Snippet|recipes/xrandr]]
-* [Awesome-Revelation - Mac OSX like 'Expose' view of all clients.](https://github.com/guotsuan/awesome-revelation)
 * [Poppin' - Pop over applications](https://github.com/raksooo/poppin)
