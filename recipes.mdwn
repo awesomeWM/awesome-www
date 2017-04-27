@@ -20,9 +20,6 @@ to improve your Awesome setup.
 ## Libraries
 
 * [Radical menu framework](https://github.com/Elv13/radical)
-* [Collision geometric navigation keybindings](https://github.com/Elv13/collision)
-* [Tyrannical dynamic tag managment framework](https://github.com/Elv13/tyrannical)
-* [Repetitive dynamic keybindings and macros](https://github.com/Elv13/repetitive)
 
 ## Themes
 
@@ -32,6 +29,9 @@ to improve your Awesome setup.
 
 * [Awesome-Revelation - Mac OSX like 'Expose' view of all clients](https://github.com/guotsuan/awesome-revelation)
 * [awesome-cyclefocus - sensible Alt-Tab behavior](https://github.com/blueyed/awesome-cyclefocus/)
+* [Collision geometric navigation keybindings](https://github.com/Elv13/collision)
+* [Tyrannical dynamic tag managment framework](https://github.com/Elv13/tyrannical)
+* [Repetitive dynamic keybindings and macros](https://github.com/Elv13/repetitive)
 
 ## Others
 
