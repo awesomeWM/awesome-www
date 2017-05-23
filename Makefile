@@ -7,8 +7,10 @@ all: output ldoc changelogs manpages
 output:
 	ikiwiki $(CURDIR) html -v --wikiname about --plugin=goodstuff \
 	  --templatedir=templates \
-	  --exclude=html --exclude=Makefile --exclude=README.md
+	  --exclude=html --exclude=Makefile --exclude=README.md \
+	  --exclude=README.for_webpage.md
 	echo awesomewm.org > html/CNAME
+	cp README.for_webpage.md html/README.md
 
 ldoc:
 	rm -f src/build
