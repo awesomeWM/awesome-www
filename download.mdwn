@@ -54,6 +54,7 @@ A list of of old releases [[is available here|releases]].
 * [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
 * [PLD Linux](http://pld-linux.org)
 * [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
+* [OpenIndiana](http://pkg.openindiana.org/hipster/en/search.shtml?token=awesome&action=Search)
 
 ### Distributions using Awesome as the default window manager
 
