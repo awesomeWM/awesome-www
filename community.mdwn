@@ -28,6 +28,11 @@ can be changed via pull requests. To locally test your changes, the web page can
 be build with `make`. For this, you need to have
 [ikiwiki](https://ikiwiki.info/) installed.
 
+You can also browse GitHub repositories tagged with
+[awesomewm](https://github.com/search?q=topic%3Aawesomewm). To find inspiration
+or snippets of code. Feel welcome to tag your own config so other users can
+discover it.
+
 # Old mailing list (now closed)
 
 * [The Mail Archive](http://www.mail-archive.com/awesome@naquadah.org/)
