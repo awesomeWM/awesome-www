@@ -51,7 +51,7 @@ define the behaviour of your window manager.
   latency than many window managers;
 * Very well documented source code and API;
 * No mouse needed: everything can be performed with keyboard;
-* Real multihead support (XRandR, Xinerama or Zaphod mode) with per screen
+* Real multihead support (XRandR or Xinerama) with per screen
   desktops (tags);
 * Implement many [Freedesktop](http://www.freedesktop.org) standards:
   [EWMH](http://standards.freedesktop.org/wm-spec/wm-spec-latest.html),
