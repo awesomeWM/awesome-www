@@ -1,5 +1,32 @@
 # Download
 
+## Packages
+
+**awesome** is currently available in:
+
+* Arch Linux:
+  * stable: [x86\_64](https://www.archlinux.org/packages/community/x86_64/awesome/)
+    / [i686](https://www.archlinux.org/packages/community/i686/awesome/)
+  * [awesome-git in AUR](https://aur.archlinux.org/packages/awesome-git)
+  * [awesome-luajit-git in AUR](https://aur.archlinux.org/packages/awesome-luajit-git/)
+* [Debian](http://packages.debian.org/awesome)
+* [Ubuntu](http://packages.ubuntu.com/awesome)
+* [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
+* [Gentoo](http://packages.gentoo.org/package/x11-wm/awesome)
+* [OpenBSD](http://openports.se/x11/awesome)
+* [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
+* [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
+* [T2 SDE](http://t2-project.org/packages/awesome.html)
+* [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
+* [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
+* [PLD Linux](http://pld-linux.org)
+* [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
+* [OpenIndiana](http://pkg.openindiana.org/hipster/en/search.shtml?token=awesome&action=Search)
+
+### Distributions using Awesome as the default window manager
+
+ * [GoboLinux](gobolinux.org)
+
 ## Stable
 
 Latest stable version of **awesome** is version 4.1 (*Technologic*)
@@ -32,30 +59,3 @@ Alternatively, development versions can be downloaded as ZIP files through the
 ## History
 
 A list of of old releases [[is available here|releases]].
-
-## Packages
-
-**awesome** is currently available in:
-
-* Arch Linux:
-  * stable: [x86\_64](https://www.archlinux.org/packages/community/x86_64/awesome/)
-    / [i686](https://www.archlinux.org/packages/community/i686/awesome/)
-  * [awesome-git in AUR](https://aur.archlinux.org/packages/awesome-git)
-  * [awesome-luajit-git in AUR](https://aur.archlinux.org/packages/awesome-luajit-git/)
-* [Debian](http://packages.debian.org/awesome)
-* [Ubuntu](http://packages.ubuntu.com/awesome)
-* [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
-* [Gentoo](http://packages.gentoo.org/package/x11-wm/awesome)
-* [OpenBSD](http://openports.se/x11/awesome)
-* [NetBSD](http://cvsweb.netbsd.org/bsdweb.cgi/pkgsrc/wm/awesome/)
-* [Source Mage GNU/Linux](http://codex.sourcemage.org/test/windowmanagers/awesome/)
-* [T2 SDE](http://t2-project.org/packages/awesome.html)
-* [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
-* [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
-* [PLD Linux](http://pld-linux.org)
-* [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
-* [OpenIndiana](http://pkg.openindiana.org/hipster/en/search.shtml?token=awesome&action=Search)
-
-### Distributions using Awesome as the default window manager
-
- * [GoboLinux](gobolinux.org)
