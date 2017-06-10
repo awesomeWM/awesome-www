@@ -1,38 +1,5 @@
 # Download
 
-## Stable
-
-Latest stable version of **awesome** is version 4.1 (*Technologic*)
-released on 18 March 2017.
-
-* [v4.1 changelog](../changelogs/v4.1.txt) ([short](../changelogs/short/v4.1.txt))
-* [awesome-4.1.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.bz2) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.bz2.asc))
-* [awesome-4.1.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.xz) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.xz.asc))
-
-## Old stable
-
-This branch of **awesome** is deprecated.
-
-Latest old stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
-released on 6 March 2016.
-
-* [v3.5.9 changelog](../changelogs/v3.5.9.txt) ([short](../changelogs/short/v3.5.9.txt))
-* [awesome-3.5.9.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.bz2)
-* [awesome-3.5.9.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.xz)
-
-## Development
-
-The Git repository can be cloned from Github:
-
-  `git clone https://github.com/awesomeWM/awesome.git`
-
-Alternatively, development versions can be downloaded as ZIP files through the
-[Github web interface](https://github.com/awesomeWM/awesome).
-
-## History
-
-A list of of old releases [[is available here|releases]].
-
 ## Packages
 
 **awesome** is currently available in:
@@ -59,3 +26,52 @@ A list of of old releases [[is available here|releases]].
 ### Distributions using Awesome as the default window manager
 
  * [GoboLinux](gobolinux.org)
+
+## Building from Source
+
+<p class="standout">
+We strongly recommend using the awesome package of your distribution.
+</p>
+
+This is because many people who tried to build from source had problems.
+[LGI](https://github.com/pavouk/lgi), one of awesome's dependencies, currently
+hardcodes the package search path used by Lua 5.1. Part of the reason for this
+is that Lua upstream intends Lua to be embedded, which means that detecting an
+installed Lua version properly is not easy.
+
+After installing awesome, you can check if you are affected by this problem by
+running `awesome -v`. If an error message is displayed instead of LGI version's
+number, you are likely affected.
+
+### Stable
+
+Latest stable version of **awesome** is version 4.1 (*Technologic*)
+released on 18 March 2017.
+
+* [v4.1 changelog](../changelogs/v4.1.txt) ([short](../changelogs/short/v4.1.txt))
+* [awesome-4.1.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.bz2) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.bz2.asc))
+* [awesome-4.1.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.xz) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.1.tar.xz.asc))
+
+### Old stable
+
+This branch of **awesome** is deprecated.
+
+Latest old stable version of **awesome** is version 3.5.9 (*Mighty Ravendark*)
+released on 6 March 2016.
+
+* [v3.5.9 changelog](../changelogs/v3.5.9.txt) ([short](../changelogs/short/v3.5.9.txt))
+* [awesome-3.5.9.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.bz2)
+* [awesome-3.5.9.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-3.5.9.tar.xz)
+
+### Development
+
+The Git repository can be cloned from Github:
+
+  `git clone https://github.com/awesomeWM/awesome.git`
+
+Alternatively, development versions can be downloaded as ZIP files through the
+[Github web interface](https://github.com/awesomeWM/awesome).
+
+## History
+
+A list of of old releases [[is available here|releases]].
