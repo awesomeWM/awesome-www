@@ -1,7 +1,8 @@
 # News
 
 <p class="standout">
-Awesome 4.0 has been released on 2016-12-25, with 4.1 following on 2017-03-18.
+Awesome 4.0 has been released on 2016-12-25, and other release have followed
+since then.
 </br>
 </br>
 Please refer to the <a href="doc/#v4">documentation section</a> for
