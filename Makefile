@@ -14,7 +14,7 @@ output:
 
 ldoc:
 	rm -f src/build
-	HOME=$(OLD_HOME) make -C src build cmake ldoc
+	HOME=$(OLD_HOME) make -C src cmake-build ldoc
 
 clean:
 	rm -rf .ikiwiki html
