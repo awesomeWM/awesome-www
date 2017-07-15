@@ -6,6 +6,7 @@ This page provides an overview over all releases of awesome.
 
 [[!table data="""
 Date                 |Version        |Codename
+  15 July 2017       |awesome 4.2    |Human after all
   18 March 2017      |awesome 4.1    |Technologic
 **25 December 2016** |**awesome 4.0**|**Harder, Better, Faster, Stronger**
 """]]
