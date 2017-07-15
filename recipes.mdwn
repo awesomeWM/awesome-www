@@ -18,6 +18,7 @@ to improve your Awesome setup.
 * [[Watchers|recipes/watch]]
 * [PulseAudio](https://github.com/stefano-m/awesome-pulseaudio_widget)
 * [Connman (network manager)](https://github.com/stefano-m/awesome-connman_widget)
+* [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
 
 ## Libraries
 
