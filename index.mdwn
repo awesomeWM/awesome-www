@@ -9,14 +9,14 @@ Please refer to the <a href="doc/#v4">documentation section</a> for
 news/changes and porting tips for your configuration.
 </p>
 
-# What is the awesome?
+# What is this awesome window manager?
 
 **awesome** is a highly configurable, next generation framework window
 manager for X. It is very fast, extensible and licensed under the
 [GNU GPLv2 license](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html).
 
-It is primarly targeted at power users, developers and any people dealing with
-every day computing tasks and who want to have fine-grained control on theirs
+It is primarily targeted at power users, developers and any people dealing with
+every day computing tasks and who want to have fine-grained control on their
 graphical environment.
 
 <div class="screenshot">
@@ -24,8 +24,9 @@ graphical environment.
 </div>
 
 # Concepts
+
 A window manager is probably one of the most used software in your day-to-day
-tasks, with your Web browser, mail reader and text editor.
+tasks, with your web browser, mail reader and text editor.
 Power users and programmers have a big range of choice between several tools
 for these day-to-day tasks. Some are heavily extensible and configurable.
 
@@ -37,35 +38,35 @@ manager.
 It's extremely fast, small, dynamic and heavily extensible using the
 [Lua](http://www.lua.org) programming language.
 
-We provide an easily usable and very-well documented API to configure and
-define the behaviour of your window manager.
+We provide a documented API to configure and define the behavior of your
+window manager.
 
 <div class="screenshot">
 [[!img images/6mon.small.png link="images/6mon.medium.png" alt="awesome running on 6 monitors"]]
 </div>
 
 # Features and non-features
-* Very stable, fast and small codebase and footprint;
+
+* Very stable, fast and small codebase and footprint.
 * First window manager using asynchronous [XCB](http://xcb.freedesktop.org)
-  library instead of the old synchronous
-  [Xlib](http://en.wikipedia.org/wiki/Xlib): make **awesome** less subject to
-  latency than many window managers;
-* Very well documented source code and API;
-* No mouse needed: everything can be performed with keyboard;
-* Real multihead support (XRandR or Xinerama) with per screen
-  desktops (tags);
-* Implement many [Freedesktop](http://www.freedesktop.org) standards:
+  library instead of the old synchronous.
+  [Xlib](http://en.wikipedia.org/wiki/Xlib), which make **awesome** less
+  subject to latency compared to other window managers.
+* Documented source code and API.
+* No mouse needed: everything can be performed with keyboard.
+* Real multihead support (XRandR) with per screen desktops (tags).
+* Implements many [Freedesktop](http://www.freedesktop.org) standards:
   [EWMH](http://standards.freedesktop.org/wm-spec/wm-spec-latest.html),
   [XDG Base Directory](http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html),
   [XEmbed](http://standards.freedesktop.org/xembed-spec/xembed-spec-latest.html),
   [Desktop Notification](http://www.galago-project.org/specs/notification/),
-  [System Tray](http://standards.freedesktop.org/systemtray-spec/systemtray-spec-latest.html);
-* Doesn't distinguish between layers: there is no floating or tiled layer;
-* Use tags instead of workspaces: allow to place clients on several tags, and
-  display several tags at the same time;
+  [System Tray](http://standards.freedesktop.org/systemtray-spec/systemtray-spec-latest.html).
+* Does not distinguish between layers: there is no floating or tiled layer.
+* Uses tags instead of workspaces: allow to place clients on several tags, and
+  display several tags at the same time.
 * A lot of Lua extensions to add features: dynamic tagging, widget feeding,
-  tabs, layouts …;
-* [D-Bus](http://dbus.freedesktop.org) support;
+  tabs, layouts, …
+* [D-Bus](http://dbus.freedesktop.org) support.
 * And more.
 
 This gonna be LEGEN... wait for it... DARY!
