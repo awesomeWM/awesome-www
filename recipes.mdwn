@@ -16,6 +16,7 @@ to improve your Awesome setup.
 * [[Countdown|recipes/countdown]]
 * [[MPD current song|recipes/mpc]]
 * [[Watchers|recipes/watch]]
+* [PulseAudio](https://github.com/stefano-m/awesome-pulseaudio_widget)
 
 ## Libraries
 
