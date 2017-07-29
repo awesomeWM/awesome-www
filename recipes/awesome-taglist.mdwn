@@ -1,0 +1,23 @@
+# Awesome taglist
+
+Here is nice-looking and super easy way to customize taglist. The idea is simple - literally write 'awesome' or 'awesomewm' (if you want to keep 9 tags) in the taglist using letters from the Awesome logo:
+
+<div class="screenshot">
+[[!img images/awesome-taglist.png alt="awesome taglist screenshot"]]
+</div>
+
+To customize the taglist the same way you need to install font which was generated from the svg images of the letters from the logo. You can get it from [here](../awesomewmfont.ttf). And then simply name your tags in rc.lua using this font (to copy characters you can open downloaded font in [this](http://bluejamesbond.github.io/CharacterMap/) web app, copy character and paste it in the tag name):
+
+<div class="screenshot">
+[[!img images/awesome-taglist_2.png alt="awesome taglist screenshot"]]
+</div>
+
+Done! The last step is to theme it, below is the config for the screenshot above:
+
+
+    theme.taglist_fg_focus    = "#3992af"
+    theme.taglist_fg_occupied = "#164b5d"
+    theme.taglist_fg_urgent   = "#ED7572"
+    theme.taglist_fg_empty    = "#828282"
+    theme.taglist_spacing     = 2
+    theme.taglist_font        = "awesomewm 11"
