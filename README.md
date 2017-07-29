@@ -57,7 +57,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
 #### Seeing results and pulling your changes
 
-1. Build the site as explaining in the Hacking section in this same page to check how your changes will look like.
+1. Build the site as explained in the Hacking section in this same page to check how your changes will look like.
 
 2. If everything is right and looks good, you're ready do make a Pull Request.
 
