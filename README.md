@@ -28,7 +28,7 @@ open `index.html` when following a link to a directory:
 
 To contribute with Screenshots:
 
-1. Add your image to the folder images/screenshots with an appropiated name.
+1. Add your image to the folder images/screenshots with an appropriate name.
 
 2. Add a new `<figure>` tag in the bottom of *screenshots.mdwn*,
 
@@ -43,7 +43,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
 #### With external Link
 
-1. Create a new link in markdown format `[Link Name](Real Link)` in the appropiated section in `recipes.mdwn` file.
+1. Create a new link in markdown format `[Link Name](Real Link)` in the appropriate section in `recipes.mdwn` file.
 
 #### With internal Link (host in awesome site)
 
@@ -57,7 +57,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
 #### Seeing results and pulling your changes
 
-1. Build the site as explaining in the Hacking section in this same page to check how your changes will looks like.
+1. Build the site as explained in the Hacking section in this same page to check how your changes will look like.
 
 2. If everything is right and looks good, you're ready do make a Pull Request.
 
