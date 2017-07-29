@@ -19,6 +19,7 @@ to improve your Awesome setup.
 * [PulseAudio](https://github.com/stefano-m/awesome-pulseaudio_widget)
 * [Connman (network manager)](https://github.com/stefano-m/awesome-connman_widget)
 * [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
+* [Awesome-wm-widgets](https://github.com/streetturtle/awesome-wm-widgets) - set of simple (created mainly with textbox, imagebox and naughty notifications) widgets for Awesome v4+.
 
 ## Libraries
 
