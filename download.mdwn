@@ -11,6 +11,7 @@
   * [awesome-luajit-git in AUR](https://aur.archlinux.org/packages/awesome-luajit-git/)
 * [Debian](http://packages.debian.org/awesome)
 * [Ubuntu](http://packages.ubuntu.com/awesome)
+* [Fedora](https://apps.fedoraproject.org/packages/awesome)
 * [FreeBSD](http://www.freshports.org/x11-wm/awesome/)
 * [Gentoo](http://packages.gentoo.org/package/x11-wm/awesome)
 * [OpenBSD](http://openports.se/x11/awesome)
