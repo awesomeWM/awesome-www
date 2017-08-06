@@ -26,7 +26,7 @@
 
 ### Distributions using Awesome as the default window manager
 
- * [GoboLinux](gobolinux.org)
+ * [GoboLinux](https://gobolinux.org)
 
 ## Building from Source
 
