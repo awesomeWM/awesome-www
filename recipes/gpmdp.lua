@@ -22,7 +22,8 @@ local gpmdp = {
         timeout   = 6
     },
     notification  = nil,
-    current_track = nil
+    current_track = nil,
+    album_cover   = "/tmp/gpmcover"
 }
 
 function gpmdp.notification_on()
@@ -30,13 +31,13 @@ function gpmdp.notification_on()
     gpmdp.current_track = gpm_now.title
 
     if gpmdp.followtag then gpmdp.notification_preset.screen = awful.screen.focused() end
-    awful.spawn.easy_async(string.format("curl %s -o /tmp/gpmcover.png", gpm_now.cover_url), function(stdout)
+    awful.spawn.easy_async({"curl", gpm_now.cover_url, "-o", gpmdp.album_cover}, function(stdout)
         local old_id = nil
         if gpmdp.notification then old_id = gpmdp.notification.id end
 
         gpmdp.notification = naughty.notify({
             preset = gpmdp.notification_preset,
-            icon = "/tmp/gpmcover.png",
+            icon = gpmdp.album_cover,
             replaces_id = old_id
         })
     end)
@@ -63,7 +64,7 @@ function gpmdp.get_lines(file)
     return lines
 end
 
-gpmdp.widget = awful.widget.watch("pidof 'Google Play Music Desktop Player'", 2, function(widget, stdout)
+gpmdp.widget = awful.widget.watch({"pidof", "Google Play Music Desktop Player"}, 2, function(widget, stdout)
     local filelines = gpmdp.get_lines(gpmdp.file_location)
     if not filelines then return end -- GPMDP not running?
 
