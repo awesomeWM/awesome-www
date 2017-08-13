@@ -3,9 +3,7 @@
 This widget can be used to display the current track information and state of [Google Play Music Desktop Player](https://www.googleplaymusicdesktopplayer.com/).
 
 1. Download `gpmdp.lua` [here](https://awesomewm.org/recipes/gpmdp.lua)
-2. Add your customization to `gpmdp.lua` starting at line 87
-    > for a in depth example, see [here](https://github.com/gregflynn/dotsanity/blob/master/awesome/widgets/gpmdp.lua)
-
+2. Add your customization to `gpmdp.lua` after `-- customize here`
 3. Import `gpmdp.lua` into your `rc.lua`
     ```lua
     local gpmdp = require("path/to/gpmdp.lua")
@@ -16,6 +14,7 @@ This widget can be used to display the current track information and state of [G
         layout = wibox.layout.align.horizontal,
         {
             layout = wibox.layout.fixed.horizontal,
-            require("widgets/gpmdp").widget
+            gpmdp.widget,
+            -- ...
         }
     ```
