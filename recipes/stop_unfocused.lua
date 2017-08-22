@@ -1,4 +1,4 @@
---- Keep track of stopped clients, and CONT in case it gets focused.
+--- Manage sending SIGSTOP signals to special clients when they are unfocused.
 --
 -- Clients with ontop = true are ignored.
 --
@@ -101,13 +101,9 @@ client.connect_signal("focus", onfocus)
 client.connect_signal("unfocus", sigstop_unfocus)
 
 client.connect_signal("request::activate", function(c, context, hints)  --luacheck: no unused args
-  -- if context == 'client.jumpto' then
-    if sigstopped_clients[c] then
-      stop_unfocused.sigcont(c)
-      -- bdebug(debug.traceback('request::activate'),
-      --        gears.debug.dump_return(context) .. "\n" .. gears.debug.dump_return(hints))
-    end
-  -- end
+  if sigstopped_clients[c] then
+    stop_unfocused.sigcont(c)
+  end
 end)
 
 -- Restart any stopped clients when exiting/restarting.
@@ -117,19 +113,6 @@ awesome.connect_signal("exit", function(restarting)  -- luacheck: no unused args
   end
 end)
 
--- function stop_unfocused.minimize_with_SIGSTOP(c, minimize)
---   if minimize then
---     c.minimized = true
---     if sigstopped_clients[c] then
---       stop_unfocused.sigstop(c)
---     end
---   else
---     if c.pid then
---       stop_unfocused.sigcont(c)
---     end
---     c.minimized = false
---   end
--- end
-
 return stop_unfocused
 
+-- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
