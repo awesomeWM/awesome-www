@@ -107,7 +107,7 @@ client.connect_signal("request::activate", function(c, context, hints)  --luache
 end)
 
 -- Restart any stopped clients when exiting/restarting.
-awesome.connect_signal("exit", function(restarting)  -- luacheck: no unused args
+awesome.connect_signal("exit", function()
   for c, _ in pairs(sigstopped_clients) do
     stop_unfocused.sigcont(c)
   end
