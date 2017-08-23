@@ -1,23 +1,30 @@
-# Multiple Monitor Helper
+# Helper for multiple monitors (based on xrandr)
 
-This page is intended to show how to user `xrandr.lua` script to help the way you deal with multiple monitors.
-Using this snippet you can set a keybinding where you swap to all possible arrangements of monitors.
+The [[xrandr.lua|xrandr.lua]] script helps when dealing with multiple monitors.
+Using this snippet you can set a keybinding where you swap to all possible
+arrangements of monitors.
 
-The process of setting up this script goes as follow:
+The process of setting up this script is as follows:
 
-1. Create a file called `xrandr.lua` in your file system (preferably in awesome's folder) with the [[script|xrandr.lua]] content.
+1. Create a file called `xrandr.lua` in your file system (preferably in
+   awesome's folder) with the [[script|xrandr.lua]] content.
 
 2. Import the script in your `rc.lua`
 
-          local xrandr = require("/path/to/file/xrandr")
+   ```lua
+   local xrandr = require("xrandr")
+   ```
 
-3. Create a keybinding to the script in the appropriated globalkeys table
+3. Create a keybinding to the script in the `globalkeys` table
 
-Pressing this key binding will open a popup with a possible screen arrangement.
-Pressing the key again will replace this popup with another possibility, eventually arriving at "keep the current configuration".
+   Pressing this key binding will open a popup with a possible screen
+   arrangement.
+   Pressing the key again will replace this popup with the next possibility,
+   eventually arriving at "keep the current configuration".
 
-If the key is not pressed again within four seconds, the configuration described in the current popup is applied.
+   If the key is not pressed again within four seconds, the configuration
+   described in the current popup is applied.
 
-
-           awful.key({}, "Some Key", function() xrandr.xrandr() end)
-
+   ```lua
+   awful.key({}, "Some Key", function() xrandr.xrandr() end)
+   ```
