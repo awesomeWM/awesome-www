@@ -25,7 +25,7 @@ triage issues.  Also pull requests and issues are welcome there.
 
 This web page also is [on GitHub](https://github.com/awesomeWM/awesome-www) and
 can be changed via pull requests. To locally test your changes, the web page can
-be build with `make`. For this, you need to have
+be built with `make`. For this, you need to have
 [ikiwiki](https://ikiwiki.info/) installed.
 
 You can also browse GitHub repositories tagged with
