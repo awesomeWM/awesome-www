@@ -1,4 +1,4 @@
-# [`awful.util.watch`](https://awesomewm.org/doc/api/classes/awful.widget.watch.html) use case examples
+# [`awful.widget.watch`](https://awesomewm.org/doc/api/classes/awful.widget.watch.html) use case examples
 
 ## bitcoin
 
@@ -58,6 +58,26 @@ local cmus, cmus_timer = awful.widget.watch(
 
         -- customize here
         widget:set_text(cmus_now.artist .. " - " .. cmus_now.title)
+    end
+)
+```
+
+## iostat
+
+```lua
+-- disk I/O using iostat from sysstat utilities
+local iotable = {}
+local iostat = awful.widget.watch("iostat -dk", 2, -- in Kb, use -dm for Mb
+    function(widget, stdout)
+        for line in stdout:match("(sd.*)\n"):gmatch("(.-)\n") do
+            local device, tps, read_s, wrtn_s, read, wrtn =
+            line:match("(%w+)%s*(%d+,?%d*)%s*(%d+,?%d*)%s*(%d+,?%d*)%s*(%d+,?%d*)%s*(%d+,?%d*)")
+            --                  [1]  [2]     [3]     [4]   [5]
+            iotable[device] = { tps, read_s, wrtn_s, read, wrtn }
+        end
+
+        -- customize here
+        widget:set_text("sda: "..iotable["sda"][2].."/"..iotable["sda"][3]) -- read_s/wrtn_s
     end
 )
 ```
