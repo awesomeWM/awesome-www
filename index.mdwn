@@ -49,7 +49,7 @@ window manager.
 
 * Very stable, fast and small codebase and footprint.
 * First window manager using asynchronous [XCB](http://xcb.freedesktop.org)
-  library instead of the old synchronous.
+  library instead of the old, synchronous
   [Xlib](http://en.wikipedia.org/wiki/Xlib), which make **awesome** less
   subject to latency compared to other window managers.
 * Documented source code and API.
