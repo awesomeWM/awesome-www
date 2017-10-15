@@ -1,0 +1,24 @@
+# Google Play Music Desktop Player watcher
+
+This widget can be used to display the current track information and state of
+[Google Play Music Desktop Player](https://www.googleplaymusicdesktopplayer.com/).
+
+1. Download `gpmdp.lua` [here](https://awesomewm.org/recipes/gpmdp.lua)
+2. Add your customization to `gpmdp.lua` after `-- customize here`
+3. Import `gpmdp.lua` into your `rc.lua`
+
+    ```lua
+    local gpmdp = require("path/to/gpmdp.lua")
+    ```
+
+4. Add the widget to your wibar
+
+    ```lua
+    s.mywibox:setup {
+        layout = wibox.layout.align.horizontal,
+        {
+            layout = wibox.layout.fixed.horizontal,
+            gpmdp.widget,
+            -- ...
+        }
+    ```

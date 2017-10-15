@@ -50,9 +50,17 @@ function mpc:_connect()
 	self._idle = false
 	self._connected = true
 
-	-- Set up a new TCP connection
+	-- Set up a new connection
+	local address
+	if string.sub(self._host, 1, 1) == "/" then
+		-- It's a unix socket
+		address = Gio.UnixSocketAddress.new(self._host)
+	else
+		-- Do a TCP connection
+		address = Gio.NetworkAddress.new(self._host, self._port)
+	end
 	local client = Gio.SocketClient()
-	local conn, err = client:connect_to_host(self._host, self._port)
+	local conn, err = client:connect(address)
 
 	if not conn then
 		self:_error(err)
