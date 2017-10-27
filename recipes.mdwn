@@ -41,3 +41,4 @@ to improve your Awesome setup.
 
 * [[Swap Monitor Snippet|recipes/xrandr]]
 * [Poppin' - Pop over applications](https://github.com/raksooo/poppin)
+* [Awesome taglist](../recipes/awesome-taglist)
