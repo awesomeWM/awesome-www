@@ -30,9 +30,9 @@ To contribute with Screenshots:
 
 1. Add your image to the folder images/screenshots with an appropriate name.
 
-2. Add a new `<figure>` tag in the bottom of *screenshots.mdwn*,
+1. Add a new `<figure>` tag in the bottom of *screenshots.mdwn*,
 
-3. Inside the new tag, add the screenshots with a <img> tag and use the `<figcaption>` to add caption to the image, explaining what is being used on the screenshot.
+1. Inside the new tag, add the screenshots with a <img> tag and use the `<figcaption>` to add caption to the image, explaining what is being used on the screenshot.
 
 ## Contributing to Recipes Section
 
@@ -51,7 +51,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
    - Example `recipes/xrandr-tutorial.mdmw`
 
-2. Link your page to the right section in the `recipes.mdwn` page with Markdown syntax.
+1. Link your page to the right section in the `recipes.mdwn` page with Markdown syntax.
 
    - Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
 
@@ -59,7 +59,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
 1. Build the site as explained in the Hacking section in this same page to check how your changes will look like.
 
-2. If everything is right and looks good, you're ready do make a Pull Request.
+1. If everything is right and looks good, you're ready do make a Pull Request.
 
 ## Publishing
 
