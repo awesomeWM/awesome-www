@@ -21,8 +21,7 @@ To view it, open `html/index.html` in your web browser.
 You can simulate running a web server using Python, which will automatically
 open `index.html` when following a link to a directory:
 
-    $ cd html
-    $ python3 -m http.server -b localhost 8000 &
+    cd html && python3 -m http.server -b localhost 8000 &
 
 ## Contributing to the Screenshots Section
 
