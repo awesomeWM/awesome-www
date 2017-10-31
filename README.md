@@ -41,11 +41,11 @@ If you have doubts in how to Fork and Branch, take a look in this cheat-sheet [h
 
 The process of editing files can be done inside GitHub's interface, more information [here](https://help.github.com/articles/github-flow/)
 
-#### With external Link
+### With external Link
 
 1. Create a new link in markdown format `[Link Name](Real Link)` in the appropriate section in `recipes.mdwn` file.
 
-#### With internal Link (host in awesome site)
+### With internal Link (host in awesome site)
 
 1. Create a new page with your tutorial/setup/widget/snippet in Markdown, with a relevant name, under the `recipes` folder.
 
@@ -55,7 +55,7 @@ The process of editing files can be done inside GitHub's interface, more informa
 
    - Example `[XrandR Tutorial](../recipes/xrandr-tutorial.html)`
 
-#### Seeing results and pulling your changes
+### Seeing results and pulling your changes
 
 1. Build the site as explained in the Hacking section in this same page to check how your changes will look like.
 
