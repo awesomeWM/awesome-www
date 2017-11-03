@@ -20,7 +20,7 @@ to improve your Awesome setup.
 * [Connman (network manager)](https://github.com/stefano-m/awesome-connman_widget)
 * [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
 * [[Google Play Music Desktop Player|recipes/gpmdp]]
-* [Awesome WM widgets](https://github.com/streetturtle/awesome-wm-widgets) - set of simple widgets
+* [Set of simple widgets](https://github.com/streetturtle/awesome-wm-widgets) - widgets for battery, cpu, brightness, volume, email, etc.
 
 ## Libraries
 
