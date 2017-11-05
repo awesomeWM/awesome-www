@@ -20,6 +20,8 @@ to improve your Awesome setup.
 * [Connman (network manager)](https://github.com/stefano-m/awesome-connman_widget)
 * [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
 * [[Google Play Music Desktop Player|recipes/gpmdp]]
+* [[Caps Lock Indicator](https://github.com/stefano-m/awesome-capslock_widget)]
+* [[Calendar Widget](https://github.com/stefano-m/awesome-calendar_widget)]
 
 ## Libraries
 
