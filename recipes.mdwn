@@ -37,7 +37,7 @@ to improve your Awesome setup.
 * [Collision geometric navigation keybindings](https://github.com/Elv13/collision)
 * [Tyrannical dynamic tag managment framework](https://github.com/Elv13/tyrannical)
 * [Repetitive dynamic keybindings and macros](https://github.com/Elv13/repetitive)
-* [Alternative tag management for multiple screens](https://github.com/dakling/awesome-sharedtags)
+* [Alternative tag management for multiple screens](../recipes/sharedtags-greedyview)
 
 ## Others
 
