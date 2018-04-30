@@ -1,4 +1,4 @@
-# Helper for multiple monitors (based on xrandr)
+# Different tag management for multiple monitors
 
 The [[sharedtags-greedyview.lua|sharedtags-greedyview.lua]] script implements the xmonad default 
 behaviour in which tags are handled for multiple monitors, namely:
@@ -16,7 +16,7 @@ swapping behaviour described above.
 The process of setting up this script is as follows:
 
 1. Create a file called `sharedtags-greedyview.lua` in your file system (preferably in
-   awesome's folder) with the [[script|xrandr.lua]] content.
+   awesome's folder) with the [[script|sharedtags-greedyview.lua]] content.
 
 2. Import the script in your `rc.lua`
 
