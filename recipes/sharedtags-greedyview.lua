@@ -41,27 +41,32 @@ local sharedtags = {
 
 -- Add a signal for each new screen, which just listens for the remove
 -- event, and moves over all tags when it happens.
-capi.screen.connect_signal("removed", function(s)
-    -- The screen to move the orphaned tags to.
-    local newscreen = capi.screen.primary
-    -- The currently selected tags on that screen.
-    local seltags = newscreen.selected_tags
+awful.screen.connect_for_each_screen(function(s)
+    -- When the screen is removed, all tags need to be moved over to an existing
+    -- screen. If they are not, accessing the tags will result in an error. It
+    -- doesn't make sense to fix the error, since clients on the now-hidden tags
+    -- will automatically be moved to a tag on a visible screen.
+    s:connect_signal("removed",function()
+        -- The screen to move the orphaned tags to.
+        local newscreen = capi.screen.primary
+        -- The currently selected tags on that screen.
+        local seltags = newscreen.selected_tags
 
-    -- Move over all tags to an existing screen.
-    for _,tag in ipairs(s.tags) do
-        sharedtags.movetag(tag, newscreen)
-    end
-
-    -- Restore the viewed tags on the new screen.
-    for i,tag in ipairs(seltags) do
-        if i == 1 then
-            tag:view_only()
-        else
-            awful.tag.viewmore(seltags, s)
+        -- Move over all tags to an existing screen.
+        for _,tag in ipairs(s.tags) do
+            sharedtags.movetag(tag, newscreen)
         end
-    end
-end)
 
+        -- Restore the viewed tags on the new screen.
+        for i,tag in ipairs(seltags) do
+            if i == 1 then
+                tag:view_only()
+            else
+                awful.tag.viewtoggle(tag)
+            end
+        end
+    end)
+end)
 
 --- Create new tag objects.
 -- The first tag defined for each screen will be automatically selected.
@@ -87,7 +92,7 @@ function sharedtags.new(def)
 
     for i,t in ipairs(def) do
         tags[i] = awful.tag.add(t.name or i, {
-            screen = t.screen and t.screen or capi.screen.primary,
+            screen = (t.screen and t.screen <= capi.screen.count()) and t.screen or capi.screen.primary,
             layout = t.layout,
             sharedtagindex = i
         })
@@ -120,7 +125,8 @@ function sharedtags.movetag(tag, screen)
         if tag.selected then
             screen.selected_tag.screen = oldscreen
         end
-        oldscreen.selected_tag.screen = screen
+        local oldsel = oldscreen.selected_tag
+        tag.screen = screen
 
         if oldsel == tag then
             -- The tag has been moved away. In most cases the tag history
@@ -179,6 +185,6 @@ function sharedtags.viewtoggle(tag, screen)
     end
 end
 
-return setmetatable(sharedtags, { __call = function(self, args) return sharedtags.new(args)) end })
+return setmetatable(sharedtags, { __call = function(self, args) return sharedtags.new(args) end })
 
 -- vim: filetype=lua:expandtab:shiftwidth=4:tabstop=8:softtabstop=4:textwidth=80
