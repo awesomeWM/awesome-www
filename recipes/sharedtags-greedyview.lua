@@ -124,11 +124,11 @@ function sharedtags.movetag(tag, screen)
         -- greedyview xmonad-style
         if tag.selected then
             screen.selected_tag.screen = oldscreen
+            oldscreen.selected_tag:view_only()
         end
-        local oldsel = oldscreen.selected_tag
         tag.screen = screen
 
-        if oldsel == tag then
+        if oldscreen.selected_tag == tag then
             -- The tag has been moved away. In most cases the tag history
             -- function will find the best match, but if we really want we can
             -- try to find a fallback tag as well.
