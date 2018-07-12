@@ -25,6 +25,7 @@ to improve your Awesome setup.
 ## Libraries
 
 * [Radical menu framework](https://github.com/Elv13/radical)
+* [amh - Simultaneously spawn programs on multiple hosts](https://github.com/sim590/amh)
 
 ## Themes
 
