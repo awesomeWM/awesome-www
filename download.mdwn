@@ -24,6 +24,8 @@
 * [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
 * [OpenIndiana](http://pkg.openindiana.org/hipster/en/search.shtml?token=awesome&action=Search)
 
+Repology provides a [comprehensive overview](https://repology.org/metapackage/awesome/versions) of which version of **awesome** is included in which distribution.
+
 ### Distributions using Awesome as the default window manager
 
  * [GoboLinux](https://gobolinux.org)
