@@ -20,6 +20,7 @@
 * [T2 SDE](http://t2-project.org/packages/awesome.html)
 * [CRUX](http://crux.nu/portdb/index.php?q=awesome&a=search&s=true)
 * [openSUSE](http://download.opensuse.org/repositories/X11:/windowmanagers/)
+* [Milis Linux](https://notabug.org/milislinux/milis/src/master/talimatname/genel/a/awesome)
 * [PLD Linux](http://pld-linux.org)
 * [Mageia](http://mageia.madb.org/package/show/application/0/name/awesome)
 * [OpenIndiana](http://pkg.openindiana.org/hipster/en/search.shtml?token=awesome&action=Search)
