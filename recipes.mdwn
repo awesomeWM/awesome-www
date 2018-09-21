@@ -20,10 +20,12 @@ to improve your Awesome setup.
 * [Connman (network manager)](https://github.com/stefano-m/awesome-connman_widget)
 * [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
 * [[Google Play Music Desktop Player|recipes/gpmdp]]
+* [Set of simple widgets](https://github.com/streetturtle/awesome-wm-widgets) - widgets for battery, cpu, brightness, volume, email, etc.
 
 ## Libraries
 
 * [Radical menu framework](https://github.com/Elv13/radical)
+* [amh - Simultaneously spawn programs on multiple hosts](https://github.com/sim590/amh)
 
 ## Themes
 
@@ -41,4 +43,6 @@ to improve your Awesome setup.
 
 * [[Swap Monitor Snippet|recipes/xrandr]]
 * [Poppin' - Pop over applications](https://github.com/raksooo/poppin)
+* [Awesome taglist](../recipes/awesome-taglist)
+* [Tag based screen rotation](https://github.com/raksooo/screenrotation)
 * [[Stop unfocused clients|recipes/stop_unfocused]]

@@ -1,7 +1,7 @@
 # News
 
 <p class="standout">
-Awesome 4.0 has been released on 2016-12-25, and other release have followed
+Awesome 4.0 has been released on 2016-12-25, and other releases have followed
 since then.
 </br>
 </br>
@@ -25,8 +25,8 @@ graphical environment.
 
 # Concepts
 
-A window manager is probably one of the most used software in your day-to-day
-tasks, with your web browser, mail reader and text editor.
+A window manager is probably one of the most used software applications in
+your day-to-day tasks, along with your web browser, mail reader and text editor.
 Power users and programmers have a big range of choice between several tools
 for these day-to-day tasks. Some are heavily extensible and configurable.
 
@@ -48,12 +48,12 @@ window manager.
 # Features and non-features
 
 * Very stable, fast and small codebase and footprint.
-* First window manager using asynchronous [XCB](http://xcb.freedesktop.org)
-  library instead of the old synchronous.
-  [Xlib](http://en.wikipedia.org/wiki/Xlib), which make **awesome** less
+* First window manager using the asynchronous [XCB](http://xcb.freedesktop.org)
+  library instead of the old, synchronous
+  [Xlib](http://en.wikipedia.org/wiki/Xlib), which makes **awesome** less
   subject to latency compared to other window managers.
 * Documented source code and API.
-* No mouse needed: everything can be performed with keyboard.
+* No mouse needed: everything can be performed with the keyboard.
 * Real multihead support (XRandR) with per screen desktops (tags).
 * Implements many [Freedesktop](http://www.freedesktop.org) standards:
   [EWMH](http://standards.freedesktop.org/wm-spec/wm-spec-latest.html),
@@ -69,4 +69,4 @@ window manager.
 * [D-Bus](http://dbus.freedesktop.org) support.
 * And more.
 
-This gonna be LEGEN... wait for it... DARY!
+This is gonna be LEGEN... wait for it... DARY!

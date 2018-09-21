@@ -13,7 +13,7 @@ output:
 	cp README.for_webpage.md html/README.md
 
 ldoc:
-	rm -f src/build
+	make -C src distclean
 	HOME=$(OLD_HOME) make -C src cmake-build ldoc
 
 clean:
