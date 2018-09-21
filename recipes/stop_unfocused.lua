@@ -250,7 +250,7 @@ function stop_unfocused.sigcont(c)
 end
 
 local function delayed_cont(c, mouse_coords)
-  if client.focus == c then
+  if c.valid and client.focus == c then
     local coords = mouse.coords()
     if mouse_coords.x == coords.x and mouse_coords.y == coords.y then
       -- bnote('delayed_cont')
