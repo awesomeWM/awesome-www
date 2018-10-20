@@ -12,7 +12,7 @@ to improve your Awesome setup.
 ## Widgets
 
 * [Lain](https://github.com/copycat-killer/lain)
-* [Vicious](https://github.com/Mic92/vicious)
+* [Vicious](https://github.com/vicious-widgets/vicious)
 * [[Countdown|recipes/countdown]]
 * [[MPD current song|recipes/mpc]]
 * [[Awesome "Watch" widget usage examples|recipes/watch]]
