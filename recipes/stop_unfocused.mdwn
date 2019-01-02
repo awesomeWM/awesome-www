@@ -49,29 +49,30 @@ stop_unfocused.config.rules = {
 ## Methods
 
 You can use the `sigstop()` and `sigcont()` methods, e.g. for the tasklist
-mouse buttons:
+mouse buttons to stop a client when it gets minimized.
+
+## Example config with custom callback to handle child processes
 
 ```lua
-local tasklist_buttons = gears.table.join(
-                     -- Left click: (un)minimize the client.
-                     awful.button({ }, 1, function (c)
-                                              if c == client.focus then
-                                                  c.minimized = true
-                                                  stop_unfocused.sigstop(c)
-                                              else
-                                                  -- Without this, the following
-                                                  -- :isvisible() makes no sense
-                                                  c.minimized = false
-                                                  stop_unfocused.sigcont(c)
-                                                  if not c:isvisible() and c.first_tag then
-                                                      c.first_tag:view_only()
-                                                  end
-                                                  -- This will also un-minimize
-                                                  -- the client, if needed
-                                                  client.focus = c
-                                                  c:raise()
-                                              end
-                                          end),
-                     …
-                     )
+local stop_unfocused = require('lib/stop_unfocused')
+stop_unfocused.config.rules = {
+    { rule = {class = 'qutebrowser'}, properties = {
+        stop_timeout=5,
+      },
+      callback = function(c, stop, done_cb)
+        local ps_cmd = '$(ps -o pgid= '..tostring(c.pid)..')'
+        if stop then
+          return stop_unfocused.spawn_with_cb_on_exit(
+            {'sh', '-c', 'pkill -STOP -g '..ps_cmd..' -f QtWebEngineProc'},
+            done_cb)
+        else
+          return stop_unfocused.spawn_with_cb_on_exit(
+            {'sh', '-c', 'pkill -CONT -g '..ps_cmd},
+            done_cb)
+        end
+      end,
+    },
+    { rule = {class = 'Firefox'} },
+    { rule = {class = 'Thunderbird'} },
+}
 ```
