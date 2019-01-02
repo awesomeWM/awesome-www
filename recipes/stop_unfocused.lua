@@ -24,8 +24,11 @@ local function log(...)
   if #args == 1 then
     msg = args[1]
   else
-    local sliced = gears.table.iterate(args, function (_) return true end, 2)
-    msg = gears.debug.dump_return(sliced(), args[1])
+    local sliced = {}
+    for i = 2, #args, 1 do
+      sliced[#sliced + 1] = args[i]
+    end
+    msg = gears.debug.dump_return(sliced, args[1])
   end
   io.stderr:write(os.date("%Y-%m-%d %T stop_unfocused: ") .. tostring(msg) .. "\n")
 end
@@ -96,8 +99,8 @@ stop_unfocused.spawn_with_cb_on_exit = function(cmd, cb_on_exit)
   return awful.spawn.easy_async(cmd, spawn_cb)
 end
 
--- A table of stopped clients as key, and callbacks as values.
-local sigstopped_clients = {}
+-- A table of stopped client PIDs as key, and callbacks as values.
+local sigstopped_pids = {}
 
 local stopping_cbs = {}
 
@@ -106,11 +109,12 @@ local stopping_cbs = {}
 -- `next_cb` (without any args).
 local function call_next_callback(c, stop, queue)
   local k, cb = next(queue)
-  log('== call_next_callback: (' .. (stop and 'stop' or 'cont') .. ' ==', k, cb, stop)
-  if stop and not sigstopped_clients[c] then
+  log('== call_next_callback: (' .. (stop and 'stop' or 'cont') .. ') ==', k, cb, stop)
+  if stop and not sigstopped_pids[c.pid] then
     log('Aborting stop callbacks for continued client.')
     return
   end
+
   if cb then
     local function next_cb()
       log('== next_cb ==', c.valid and c or 'invalid c', stop, queue, #queue)
@@ -137,24 +141,8 @@ end
 
 function stop_unfocused.sigstop(c, callbacks)
   if c.pid then
-    -- Use xsel to keep the primary selection, otherwise it will block until the
-    -- process gets continued when trying to paste it (middle-mouse).
-    -- XXX: sometimes qutebrowser is not continued (used a
-    -- callback, which might need to get chained?!)
-    log('stopping ' .. c.pid)
-    -- NOTE: use awful.spawn instead of awesome.kill, so xsel gets executed.
-    -- awful.spawn({'sh', '-c', 'xsel --keep --primary && sleep 1 && kill -STOP ' .. tostring(c.pid) .. ' && echo stopped ' .. tostring(c.pid)})
-    -- awful.spawn({'sh', '-c', 'echo copying selection; copyq "copySelection(selection())" && sleep 1 && kill -STOP ' .. tostring(c.pid) .. ' && echo stopped ' .. tostring(c.pid)})
-
-    -- Add any other clients with the same pid.
-    for _,v in ipairs(client.get()) do
-      if v ~= c and v.pid == c.pid then
-        sigstopped_clients[v] = {}
-      end
-    end
-
     callbacks = callbacks or {}
-    sigstopped_clients[c] = callbacks
+    sigstopped_pids[c.pid] = callbacks
     log('marking stopped: '..c.pid..' ('..tostring(#callbacks)..' custom callbacks)')
 
     local function main_stop(_, _, done_cb)
@@ -212,56 +200,39 @@ function stop_unfocused.sigstop(c, callbacks)
 end
 
 function stop_unfocused.sigcont(c)
-  if c.pid then
-    local callbacks = sigstopped_clients[c]
-    if not callbacks then
-      return
-    end
-    -- bnote('-CONT ' .. c.pid)
-
-    callbacks = gears.table.clone(sigstopped_clients[c])
-
-    log('marking continued: '..c.pid)
-    sigstopped_clients[c] = nil
-    -- Remove any other clients with the same pid.
-    for k,_ in pairs(sigstopped_clients) do
-      if not k.valid or (k ~= c and k.pid == c.pid) then
-        sigstopped_clients[k] = nil
-      end
-    end
-
-    if stopping_cbs[c.pid] then
-      log('Killing stop cb with PID '..tostring(stopping_cbs[c.pid]))
-      awesome.kill(stopping_cbs[c.pid], awesome.unix_signal['SIGTERM'])
-      stopping_cbs[c.pid] = nil
-    end
-
-    local function main_cont(_, _, next_cb)
-      -- awful.spawn({'pkill', '-CONT', '-g', tostring(c.pid)})
-      log("main_cont: kill -CONT " .. tostring(c.pid))
-      awesome.kill(c.pid, awesome.unix_signal['SIGCONT'])
-      next_cb()
-    end
-    callbacks = gears.table.merge({main_cont}, callbacks)
-    log(tostring(#callbacks) .. ' cont callbacks')
-
-    call_next_callback(c, false, callbacks)
+  if not c.pid then
+    log('no PID for client: ' .. c.name)
+    return
   end
+
+  local callbacks = sigstopped_pids[c.pid]
+  if not callbacks then
+    return
+  end
+  callbacks = gears.table.clone(sigstopped_pids[c.pid])
+
+  log('marking continued: '..c.pid)
+  sigstopped_pids[c.pid] = nil
+
+  if stopping_cbs[c.pid] then
+    log('Killing stop cb with PID '..tostring(stopping_cbs[c.pid]))
+    awesome.kill(stopping_cbs[c.pid], awesome.unix_signal['SIGTERM'])
+    stopping_cbs[c.pid] = nil
+  end
+
+  local function main_cont(_, _, next_cb)
+    -- awful.spawn({'pkill', '-CONT', '-g', tostring(c.pid)})
+    log("main_cont: kill -CONT " .. tostring(c.pid))
+    awesome.kill(c.pid, awesome.unix_signal['SIGCONT'])
+    next_cb()
+  end
+  callbacks = gears.table.merge({main_cont}, callbacks)
+  log(tostring(#callbacks) .. ' cont callbacks')
+
+  call_next_callback(c, false, callbacks)
 end
 
-local function delayed_cont(c, mouse_coords)
-  if c.valid and client.focus == c then
-    local coords = mouse.coords()
-    if mouse_coords.x == coords.x and mouse_coords.y == coords.y then
-      -- bnote('delayed_cont')
-      stop_unfocused.sigcont(c)
-    else
-      timer.start_new(0.05, function()
-        timer.delayed_call(function() delayed_cont(c, coords) end)
-      end)
-    end
-  end
-end
+local delayed_focus_timeout = 0.05
 
 local onfocus = function(c)
   if sigstop_timers[c.pid] then
@@ -269,18 +240,28 @@ local onfocus = function(c)
       sigstop_timers[c.pid] = nil
   end
 
-  if c.pid then
-    if sigstopped_clients[c] then
+  if c.pid and sigstopped_pids[c.pid] then
+    local prev_coords = mouse.coords()
+
+    timer.start_new(delayed_focus_timeout, function()
+      if not c.valid or client.focus ~= c then
+        return false
+      end
+
       local coords = mouse.coords()
-      timer.delayed_call(function() delayed_cont(c, coords) end)
-    end
+      if prev_coords.x == coords.x and prev_coords.y == coords.y then
+        stop_unfocused.sigcont(c)
+        return false
+      end
+      prev_coords = coords
+      return true
+    end)
   end
 end
 local sigstop_unfocus = function(c)
   -- bnote('unfocus: c.name: '..c.name..', c.pid: '..c.pid)
-  -- bnote(sigstopped_clients[c])
 
-  if c.pid and not sigstopped_clients[c] and not c.ontop and not stop_unfocused.ignore_clients[c] then
+  if c.pid and not sigstopped_pids[c.pid] and not c.ontop and not stop_unfocused.ignore_clients[c] then
     -- local rules = awful.rules.matching_rules(c, stop_unfocused.config.rules)
     local props, callbacks = awful.rules.get_props_and_callbacks(c, stop_unfocused.config.rules)
 
@@ -322,7 +303,7 @@ client.connect_signal("focus", onfocus)
 client.connect_signal("unfocus", sigstop_unfocus)
 
 client.connect_signal("request::activate", function(c, context, hints)  --luacheck: no unused args
-  if sigstopped_clients[c] then
+  if sigstopped_pids[c.pid] then
     -- bnote('request::activate: cont')
     stop_unfocused.sigcont(c)
   end
@@ -330,8 +311,10 @@ end)
 
 -- Restart any stopped clients when exiting/restarting.
 awesome.connect_signal("exit", function()
-  for c, callbacks in pairs(sigstopped_clients) do
-    stop_unfocused.sigcont(c, callbacks)
+  for _,c in ipairs(client.get()) do
+    if c.pid and sigstopped_pids[c.pid] then
+      stop_unfocused.sigcont(c)
+    end
   end
 end)
 
