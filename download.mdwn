@@ -48,12 +48,12 @@ number, you are likely affected.
 
 ### Stable
 
-Latest stable version of **awesome** is version 4.2 (*Human after all*)
-released on 15 July 2017.
+Latest stable version of **awesome** is version 4.3 (*Too long*)
+released on 28 January 2019.
 
-* [v4.2 changelog](../changelogs/v4.2.txt) ([short](../changelogs/short/v4.2.txt))
-* [awesome-4.2.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.2.tar.bz2) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.2.tar.bz2.asc))
-* [awesome-4.2.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.2.tar.xz) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.2.tar.xz.asc))
+* [v4.3 changelog](../changelogs/v4.3.txt) ([short](../changelogs/short/v4.3.txt))
+* [awesome-4.3.tar.bz2](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.3.tar.bz2) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.3.tar.bz2.asc))
+* [awesome-4.3.tar.xz](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.3.tar.xz) ([GPG sig](https://github.com/awesomeWM/awesome-releases/raw/master/awesome-4.3.tar.xz.asc))
 
 ### Old stable
 
