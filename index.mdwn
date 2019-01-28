@@ -1,14 +1,3 @@
-# News
-
-<p class="standout">
-Awesome 4.0 has been released on 2016-12-25, and other releases have followed
-since then.
-</br>
-</br>
-Please refer to the <a href="doc/#v4">documentation section</a> for
-news/changes and porting tips for your configuration.
-</p>
-
 # What is this awesome window manager?
 
 **awesome** is a highly configurable, next generation framework window
