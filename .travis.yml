@@ -99,7 +99,8 @@ after_success:
       git config user.name "awesome-robot on Travis CI"
       git config user.email "awesome-robot@users.noreply.github.com"
       git add --all .
-      git commit -m "Update from Travis for awesome-www@${commit_hash}\n\nCommits: https://github.com/awesomeWM/awesome/compare/${TRAVIS_COMMIT_RANGE/.../..}\nBuild URL: https://travis-ci.com/awesomeWM/awesome/builds/${TRAVIS_BUILD_ID}"
+      NL=$'\n'
+      git commit -m "Update from Travis for awesome-www@${commit_hash}$NL$NLCommits: https://github.com/awesomeWM/awesome/compare/${TRAVIS_COMMIT_RANGE/.../..}$NLBuild URL: https://travis-ci.com/awesomeWM/awesome/builds/${TRAVIS_BUILD_ID}"
       git --no-pager show --stat
       git push origin "$(git symbolic-ref --quiet HEAD)" 2>&1 | sed "s/$GH_APIDOC_TOKEN/GH_APIDOC_TOKEN/g"
 
