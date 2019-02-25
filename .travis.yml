@@ -73,6 +73,7 @@ install:
 
     # ldoc is not available in Ubuntu Ancient
   - travis_retry luarocks --local install ldoc
+  - travis_retry luarocks --local install discount
   - luarocks path --bin
   - eval `luarocks path --bin`
     # Of course Ubuntu's Luarocks version is too old for --bin
