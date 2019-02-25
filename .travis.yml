@@ -83,6 +83,9 @@ install:
 
   - gem install mdl
 
+after_install:
+  - luarocks --local list --porcelain | column -t -s $'\r'
+
 script:
   - PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_travis
   - mdl --git-recurse .
