@@ -35,11 +35,15 @@ manpages:
 	    done
 
 build_for_travis: all
+build_for_travis: BUILD_WEB?=/tmp/awesome-build-web
+build_for_travis: ASCIIDOC_ICONS_DIR?=/usr/share/asciidoc/icons
+build_for_travis:
+	test -d "$(ASCIIDOC_ICONS_DIR)"
 	rsync -PaOvz --delete --exclude=.git --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
-	  $${BUILD_WEB}
+	  "$(BUILD_WEB)"
 	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s src/build/doc/ \
-	  $${BUILD_WEB}/doc/api
-	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s /usr/share/asciidoc/icons \
-	  $${BUILD_WEB}/doc/manpages/icons
+	  "$(BUILD_WEB)/doc/api"
+	rsync -PaOvz --delete --chmod=u=rwX,g=rwX,o=rX,Dg+s $(ASCIIDOC_ICONS_DIR) \
+	  "$(BUILD_WEB)/doc/manpages/icons"
 
 .PHONY: changelogs manpages
