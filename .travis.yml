@@ -39,6 +39,7 @@ addons:
       - xutils-dev
         # Dependencies for lgi
       - libgirepository1.0-dev
+      - lua-discount
 
 # Clone the awesomeWM.github.io repo before building, because we need the
 # working copy to be there for updating already.
@@ -71,7 +72,6 @@ install:
     # xcb-util-xrm is not available in Ubuntu Ancient
   - (cd /tmp && git clone --recursive https://github.com/Airblader/xcb-util-xrm.git && cd xcb-util-xrm && ./autogen.sh --prefix=$HOME/install && make && make install)
 
-    # ldoc is not available in Ubuntu Ancient
   - travis_retry luarocks --local install ldoc
   - luarocks path --bin
   - eval `luarocks path --bin`
