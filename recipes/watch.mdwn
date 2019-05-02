@@ -153,7 +153,7 @@ local mpris, mpris_timer = awful.widget.watch(
 local mybattery = awful.widget.watch(
     { awful.util.shell, "-c", "upower -i /org/freedesktop/UPower/devices/battery_BAT | sed -n '/present/,/icon-name/p'" },
     30,
-    settings = function(widget, stdout)
+    function(widget, stdout)
         local bat_now = {
             present      = "N/A",
             state        = "N/A",
