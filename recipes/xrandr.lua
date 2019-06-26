@@ -1,5 +1,6 @@
 --- Separating Multiple Monitor functions as a separeted module (taken from awesome wiki)
 
+local gtable    = require("gears.table")
 local awful     = require("awful")
 local naughty   = require("naughty")
 
@@ -37,12 +38,12 @@ local function arrange(out)
       local new = {}
       for _, p in pairs(previous) do
          for _, o in pairs(out) do
-            if not awful.util.table.hasitem(p, o) then
-               new[#new + 1] = awful.util.table.join(p, {o})
+            if not gtable.hasitem(p, o) then
+               new[#new + 1] = gtable.join(p, {o})
             end
          end
       end
-      choices = awful.util.table.join(choices, new)
+      choices = gtable.join(choices, new)
       previous = new
    end
 
@@ -66,7 +67,7 @@ local function menu()
       end
       -- Disabled outputs
       for _, o in pairs(out) do
-         if not awful.util.table.hasitem(choice, o) then
+         if not gtable.hasitem(choice, o) then
             cmd = cmd .. " --output " .. o .. " --off"
          end
       end
