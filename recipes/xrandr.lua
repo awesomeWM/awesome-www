@@ -118,7 +118,7 @@ local function xrandr()
       label = "Keep the current configuration"
       state.index = nil
    else
-      label, action = unpack(next)
+      label, action = next[1], next[2]
    end
    state.cid = naughty.notify({ text = label,
                                 icon = icon_path,
