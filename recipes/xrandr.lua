@@ -1,8 +1,8 @@
 --- Separating Multiple Monitor functions as a separeted module (taken from awesome wiki)
 
-local gtable    = require("gears.table")
-local awful     = require("awful")
-local naughty   = require("naughty")
+local gtable  = require("gears.table")
+local spawn   = require("awful.spawn")
+local naughty = require("naughty")
 
 -- A path to a fancy icon
 local icon_path = ""
@@ -96,7 +96,7 @@ local function naughty_destroy_callback(reason)
      reason == naughty.notificationClosedReason.dismissedByUser then
     local action = state.index and state.menu[state.index - 1][2]
     if action then
-      awful.util.spawn(action, false)
+      spawn(action, false)
       state.index = nil
     end
   end
