@@ -7,6 +7,7 @@
 --]]
 local awful = require("awful")
 local naughty = require("naughty")
+local dpi = require("beautiful.xresources").apply_dpi
 local io, next, os, string, table = io, next, os, string, table
 
 -- Google Play Music Desktop Player widget
@@ -85,7 +86,7 @@ gpmdp.widget = awful.widget.watch({"pidof", "Google Play Music Desktop Player"},
     gpmdp.latest = gpm_now
 
     -- customize here
-    gpmdp_notification_preset.text = string.format("%s (%s) - %s", gpm_now.artist, gpm_now.album, gpm_now.title)
+    gpmdp.notification_preset.text = string.format("%s (%s) - %s", gpm_now.artist, gpm_now.album, gpm_now.title)
     widget:set_text(gpm_now.artist .. " - " .. gpm_now.title)
 
     if gpm_now.playing then
