@@ -1,4 +1,5 @@
---- Manage sending SIGSTOP signals to special clients when they are unfocused.
+--- Manage sending SIGSTOP/SIGCONT signals to special clients when they are
+-- (un)focused.
 --
 -- Clients with ontop = true are ignored.
 --
@@ -99,6 +100,26 @@ stop_unfocused.spawn_with_cb_on_exit = function(cmd, cb_on_exit)
   return awful.spawn.easy_async(cmd, spawn_cb)
 end
 
+local pgid_cache = {}
+
+-- Intermediate callback to get a client's pgid via `ps` (cached).
+local function get_pid_for_kill_cb(pid, next_cb)
+  if awesome.version >= 'v4.2-335' then
+    -- Use negative PID (pgid) to kill process group.
+    local pgid = pgid_cache[pid]
+    if pgid then
+      next_cb(0 - pgid_cache[pid])
+    else
+      local ps_cmd = {'ps', '-o', 'pgid=', tostring(pid)}
+      awful.spawn.easy_async(ps_cmd, function(stdout)
+        pgid_cache[pid] = tonumber(stdout)
+        next_cb(0 - pgid_cache[pid])
+      end)
+    end
+  end
+  next_cb(pid)
+end
+
 -- A table of stopped client PIDs as key, and callbacks as values.
 local sigstopped_pids = {}
 
@@ -146,46 +167,11 @@ function stop_unfocused.sigstop(c, callbacks)
     log('marking stopped: '..c.pid..' ('..tostring(#callbacks)..' custom callbacks)')
 
     local function main_stop(_, _, done_cb)
-      -- XXX: xclip might hang?!  (needs to be killed then)
-      -- 2018-06-28 15:03:19 stop_unfocused: stderr: Error: target STRING not available
-      -- Connected to X server.
-      -- Using selection: XA_CLIPBOARD
-      -- Connected to X server.
-      -- Using selection: XA_PRIMARY
-      -- Using UTF8_STRING.
-      -- Using UTF8_STRING.
-      -- Waiting for selection requests, Control-C to quit
-      --   Waiting for selection request number 1
-      -- Waiting for selection requests, Control-C to quit
-      --   Waiting for selection request number 1
-      --   Waiting for selection request number 2
-      --   Waiting for selection request number 2
-      --   Waiting for selection request number 3
-      --   Waiting for selection request number 4
-      --   Waiting for selection request number 5
-      --
-      -- 2018-06-28 15:03:19 stop_unfocused: exit: 0
-      local pid_or_error = stop_unfocused.spawn_with_cb_on_exit({
-        'sh', '-c',
-        -- 'echo "$(date) copying"; '
-        ''
-        -- .. 'xclip -o -selection clipboard | nohup xclip -verbose -selection clipboard >/dev/null & '
-        -- .. 'xclip -o -selection primary | nohup xclip -verbose -selection primary >/dev/null & '
-        -- .. 'awesome-client \'bnote("copying")\'; '
-        .. '(copyq "copySelection(selection())" &&'
-        .. 'copyq "copy(clipboard())" &&'
-        .. 'sleep 1); '
-        -- .. string.format('awesome-client \'bnote("stopping %d (%s)")\'; ', c.pid, c.name)
-        .. 'echo "$(date) stopping"; kill -STOP ' .. tostring(c.pid) .. ';'
-        -- .. 'awesome-client "bnote(\'state: '..tostring(c.pid)..': $(ps -p '..tostring(c.pid)..' -o state=)\')"; '
-        -- .. 'echo "$(date) stopped ' .. tostring(c.pid) .. '"'
-        },
-        done_cb)
-      if type(pid_or_error) == 'string' then
-        gears.debug.print_error('Failed to run main_stop: ' .. pid_or_error)
-      else
-        return pid_or_error
-      end
+        get_pid_for_kill_cb(c.pid, function(pid)
+          log("main_stop: " .. c.pid .. ": kill -STOP " .. pid)
+          awesome.kill(pid, awesome.unix_signal['SIGSTOP'])
+          done_cb()
+        end)
     end
     call_next_callback(c, true, gears.table.merge({main_stop}, callbacks) or {})
 
@@ -221,10 +207,11 @@ function stop_unfocused.sigcont(c)
   end
 
   local function main_cont(_, _, next_cb)
-    -- awful.spawn({'pkill', '-CONT', '-g', tostring(c.pid)})
-    log("main_cont: kill -CONT " .. tostring(c.pid))
-    awesome.kill(c.pid, awesome.unix_signal['SIGCONT'])
-    next_cb()
+    get_pid_for_kill_cb(c.pid, function(pid)
+      log("main_cont: " .. c.pid .. ": kill -CONT " .. pid)
+      awesome.kill(pid, awesome.unix_signal['SIGCONT'])
+      next_cb()
+    end)
   end
   callbacks = gears.table.merge({main_cont}, callbacks)
   log(tostring(#callbacks) .. ' cont callbacks')
