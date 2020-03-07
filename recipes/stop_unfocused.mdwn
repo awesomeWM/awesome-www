@@ -76,3 +76,21 @@ stop_unfocused.config.rules = {
     { rule = {class = 'Thunderbird'} },
 }
 ```
+
+## Temporarily ignore clients
+
+To temporarily ignore clients (e.g. an unfocused browser playing some video)
+something like this can be used, e.g. mapped to some key(s), which toggles the
+state, and :
+
+```lua
+    i = function (c)
+      if stop_unfocused.ignore_clients[c] then
+        stop_unfocused.ignore_clients[c] = nil
+        naughty.notify({text="stop_unfocused: not ignoring"})
+      else
+        stop_unfocused.ignore_clients[c] = true
+        naughty.notify({text="stop_unfocused: ignoring"})
+      end
+    end,
+```
