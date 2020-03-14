@@ -235,12 +235,9 @@ local function get_pids_for_kill_stop_cb(c, next_cb)
 
   local cmd = {awful.util.shell, '-c',
     'chpids() {'..
-    '  local childs;'..
-    '  local pids;'..
-    '  pids="$1"; shift;'..
-    '  childs="$(pgrep -P "$pids" "$@")";'..
+    '  local pids="$1"; shift;'..
+    '  local childs="$(pgrep -P "$pids" "$@")";'..
     '  if [ -n "$childs" ]; then'..
-    '    echo "$childs";'..
     '    chpids "$(echo "$childs" | paste -s -d,)" "$@";'..
     '  fi;'..
     '};'..
