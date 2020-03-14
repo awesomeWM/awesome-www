@@ -242,7 +242,7 @@ local function get_pids_for_kill_stop_cb(c, next_cb)
     '  if [ -n "$childs" ]; then'..
     '    echo "$childs";'..
     '    chpids "$(echo "$childs" | paste -s -d,)" "$@";'..
-    '  fi'..
+    '  fi;'..
     '};'..
     'chpids "$@"', '--', tostring(c.pid)}
 
