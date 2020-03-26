@@ -84,7 +84,7 @@ stop_unfocused.config = {
       pgrep_args = {'-f', 'QtWebEngineProc'},
     }},
     -- TODO: include_child_processes / pgrep_args
-    {rule = {class = 'Firefox'}},
+    {rule = {class = 'firefox'}},
 
     {rule = {class = 'Thunderbird'}, properties = {
       -- No childs (e.g. PDF viewer).
