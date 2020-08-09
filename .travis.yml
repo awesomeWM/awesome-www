@@ -87,6 +87,7 @@ script:
 
 after_success:
   - |
+    if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then exit 0; fi
     if [ -n "$GH_APIDOC_TOKEN" ]; then
       set -e
       commit_hash=$(git rev-parse --short HEAD)
