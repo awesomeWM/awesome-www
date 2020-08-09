@@ -14,7 +14,7 @@ You can ask questions on
 
 # Reddit
 
-We also have a [awesome subreddit](https://www.reddit.com/r/awesomewm/) where
+We also have an [awesomewm subreddit](https://www.reddit.com/r/awesomewm/) where
 you can share your work and ask questions.
 
 # GitHub
