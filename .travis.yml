@@ -76,7 +76,7 @@ install:
   # lgi is too old
   - travis_retry luarocks --local install lgi
 
-  - gem install mdl
+  - gem install mdl -v 0.9.0
 
 after_install:
   - luarocks --local list --porcelain | column -t -s $'\t'
