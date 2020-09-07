@@ -8,6 +8,7 @@ to improve your Awesome setup.
 ## Setups
 
 * [My First Awesome Setup](https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html#)
+* [A step by step Guide by Epsi](https://epsi-rns.github.io/desktop/2019/06/15/awesome-overview.html) (for Awesome 4.3)
 
 ## Widgets
 
