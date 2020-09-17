@@ -40,6 +40,7 @@ to improve your Awesome setup.
 * [Tyrannical dynamic tag managment framework](https://github.com/Elv13/tyrannical)
 * [Repetitive dynamic keybindings and macros](https://github.com/Elv13/repetitive)
 * [layout-machi - a manual layout with interactive editing](https://github.com/xinhaoyuan/layout-machi)
+* [nice - macOS like beautiful seamless window decorations](https://github.com/mut-ex/awesome-wm-nice)
 
 ## Others
 
