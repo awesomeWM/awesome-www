@@ -41,6 +41,7 @@ to improve your Awesome setup.
 * [Repetitive dynamic keybindings and macros](https://github.com/Elv13/repetitive)
 * [layout-machi - a manual layout with interactive editing](https://github.com/xinhaoyuan/layout-machi)
 * [nice - macOS-like seamless window decorations](https://github.com/mut-ex/awesome-wm-nice)
+* [modalawesome - framework for modal, vi-like keybindings](https://github.com/potamides/modalawesome)
 
 ## Others
 
