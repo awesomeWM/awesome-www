@@ -49,8 +49,7 @@ local function log(...)
 end
 
 local awful = require('awful')
-if not awful.rules.get_props_and_callbacks then
-function awful.rules.get_props_and_callbacks(c, _rules)
+local function get_props_and_callbacks(c, _rules)
     local matching_rules = awful.rules.matching_rules(c, _rules)
     if #matching_rules == 0 then
         return
@@ -65,7 +64,6 @@ function awful.rules.get_props_and_callbacks(c, _rules)
         end
     end
     return props, callbacks
-end
 end
 
 -- A table of stopped client PIDs as key, and a table with config/props as
@@ -213,7 +211,7 @@ end
 
 -- Get config for a client, merged with defaults.
 local get_client_config = function(c)
-  local props, callbacks = awful.rules.get_props_and_callbacks(c, stop_unfocused.config.rules)
+  local props, callbacks = get_props_and_callbacks(c, stop_unfocused.config.rules)
 
   -- Merge with defaults.
   props = gears.table.join(stop_unfocused.config, props)
@@ -488,7 +486,7 @@ local onunfocus = function(c)
     return
   end
 
-  local props, callbacks = awful.rules.get_props_and_callbacks(c, stop_unfocused.config.rules)
+  local props, callbacks = get_props_and_callbacks(c, stop_unfocused.config.rules)
   if not props then
     -- Skip any client without a matching rule.
     return
