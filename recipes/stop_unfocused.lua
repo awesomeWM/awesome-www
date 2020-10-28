@@ -236,6 +236,7 @@ local function get_pids_for_kill_stop_cb(c, next_cb)
     '  local pids="$1"; shift;'..
     '  local childs="$(pgrep -P "$pids" "$@")";'..
     '  if [ -n "$childs" ]; then'..
+    '    echo $childs;'..
     '    chpids "$(echo "$childs" | paste -s -d,)" "$@";'..
     '  fi;'..
     '};'..
