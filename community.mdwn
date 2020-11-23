@@ -12,6 +12,11 @@ You can join us in the `#awesome` channel on the [`OFTC`](http://www.oftc.net) I
 You can ask questions on
 [Stack Overflow](http://stackoverflow.com/questions/tagged/awesome-wm).
 
+# Discord
+
+You can join the (non official) awesome community on the discord server
+[invite](https://discord.gg/XYvn8R5).
+
 # Reddit
 
 We also have an [awesomewm subreddit](https://www.reddit.com/r/awesomewm/) where
