@@ -1,0 +1,46 @@
+# Microphone state widget/watcher
+This widget can be used to display the current microphone status.
+
+## Requirements
+- `amixer` - this command is used to get and toggle microphone state
+
+## Usage
+- Download [mic.lua](https://awesomewm.org/recipes/mic.lua) file and put it into awesome's
+  folder (like `~/.config/awesome/widgets/mic.lua`)
+- Add widget to `theme.lua`:
+
+  ```lua
+  local widgets = {
+      mic = require("widgets/mic"),
+  }
+  theme.mic = widgets.mic({
+      timeout = 10,
+      settings = function(self)
+          if self.state == "muted" then
+              self.widget:set_image(theme.widget_micMuted)
+          else
+              self.widget:set_image(theme.widget_micUnmuted)
+          end
+      end
+  })
+  local widget_mic = wibox.widget { theme.mic.widget, layout = wibox.layout.align.horizontal }
+  ```
+
+- Create a shortcut to toggle microphone state (add to `rc.lua`):
+
+  ```lua
+  -- Toggle microphone state
+  awful.key({ modkey, "Shift" }, "m",
+            function ()
+                beautiful.mic:toggle()
+            end,
+            {description = "Toggle microphone (amixer)", group = "Hotkeys"}
+  ),
+  ```
+
+- You can also add a command to mute the microphone state on boot. Add this to your `rc.lua`:
+
+  ```lua
+  -- Mute microphone on boot
+  beautiful.mic:mute()
+  ```

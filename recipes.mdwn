@@ -22,6 +22,7 @@ to improve your Awesome setup.
 * [Battery Indicator (UPower)](https://github.com/stefano-m/awesome-power_widget)
 * [[Google Play Music Desktop Player|recipes/gpmdp]]
 * [Set of simple widgets](https://github.com/streetturtle/awesome-wm-widgets) - widgets for battery, cpu, brightness, volume, email, etc.
+* [Microphone state](../recipes/mic)
 
 ## Libraries
 
