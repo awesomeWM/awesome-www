@@ -5,55 +5,83 @@
 
 
 # Wireless status widget/watcher
+
 Get wireless Quality link (converted to percentages) and wireless status.
 
-## Requirements:
+Data is taken from `/proc/net/wireless`.
+
+According to [this](https://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Linux.Wireless.Extensions.html)
+website `/proc/net/wireless` has the following information:
+
+- Status: Its current state. This is a device dependent information.
+
+- Quality - link: general quality of the reception.
+
+- Quality - level: signal strength at the receiver.
+
+- Quality - noise: silence level (no packet) at the receiver.
+
+- Discarded - nwid: number of discarded packets due to invalid network id.
+
+- Discarded - crypt: number of packet unable to decrypt.
+
+- Discarded - misc: unused (for now).
+
+This widget uses `Quality - link` and converts it to percentages (`perc=Quality_link*10/7`).
+The above equation is taken from [this](https://superuser.com/a/1360447) forum answer.
+
+It also stores `Status` information (note that this is presumably device dependent).
+
+## Requirements
+
 - `iw`
 
-## Usage:
+## Usage
+
 - Download [wirelessStatus.lua](https://awesomewm.org/recipes/wirelessStatus.lua) file and put it
   into awesome's folder (like `~/.config/awesome/widgets/wirelessStatus.lua`)
+
 - Add widget to `theme.lua`:
 
-  ```lua
-  local widgets = {
-      wirelessStatus = require("widgets/wirelessStatus"),
-  }
-  -- Wireless status widget
-  theme.wirelessStatus = widgets.wirelessStatus({
-      notification_preset = { font = "Mononoki Nerd Font 10", fg = theme.fg_normal },
-      timeout = 10,
-      settings = function(self)
-          if self.status == "1" or self.status == "" then
-              self.widget:set_image(theme.wifidisc)
-          else
-              if self.perc <= 5 then
-                  self.widget:set_image(theme.wifinone)
-              elseif self.perc <= 25 then
-                  self.widget:set_image(theme.wifilow)
-              elseif self.perc <= 50 then
-                  self.widget:set_image(theme.wifimed)
-              elseif self.perc <= 75 then
-                  self.widget:set_image(theme.wifihigh)
-              else
-                  self.widget:set_image(theme.wififull)
-              end
-          end
-      end,
-  })
-  local widget_wirelessStatus = wibox.widget { nil, theme.wirelessStatus.widget, layout = wibox.layout.align.horizontal }
-  ```
+```lua
+local widgets = {
+    wirelessStatus = require("widgets/wirelessStatus"),
+}
+-- Wireless status widget (`status` is presumably device dependent)
+theme.wirelessStatus = widgets.wirelessStatus({
+    notification_preset = { font = "Mononoki Nerd Font 10", fg = theme.fg_normal },
+    timeout = 10,
+    settings = function(self)
+        if self.status == "1" or self.status == "" then
+            self.widget:set_image(theme.wifidisc)
+        else
+            if self.perc <= 5 then
+                self.widget:set_image(theme.wifinone)
+            elseif self.perc <= 25 then
+                self.widget:set_image(theme.wifilow)
+            elseif self.perc <= 50 then
+                self.widget:set_image(theme.wifimed)
+            elseif self.perc <= 75 then
+                self.widget:set_image(theme.wifihigh)
+            else
+                self.widget:set_image(theme.wififull)
+            end
+        end
+    end,
+})
+local widget_wirelessStatus = wibox.widget { nil, theme.wirelessStatus.widget, layout = wibox.layout.align.horizontal }
+```
 
 - Set which application to run on widget press (add to `rc.lua`):
 
-  ```lua
-  -- wirelessStatus widget pressed function - open terminal and start `nmtui`
-  beautiful.wirelessStatus.pressed = function(self, button)
-      if button == 1 then  -- left mouse click
-          awful.spawn(terminal.." -e nmtui")
-      end
-  end
-  ```
+```lua
+-- wirelessStatus widget pressed function - open terminal and start `nmtui`
+beautiful.wirelessStatus.pressed = function(self, button)
+    if button == 1 then  -- left mouse click
+        awful.spawn(terminal.." -e nmtui")
+    end
+end
+```
 
 --]]
 
@@ -133,9 +161,11 @@ local function factory(args)
                 -- Remove last character/s from string ("wlp4s0:"" -> "wlp4s0")
                 self.interface = stdout:sub(0, -3)
 
-                -- This is needed the first time there is an update
-                -- (or every time the `.interface` is equal to "")
-                self:update()
+                -- Check in case interface is now equal to "" (we don't want to cause recursive
+                -- calls)
+                if self.interface ~= "" then
+                    self:update()
+                end
             end
         )
     end
@@ -146,7 +176,7 @@ local function factory(args)
 
     -- Get status and Quality link (convert quality link to percentages)
     wirelessStatus, wirelessStatus.timer = awful.widget.watch(
-        "awk 'NR==3 {printf(\"%d-%.0f\\n\", $2, $3*10/7)}' /proc/net/wireless",
+        { 'awk', 'NR==3 {printf("%d-%.0f\\n", $2, $3*10/7)}', '/proc/net/wireless' },
         wirelessStatus.timeout,
         function(self, stdout, stderr, exitreason, exitcode)
             if stdout == "" then
