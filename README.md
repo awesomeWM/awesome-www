@@ -62,7 +62,7 @@ section in `recipes.mdwn` file.
 1. Link your page to the right section in the `recipes.mdwn` page with Markdown
    syntax.
 
-    Example `[XrandR Tutorial](../recipes/xrandr-tutorial)`
+    Example `[[XrandR Tutorial|recipes/xrandr-tutorial]]`
 
 ### Seeing results and pulling your changes
 
