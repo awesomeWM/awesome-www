@@ -75,7 +75,7 @@ local function factory(args)
     }
 
     function mic:mute()
-        awful.spawn.easy_async_with_shell("amixer set Capture nocap",
+        awful.spawn.easy_async({"amixer", "set", "Capture", "nocap"},
             function()
                 self:update()
             end
@@ -83,7 +83,7 @@ local function factory(args)
     end
 
     function mic:unmute()
-        awful.spawn.easy_async_with_shell("amixer set Capture cap",
+        awful.spawn.easy_async({"amixer", "set", "Capture", "cap"},
             function()
                 self:update()
             end
@@ -91,7 +91,7 @@ local function factory(args)
     end
 
     function mic:toggle()
-        awful.spawn.easy_async_with_shell("amixer set Capture toggle",
+        awful.spawn.easy_async({"amixer", "set", "Capture", "toggle"},
             function()
                 self:update()
             end
@@ -115,7 +115,7 @@ local function factory(args)
     --   - If there are lines with "[on]" then assume microphone is "unmuted".
     --   - If there are NO lines with "[on]" then assume microphone is "muted".
     mic, mic.timer = awful.widget.watch(
-        "bash -c \"amixer get Capture | grep '\\[on\\]'\"",
+        {"bash", "-c", "amixer get Capture | grep '\\[on\\]'"},
         mic.timeout,
         function(self, stdout, stderr, exitreason, exitcode)
             local current_micState = "error"
