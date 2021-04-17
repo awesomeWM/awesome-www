@@ -23,6 +23,7 @@ to improve your Awesome setup.
 * [[Google Play Music Desktop Player|recipes/gpmdp]]
 * [Set of simple widgets](https://github.com/streetturtle/awesome-wm-widgets) - widgets for battery, cpu, brightness, volume, email, etc.
 * [[Wireless status|recipes/wirelessStatus]]
+* [[Microphone state|recipes/mic]]
 
 ## Libraries
 
