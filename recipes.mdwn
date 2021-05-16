@@ -24,6 +24,7 @@ to improve your Awesome setup.
 * [Set of simple widgets](https://github.com/streetturtle/awesome-wm-widgets) - widgets for battery, cpu, brightness, volume, email, etc.
 * [[Wireless status|recipes/wirelessStatus]]
 * [[Microphone state|recipes/mic]]
+* [Noobie](https://github.com/streetturtle/noobie) - create a wibar widget based on the output of a script.
 
 ## Libraries
 
