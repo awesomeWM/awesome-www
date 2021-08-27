@@ -3,5 +3,7 @@
 Screenshots of different AwesomeWM configurations are available
 [at GitHub](https://github.com/awesomeWM/awesome/issues/1395).
 
-Feel free to add your own screenshots in the thread along with configuration
+Alternatively you can browse these screenshots using the [AwesomeWM Screenshot Gallery](https://mipmip.github.io/awesomewm-screenshots/).
+
+Feel free to [add your own screenshots](https://github.com/awesomeWM/awesome/issues/1395#issuecomment-new) in the thread along with configuration
 details.
