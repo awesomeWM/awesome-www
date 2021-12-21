@@ -18,7 +18,7 @@ example the connection is lost or the password is rejected), the given error
 handler function is called with the error as its argument. The next time the
 connection is used, an automatic reconnection is attempted.
 
-A description of the MPD protocol can be fined
+A description of the MPD protocol can be found
 [here](https://www.musicpd.org/doc/protocol/). This library only provides
 low-level access to the protocol. However, special support for the idle command
 is provided via extra arguments to the `new` function. This will be made clear
