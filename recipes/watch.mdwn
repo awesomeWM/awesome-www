@@ -147,6 +147,7 @@ local mpris, mpris_timer = awful.widget.watch(
 ```
 
 ## pipewire
+
 ```lua
 -- pactl based volume widget for pure pipewire setups
 local volume = awful.widget.watch(
