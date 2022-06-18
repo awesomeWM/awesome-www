@@ -146,6 +146,25 @@ local mpris, mpris_timer = awful.widget.watch(
 )
 ```
 
+## pipewire
+
+```lua
+-- pactl based volume widget for pure pipewire setups
+local volume = awful.widget.watch(
+    "pactl get-sink-volume @DEFAULT_SINK@ | cut -s -d/ -f2,4; pactl get-sink-mute @DEFAULT_SINK@",
+    5, -- timeout 
+    function(widget, stdout)
+        local volume = "Volume: "
+        for v in stdout:gmatch("(%d+%%)") do volume = volume .. " " .. v end
+        if #volume == 8 then volume = "N/A" end
+        local mute = string.match(stdout, "Mute: (%S+)") or "N/A"
+
+        -- customize here
+        widget:set_markup(volume .. " " .. mute)
+    end
+)
+```
+
 ## upower
 
 ```lua
