@@ -142,6 +142,9 @@ jobs:
         if: github.event_name != 'pull_request'
         env:
           APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
+          CLOUDFLARE_ZONE: ${{ secrets.CLOUDFLARE_ZONE }}
+          CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
+          CLOUDFLARE_AUTH_KEY: ${{ secrets.CLOUDFLARE_AUTH_KEY }}
         run: |
           set -e
           commit_hash=$(git rev-parse --short HEAD)
