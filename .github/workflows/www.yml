@@ -120,7 +120,7 @@ jobs:
             https://${APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
             "${{ github.workspace }}/build" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
           if [ "${{ github.event_name }}" != 'pull_request' ]; then
-            branch="${{ github.head_ref || github.ref_name }} "
+            branch="${{ github.head_ref || github.ref_name }}"
           else
             branch="pr-${{ github.event.pull_request.number }}"
           fi
