@@ -33,6 +33,7 @@ to improve your Awesome setup.
 
 ## Themes
 
+* [Aesthetic Night](https://github.com/rxyhn/dotfiles)
 * [awesome-copycats](https://github.com/copycat-killer/awesome-copycats)
 
 ## Window management
