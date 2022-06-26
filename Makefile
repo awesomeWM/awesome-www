@@ -34,10 +34,10 @@ manpages:
 	    do asciidoc -a icons -b xhtml11 -o ../../html/doc/manpages/`basename $${manpage} .txt`.html $$manpage || exit 1; \
 	    done
 
-build_for_travis: all
-build_for_travis: BUILD_WEB?=/tmp/awesome-build-web
-build_for_travis: ASCIIDOC_ICONS_DIR?=/usr/share/asciidoc/icons
-build_for_travis:
+build_for_gh_actions: all
+build_for_gh_actions: BUILD_WEB?=/tmp/awesome-build-web
+build_for_gh_actions: ASCIIDOC_ICONS_DIR?=/usr/share/asciidoc/icons
+build_for_gh_actions:
 	test -d "$(ASCIIDOC_ICONS_DIR)"
 	rsync -PaOvz --delete --exclude=.git --chmod=u=rwX,g=rwX,o=rX,Dg+s --exclude src html/ \
 	  "$(BUILD_WEB)"
