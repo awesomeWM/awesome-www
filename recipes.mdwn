@@ -34,6 +34,21 @@ to improve your Awesome setup.
 ## Themes
 
 * [Aesthetic Night](https://github.com/rxyhn/dotfiles)
+  - Features:
+    - Full Animated Setup
+    - Modern Bottom Panel
+    - Dashboard
+    - Control Center
+    - Notification Center
+    - Music Player Widget
+    - Weather Widget
+    - Calendar Widget
+    - Battery Widget
+    - Network Widget
+    - Custom Notification
+    - Word Clock Lockscreen
+    - Exitscreen
+
 * [awesome-copycats](https://github.com/copycat-killer/awesome-copycats)
 
 ## Window management
