@@ -108,14 +108,6 @@ jobs:
       - name: Create Build Environment
         run: cmake -E make_directory -B "${{ github.workspace }}/build"
 
-      - name: Get Pull Request Number
-        id: pr
-        run: |
-          cd "${{ github.workspace }}"
-          echo "::set-output name=pull_request_number::$(gh pr view --json number -q .number || echo "")"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Get AwesomeWM
         env:
           APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
@@ -127,7 +119,7 @@ jobs:
           if [ "${{ github.event_name }}" != 'pull_request' ]; then
             branch="${{ github.head_ref || github.ref_name }} "
           else
-            branch="pr-${{ steps.pr.outputs.pull_request_number }}"
+            branch="pr-${{ github.event.issue.number }}"
           fi
           if [ "$branch" != master ]; then
             cd "${{ github.workspace }}/src"
