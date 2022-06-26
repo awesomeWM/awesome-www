@@ -1,6 +1,6 @@
 # Website for awesome WM
 
-[![Build Status](https://travis-ci.org/awesomeWM/awesome-www.svg?branch=master)](https://travis-ci.org/awesomeWM/awesome-www)
+[![Build Status](https://github.com/awesomeWM/awesome-www/actions/workflows/www.yml/badge.svg)](https://github.com/awesomeWM/awesome-www/actions/workflows/www.yml)
 
 This is the main source of the
 [website for the awesome window manager](https://awesomewm.org/).
@@ -74,7 +74,7 @@ section in `recipes.mdwn` file.
 ## Publishing
 
 The master branch gets built by
-[Travis CI](https://travis-ci.org/awesomeWM/awesome-www/), and is then published
+[GH Actions](https://github.com/awesomeWM/awesome-www/actions), and is then published
 through
 [Github's Organization Pages](https://github.com/awesomeWM/awesomeWM.github.io).
 
