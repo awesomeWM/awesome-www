@@ -1,4 +1,4 @@
-name: Update API docs
+name: Build and publish awesomewm.org
 
 on:
   # Trigger on push to branche `master`.
