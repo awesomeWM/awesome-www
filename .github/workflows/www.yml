@@ -21,6 +21,9 @@ jobs:
   main:
     runs-on: ubuntu-20.04
 
+    env:
+      BUILD_WEB: "/tmp/build-web"
+
     steps:
       # Create a cache invalidation key based on the current year + week.
       # This way, packages will be checked for updates once every week.
@@ -108,9 +111,6 @@ jobs:
         with:
           submodules: recursive
 
-      - name: Create Build Environment
-        run: cmake -E make_directory -B "${{ github.workspace }}/build"
-
       - name: Get Awesome website target repo
         env:
           APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
@@ -118,14 +118,14 @@ jobs:
           set -e
           git clone \
             https://${APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
-            "${{ github.workspace }}/build" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
+            "$BUILD_WEB" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
           if [ "${{ github.event_name }}" != 'pull_request' ]; then
             branch="${{ github.head_ref || github.ref_name }}"
           else
             branch="pr-${{ github.event.pull_request.number }}"
           fi
           if [ "$branch" != master ]; then
-            cd "${{ github.workspace }}/build"
+            cd "$BUILD_WEB"
             if ! git checkout -b "$branch" "origin/$branch"; then
               git checkout -b "$branch"
             fi
@@ -145,7 +145,7 @@ jobs:
         run: |
           set -e
           commit_hash=$(git rev-parse --short HEAD)
-          cd "${{ github.workspace }}/build"
+          cd "$BUILD_WEB"
           git config user.name "awesome-robot on GH Actions"
           git config user.email "awesome-robot@users.noreply.github.com"
           git add --all .
