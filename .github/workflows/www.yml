@@ -1,0 +1,164 @@
+name: Update API docs
+
+on:
+  # Trigger on push to branche `master`.
+  push:
+    branches: [ master ]
+  # Trigger on pull request events for PRs that have `master` as their target branch
+  pull_request:
+    branches: [ master ]
+
+  # Allow running the workflow manually
+  workflow_dispatch:
+
+defaults:
+  run:
+    # GitHub Actions adds `errexit` and `pipefail` by default, but we add `xtrace`
+    # to improve debugging some of the longer scripts.
+    shell: /bin/bash -o errexit -o pipefail -o xtrace {0}
+
+jobs:
+  main:
+    runs-on: ubuntu-20.04
+
+    steps:
+      # Create a cache invalidation key based on the current year + week.
+      # This way, packages will be checked for updates once every week.
+      - name: Get Date
+        id: get-date
+        run: echo "::set-output name=date::$(/bin/date -u "+%Y%W")"
+
+      - name: Cache apt packages
+        id: cache-apt
+        uses: actions/cache@v2
+        with:
+          path: /var/cache/apt/archives
+          # The trailing number serves as a version flag that can be incremented
+          # to invalidate the cache after changing the list of packages.
+          key: ${{ github.workflow }}-${{ runner.os }}-${{ steps.get-date.outputs.date }}-apt-3
+
+      - name: Download apt packages
+        if: steps.cache-apt.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install --download-only -y --no-install-recommends \
+            ikiwiki \
+            asciidoc \
+            imagemagick \
+            perlmagick \
+            luarocks \
+            cmake \
+            libxcb-cursor-dev \
+            libxcb-randr0-dev \
+            libxcb-xtest0-dev \
+            libxcb-xinerama0-dev \
+            libxcb-shape0-dev \
+            libxcb-util0-dev \
+            libxcb-keysyms1-dev \
+            libxcb-icccm4-dev \
+            libxcb-xrm-dev \
+            libxdg-basedir-dev \
+            libstartup-notification0-dev \
+            libxcb-xkb-dev \
+            libxkbcommon-dev \
+            libxkbcommon-x11-dev \
+            gir1.2-pango-1.0 \
+            xutils-dev \
+            libgirepository1.0-dev \
+            lua-discount
+
+      - name: Install downloaded packages
+        run: |
+          sudo dpkg -i /var/cache/apt/archives/*.deb
+
+      - name: Cache luarocks
+        id: cache-luarocks
+        uses: actions/cache@v2
+        with:
+          path: /tmp/luarocks
+          key: ${{ github.workflow }}-${{ runner.os }}-luarocks-3.5.0
+
+      - name: Install fresh Luarocks
+        if: steps.cache-luarocks.outputs.cache-hit != 'true'
+        run: |
+          wget -O /tmp/luarocks.tar.gz https://github.com/luarocks/luarocks/archive/v3.5.0.tar.gz
+          mkdir /tmp/luarocks
+          tar -xf /tmp/luarocks.tar.gz -C /tmp/luarocks --strip-components=1
+          cd /tmp/luarocks
+          ./configure
+          make build
+          sudo make install
+
+      - name: Install cached Luarocks
+        if: steps.cache-luarocks.outputs.cache-hit == 'true'
+        run: |
+          cd /tmp/luarocks
+          sudo make install
+
+      - name: Install rocks
+        run: |
+          sudo -H luarocks install lgi
+          sudo -H luarocks install ldoc
+
+      - name: Install mdl
+        run: |
+          sudo gem install mdl -v 0.9.0
+
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+
+      - name: Create Build Environment
+        run: cmake -E make_directory -B "${{ github.workspace }}/build"
+
+      - name: Get Awesome website target repo
+        env:
+          APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
+        run: |
+          set -e
+          git clone \
+            https://${APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
+            "${{ github.workspace }}/build" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
+          if [ "${{ github.event_name }}" != 'pull_request' ]; then
+            branch="${{ github.head_ref || github.ref_name }} "
+          else
+            branch="pr-${{ github.event.pull_request.number }}"
+          fi
+          if [ "$branch" != master ]; then
+            cd "${{ github.workspace }}/build"
+            if ! git checkout -b "$branch" "origin/$branch"; then
+              git checkout -b "$branch"
+            fi
+            cd -
+          fi
+
+      - name: Build website
+        run: |
+          cd "${{ github.workspace }}"
+          PKG_CONFIG_PATH="$HOME/install/lib/pkgconfig" make build_for_gh_actions
+          mdl --git-recurse .
+
+      - name: Publish website
+        if: github.event_name != 'pull_request'
+        env:
+          APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
+        run: |
+          set -e
+          commit_hash=$(git rev-parse --short HEAD)
+          cd "${{ github.workspace }}/build"
+          git config user.name "awesome-robot on GH Actions"
+          git config user.email "awesome-robot@users.noreply.github.com"
+          git add --all .
+          NL=$'\n'
+          git commit -m "Update from GH Actions for awesome-www@${commit_hash}${NL}${NL}Commits: ${{ github.event.pull_request.commits_url }}${NL}Build URL: https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}"
+          git --no-pager show --stat
+          git push origin "$(git symbolic-ref --quiet HEAD)" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
+
+          # Purge CloudFlare cache.
+          curl -X DELETE "https://api.cloudflare.com/client/v4/zones/$CLOUDFLARE_ZONE/purge_cache" \
+            -H "X-Auth-Email: $CLOUDFLARE_AUTH_EMAIL" \
+            -H "X-Auth-Key: $CLOUDFLARE_AUTH_KEY" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}'
+
+# vim: filetype=yaml:expandtab:shiftwidth=2:tabstop=2

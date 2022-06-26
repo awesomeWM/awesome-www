@@ -31,7 +31,7 @@ The following steps are done in a checkout of the *awesome-www* git repository.
   * In the awesome-www repository (push just the release branch!)
   * In the awesome repository (make sure the tag is also pushed!)
 * Create a pull request to the awesome-www repository for the release branch.
-  This makes sure that the Travis build will be successful when merging into the
+  This makes sure that the Github-Actions build will be successful when merging into the
   master branch.
 * Create the release on GitHub:
   * Go to the GitHub release page <https://github.com/awesomeWM/awesome/releases/new>.
