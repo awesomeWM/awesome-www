@@ -104,25 +104,27 @@ jobs:
           sudo gem install mdl -v 0.9.0
 
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
 
       - name: Create Build Environment
         run: cmake -E make_directory -B "${{ github.workspace }}/build"
 
-      - name: Get AwesomeWM
+      - name: Get Awesome website target repo
         env:
           APIDOC_TOKEN: ${{ secrets.AWESOME_ROBOT_TOKEN || github.token }}
         run: |
           set -e
           git clone \
             https://${APIDOC_TOKEN}@github.com/awesomeWM/awesomeWM.github.io \
-            "${{ github.workspace }}/src" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
+            "${{ github.workspace }}/build" 2>&1 | sed "s/$APIDOC_TOKEN/APIDOC_TOKEN/g"
           if [ "${{ github.event_name }}" != 'pull_request' ]; then
             branch="${{ github.head_ref || github.ref_name }} "
           else
-            branch="pr-${{ github.event.issue.number }}"
+            branch="pr-${{ github.event.pull_request.number }}"
           fi
           if [ "$branch" != master ]; then
-            cd "${{ github.workspace }}/src"
+            cd "${{ github.workspace }}/build"
             if ! git checkout -b "$branch" "origin/$branch"; then
               git checkout -b "$branch"
             fi
