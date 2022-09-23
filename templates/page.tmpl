@@ -52,7 +52,7 @@
 
 
             <div id="menu">
-                <ul class="active-menu-<TMPL_VAR NAME=" title">">
+                <ul class="active-menu-<TMPL_VAR NAME="title">">
                     <li class="menu-about"><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
                     <li class="menu-download"><a href="<TMPL_VAR BASEURL>download/">download</a></li>
                     <li class="menu-community"><a href="<TMPL_VAR BASEURL>community/">community</a></li>
@@ -75,11 +75,14 @@
 
     <div id="footer">
         <div id="pageinfo">
-
+            <div class="darkmode">
+                <img alt="15years anniversary" src="<TMPL_VAR BASEURL>images/awesome-15yrs-anniversary-dark.svg" width="250">
+            </div>    
+            <div class="lightmode">
+                <img alt="15years anniversary" src="<TMPL_VAR BASEURL>images/awesome-15yrs-anniversary.svg" width="250">
+            </div>    
             <script type='text/javascript'
                 src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
-            <img alt="15years anniversary" src="<TMPL_VAR BASEURL>images/awesome-15yrs-anniversary.svg" width="250"
-                style="vertical-align: top; margin-top: 20px;">
 
             <div id="donate">
                 <strong>Donations:</strong>

@@ -28,6 +28,10 @@
   --accent-background-color: #59929d;
   --accent-color: #fafafa;
   --menu-hover-color: #000300;
+  --screenshot-border-color: #347272;
+  --button-background-color: #59929d;
+  --button-text-color: #fafafa;
+  --button-hover-color: #000300;
 }
 
 .darkmode {

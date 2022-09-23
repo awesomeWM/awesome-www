@@ -17,8 +17,8 @@
 }
 
 html {
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 12pt;
+  font-family: Noto Sans, Verdana, Arial, sans-serif;
+  font-size: 0.9rem;
 }
 
 body {
@@ -46,33 +46,60 @@ figcaption {
   margin: 0.5rem 0;
 }
 
-button,
-input {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  padding: 0.5rem 1rem;
-  margin: 0;
-  border: none;
-  outline: solid 1px var(--color);
-  outline-offset: -1px;
+.button_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
-button {
-  color: var(--accent-color);
-  background: var(--accent-background-color);
+@media all and (min-width: 500px) {
+  .button_container {
+  flex-direction: row;
+  }
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--button-background-color);
+  border-color: var(--button-background-color);
+  color: var(--button-background-color);
   cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 30px;
+  padding: 1.2em 2.2em;
+  text-decoration: none;
   text-align: center;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+.btn:hover, .btn:focus {
+  color: var(--button-hover-color);
+  outline: 0;
 }
 
-input:focus,
-button:focus {
-  outline: -webkit-focus-ring-color auto 5px;
-  outline-offset: -2px;
+.shine {
+  border-color: var(--button-background-color);
+  color: var(--button-text-color);
+  box-shadow: 0 0 40px 40px var(--button-background-color) inset, 0 0 0 0 var(--button-background-color);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
-
-button:active {
-  transform: scale(0.99);
+.shine:hover {
+  box-shadow: 0 0 10px 0 var(--button-background-color) inset, 0 0 10px 4px var(--button-background-color);
 }
 
 p {
@@ -144,7 +171,7 @@ blockquote {
 
 #top {
   display: inline-block;
-  font-family: Noto Sans, Roboto, Verdana, Arial;
+  font-family: Noto Sans, Verdana, Arial;
   font-size: 1.0em;
   margin-left: 0;
   overflow: hidden;
@@ -250,13 +277,17 @@ blockquote {
 /**** Content ***/
 
 .screenshot img {
-  border: 5px solid #347272;
+  border: 5px solid var(--screenshot-border-color);
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   height: auto;
   max-width: 1024px;
+}
+
+iframe {
+  border: 5px solid var(--screenshot-border-color);
 }
 
 #left ul {
