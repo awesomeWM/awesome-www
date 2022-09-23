@@ -114,6 +114,10 @@ ul {
   padding:0;
 }
 
+li::marker {
+  color: var(--accent-background-color);
+}
+
 #arrow li {
   background: url(/images/arrow.svg) no-repeat left;
   background-size: 8px;
