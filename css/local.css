@@ -3,74 +3,106 @@
  * Originally created by Devit Schizoper (01.12.2006)
  */
 
-font-face {
-    font-family: "ProdigySans";
-    font-weight: normal;
-    src: url(/fonts/ProdigySans-Regular.ttf) format("truetype");
+:root {
+  color-scheme: dark light;
+  supported-color-schemes: dark light;
+  --duration: 0.5s;
+  --timing: ease;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12pt;
 }
 
 body {
   margin: 0;
   width: 100%;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+body.expand {
+  transition:
+    color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+}
+
+:any-link {
+  color: var(--link-color);
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  margin: 0.5rem 0;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0.5rem 1rem;
+  margin: 0;
+  border: none;
+  outline: solid 1px var(--color);
+  outline-offset: -1px;
+}
+
+button {
+  color: var(--accent-color);
+  background: var(--accent-background-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+input:focus,
+button:focus {
+  outline: -webkit-focus-ring-color auto 5px;
+  outline-offset: -2px;
+}
+
+button:active {
+  transform: scale(0.99);
 }
 
 p {
   margin: 11px 0 10px 0;
   padding: 0;
   text-align: justify;
+  line-height: 1.5;
 }
 
-.awesome li {
-  padding: 5px 0px 5px 45px;
+ul {
+  margin:0;
+  padding:0;
+}
+
+#arrow li {
+  background: url(/images/arrow.svg) no-repeat left;
+  background-size: 8px;
+  padding: 3px 0px 3px 18px;
   list-style: none;
   margin: 0;
 }
 
-.awesome li:nth-child(1) {
-  background: url(images/icons/a.png) no-repeat left top;
-}
-
-.awesome li:nth-child(2) {
-  background: url(images/icons/w.png) no-repeat left top;
-}
-
-.awesome li:nth-child(3) {
-  background: url(images/icons/e.png) no-repeat left top;
-}
-
-.awesome li:nth-child(4) {
-  background: url(images/icons/s.png) no-repeat left top;
-}
-
-.awesome li:nth-child(5) {
-  background: url(images/icons/o.png) no-repeat left top;
-}
-
-.awesome li:nth-child(6) {
-  background: url(images/icons/m.png) no-repeat left top;
-}
-
-.awesome li:nth-child(7) {
-  background: url(images/icons/e.png) no-repeat left top;
-}
-
-.awesome li:nth-child(8) {
-  background: url(images/icons/w.png) no-repeat left top;
-}
-
-.awesome li:nth-child(9) {
-  background: url(images/icons/m.png) no-repeat left top;
-}
-
-
 h1 {
-  color: #3f4c4b;
-  font-family: ProdigySans;
-  font-size: 2.1rem
+  color: var(--main-headline-color);
+  font-size: 1.9rem;
+  line-height: 1;
 }
 
 a {
-  color: #006699;
+  color: var(--link-color);
 }
 
 ul.active-menu-about li.menu-about,
@@ -86,22 +118,20 @@ a:hover {
   text-decoration: none;
 }
 
-blockquote{
-  background: #F7FDE3;
-  color: #606060;
+blockquote {
+  background: var(--background-color);
+  color: var(--color);
   padding: 10px;
 }
 
-.align_center { 
-  display: block; 
-  text-align: center; 
+.align_center {
+  text-align: center;
 }
 
-.align_right { 
-  display: block; 
-  text-align: right; 
+.align_right {
+  display: block;
+  text-align: right;
 }
-
 
 /**** Main Container ***/
 
@@ -110,7 +140,6 @@ blockquote{
   width: 100%;
 }
 
-
 /**** Top ***/
 
 #top {
@@ -118,13 +147,13 @@ blockquote{
   font-family: Noto Sans, Roboto, Verdana, Arial;
   font-size: 1.0em;
   margin-left: 0;
-  overflow:hidden;
+  overflow: hidden;
   width: 100%;
 }
 
 #top h2 {
-  display:block;
-  float:left;
+  display: block;
+  float: left;
   font-size: 3.0em;
   font-weight: bold;
   letter-spacing: 3px;
@@ -138,7 +167,7 @@ blockquote{
 }
 
 #top h2 a:hover {
-  color: black;
+  color: var(--menu-hover-color);
 }
 
 /**** Center Logo ****/
@@ -188,14 +217,16 @@ blockquote{
   text-decoration: none;
 }
 
-* html #menu a {width:1%;}
+* html #menu a {
+  width: 1%;
+}
 
 #menu li a:hover {
-  color: black;
+  color: var(--menu-hover-color);
 }
 
 #menu li a.current {
-  color: gray;
+  color: var(--menu-hover-color);
   letter-spacing: 1px;
 }
 
@@ -229,64 +260,22 @@ blockquote{
 }
 
 #left ul {
-  margin:0;
+  margin: 0;
   padding: 15px 0 15px 35px;
 }
 
 #left li {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
 #left {
   display: block;
   display: inline;
-  float:left;
+  float: left;
   margin-left: 20%;
   width: 60%;
 }
 
-
-/**** Sidebar ***/
-
-#right {
-  display:block;
-  float: right;
-  margin-top: 10px;
-  width: 0px;
-}
-
-#right .box {
-  background: #F6F9FB;
-  border: 1px solid #E1E1E1;
-  float: right;
-  padding:10px 10px 15px 10px;
-  width: 24em;/*280px*/
-}
-
-#right .box h2 {
-  font-size: 1.1em;
-  margin: 0 0 0 0;
-  padding: 0 0 5px 0;
-}
-
-#right .box a {
-  font-size: 10px;
-  margin: 10px 0 10px 0;
-}
-
-#right .box p {
-  line-height: 15px;
-  margin: 5px 0 10px 0;
-}
-
-#right .box ul {
-  margin:10px 0 10px 0;
-  padding: 0 0 7px 20px;
-}
-
-#right .box li {
-  margin-top:5px;
-}
 
 #nav {
   float: right;
@@ -294,10 +283,12 @@ blockquote{
   margin: 2.0em 0;
   width: 25em;
 }
+
 #nav li {
   padding: 0;
   margin: 0;
 }
+
 #nav a {
   background-color: #F7F9FB;
   border-bottom: 2px;
@@ -309,8 +300,8 @@ blockquote{
   text-decoration: none;
 }
 
-#nav a:hover{
-  background: url(images/bg_t.gif) no-repeat;
+#nav a:hover {
+  background: url(/images/bg_t.gif) no-repeat;
   background-color: #fff;
   color: #1a1a1a;
   font-weight: bold;
@@ -321,8 +312,8 @@ blockquote{
 #clear {
   clear: both;
   display: block;
-  height:1px;
-  overflow:hidden;
+  height: 1px;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -351,18 +342,20 @@ blockquote{
   margin: 1em 0;
   text-align: center;
 }
-#donate p, #donate div {
+
+#donate p,
+#donate div {
   text-align: center;
 }
 
 .standout {
-  font-size:larger;
-  font-weight:bold;
+  font-size: larger;
+  font-weight: bold;
   color: #A94442;
 }
 
 .standout a {
-    color: red;
+  color: #A94442;
 }
 
 /* vim: set sw=2 et: */

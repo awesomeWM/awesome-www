@@ -1,155 +1,139 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><TMPL_VAR TITLE> - awesome window manager</title>
-<link rel="icon" href="<TMPL_VAR BASEURL>images/icons/aw_16.png" type="image/png" />
-<link rel="stylesheet" href="<TMPL_VAR BASEURL>style.css" type="text/css" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="<TMPL_VAR BASEURL>local.css" type="text/css" />
-<TMPL_IF NAME="FEEDLINKS"><TMPL_VAR FEEDLINKS></TMPL_IF>
-<TMPL_IF NAME="META"><TMPL_VAR META></TMPL_IF>
+    <title>
+        <TMPL_VAR TITLE> - awesome window manager
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="supported-color-schemes" content="dark light">
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" type="text/css" href="<TMPL_VAR BASEURL>style.css">
+    <link rel="stylesheet" type="text/css" href="<TMPL_VAR BASEURL>css/mode-switch.css">
+    <link rel="stylesheet" type="text/css" href="<TMPL_VAR BASEURL>css/local.css" />
+    <link id="css-lightmode" rel="stylesheet" type="text/css" href="<TMPL_VAR BASEURL>css/light.css"
+        media="(prefers-color-scheme: no-preference), (prefers-color-scheme: light)" />
+    <link id="css-darkmode" rel="stylesheet" type="text/css" href="<TMPL_VAR BASEURL>css/dark.css"
+        media="(prefers-color-scheme: dark)" />
+
+    <script src="<TMPL_VAR BASEURL>/script/dark-light-mode.js"></script>
+
+    <link rel="icon" href="<TMPL_VAR BASEURL>images/icons/aw_16.png" type="image/png" />
+
+    <TMPL_IF NAME="FEEDLINKS">
+        <TMPL_VAR FEEDLINKS>
+    </TMPL_IF>
+    <TMPL_IF NAME="META">
+        <TMPL_VAR META>
+    </TMPL_IF>
 </head>
 <body>
-<div id="wrap">
-    <a href="https://github.com/awesomeWM/awesome"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
-    <div id="top">
-      <TMPL_IF NAME="SEARCHFORM">
-        <TMPL_VAR SEARCHFORM>
-        </TMPL_IF>
-	<div id="center-logo">
-	  <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
-	    <img alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome-logo-1.png">
-	  </a>
-	</div>
-        <div id="menu">
-          <ul class="active-menu-<TMPL_VAR NAME="title">">
-            <li class="menu-about"><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
-            <li class="menu-download"><a href="<TMPL_VAR BASEURL>download/">download</a></li>
-            <li class="menu-community"><a href="<TMPL_VAR BASEURL>community/">community</a></li>
-            <li class="menu-recipes"><a href="<TMPL_VAR BASEURL>recipes/">recipes</a></li>
-            <li class="menu-screenshots"><a href="<TMPL_VAR BASEURL>screenshots/">screenshots</a></li>
-            <li class="menu-doc"><a href="<TMPL_VAR BASEURL>doc/">doc</a></li>
-            <li class="menu-issues"><a href="https://github.com/awesomeWM/awesome/issues">bugs/issues</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <TMPL_IF NAME="HAVE_ACTIONS">
-        <div class="actions">
-        <ul>
-            <TMPL_IF NAME="EDITURL">
-                <li><a href="<TMPL_VAR EDITURL>">Edit</a></li>
+    <div id="wrap">
+        <a href="https://github.com/awesomeWM/awesome"><img style="position: absolute; top: 0; left: 0; border: 0;"
+                src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67"
+                alt="Fork me on GitHub"
+                data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+        <div id="top">
+            <TMPL_IF NAME="SEARCHFORM">
+                <TMPL_VAR SEARCHFORM>
             </TMPL_IF>
-            <TMPL_IF NAME="RECENTCHANGESURL">
-                <li><a href="<TMPL_VAR RECENTCHANGESURL>">RecentChanges</a></li>
-            </TMPL_IF>
-            <TMPL_IF NAME="HISTORYURL">
-                <li><a href="<TMPL_VAR HISTORYURL>">History</a></li>
-            </TMPL_IF>
-            <TMPL_IF NAME="PREFSURL">
-                <li><a href="<TMPL_VAR PREFSURL>">Preferences</a></li>
-            </TMPL_IF>
-            <TMPL_IF NAME="DISCUSSIONLINK">
-                <li><TMPL_VAR DISCUSSIONLINK><br /></li>
-            </TMPL_IF>
-        </ul>
-        </div>
-    </TMPL_IF>
-
-    <TMPL_IF SIDEBAR>
-        <div id="sidebar">
-            <TMPL_VAR SIDEBAR>
-        </div>
-    </TMPL_IF>
-
-    <div id="content">
-    <!--    <h1><TMPL_VAR TITLE></h1> -->
-        <div id="left">
-          <TMPL_VAR CONTENT>
-        </div>
-        <!--
-        <div id="right">
-            <ul id="nav">
-                <li><a href="/">home</a></li>
-            </ul>
-            <div class="box">
-                <h2 style="margin-top:17px">Latest news</h2>
-                <ul>
-                    <li><a href="#">Recent Entries1</a> <i>01 Des 06</i></li>
-               </ul>
+            <div class="darkmode" id="center-logo">
+                <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
+                    <img alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome-dark-1.svg">
+                </a>
             </div>
-       </div>
-        -->
-    </div>
-</div>
+            <div class="lightmode" id="center-logo">
+                <a href="<TMPL_VAR BASEURL>index.html" title="Back to main page">
+                    <img alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome2.svg">
+                </a>
+            </div>
 
-<div id="clear"></div>
 
-<div id="footer">
-    <div id="pageinfo">
-
-    <TMPL_IF NAME="TAGS">
-        <div class="tags">
-            Tags:
-            <TMPL_LOOP NAME="TAGS">
-                <TMPL_VAR NAME=LINK>
-            </TMPL_LOOP>
+            <div id="menu">
+                <ul class="active-menu-<TMPL_VAR NAME=" title">">
+                    <li class="menu-about"><a href="<TMPL_VAR BASEURL>index.html">home</a></li>
+                    <li class="menu-download"><a href="<TMPL_VAR BASEURL>download/">download</a></li>
+                    <li class="menu-community"><a href="<TMPL_VAR BASEURL>community/">community</a></li>
+                    <li class="menu-recipes"><a href="<TMPL_VAR BASEURL>recipes/">recipes</a></li>
+                    <li class="menu-screenshots"><a href="<TMPL_VAR BASEURL>screenshots/">screenshots</a></li>
+                    <li class="menu-doc"><a href="<TMPL_VAR BASEURL>doc/">doc</a></li>
+                    <li class="menu-issues"><a href="https://github.com/awesomeWM/awesome/issues">bugs/issues</a></li>
+                </ul>
+            </div>
         </div>
-    </TMPL_IF>
 
-    <script type='text/javascript' src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
-    <img alt="15years anniversary" src="images/awesome-youtube-15yrs-anniversary.png" width="250" style="vertical-align: top; margin-top: 20px;">
-
-    <div id="donate">
-      <strong>Donations:</strong>
-      <div>
-      <script id='fbirvwx'>(function(i){var f,s=document.getElementById(i);f=document.createElement('iframe');f.src='https://button.flattr.com/view/?fid=mqwonm&button=compact&url=https%3A%2F%2Fawesomewm.org%2F';f.title='Flattr';f.height=20;f.width=110;f.style.borderWidth=0;s.parentNode.insertBefore(f,s);})('fbirvwx');</script>
-      </div>
-      <p>Bitcoin: 1A2LsrF81rWEEJ7qnXdkCUJpdCYUxqfQoP</p>
-    </div>
-
-    <div class="copyright">
-        <a id="pagecopyright"></a>
-        <TMPL_IF COPYRIGHT>
-            <TMPL_VAR COPYRIGHT>
-        </TMPL_IF>
-        Copyleft 2007-2022, AwesomeWM project
-    </div>
-    <TMPL_IF LICENSE>
-        <div class="license">
-            <a name="pagelicense"></a>
-            License: <TMPL_VAR LICENSE>
+        <div id="content">
+            <div id="left">
+                <TMPL_VAR CONTENT>
+            </div>
         </div>
-    </TMPL_IF>
-
-    <div class="pagedate">
-        Last edited <TMPL_VAR NAME=MTIME>
     </div>
 
+    <div id="clear"></div>
+
+    <div id="footer">
+        <div id="pageinfo">
+
+            <script type='text/javascript'
+                src='https://www.openhub.net/p/awesome/widgets/project_factoids_stats?format=js'></script>
+            <img alt="15years anniversary" src="<TMPL_VAR BASEURL>images/awesome-15yrs-anniversary.svg" width="250"
+                style="vertical-align: top; margin-top: 20px;">
+
+            <div id="donate">
+                <strong>Donations:</strong>
+                <div>
+                    <script
+                        id='fbirvwx'>(function (i) { var f, s = document.getElementById(i); f = document.createElement('iframe'); f.src = 'https://button.flattr.com/view/?fid=mqwonm&button=compact&url=https%3A%2F%2Fawesomewm.org%2F'; f.title = 'Flattr'; f.height = 20; f.width = 110; f.style.borderWidth = 0; s.parentNode.insertBefore(f, s); })('fbirvwx');</script>
+                </div>
+                <p>Bitcoin: 1A2LsrF81rWEEJ7qnXdkCUJpdCYUxqfQoP</p>
+            </div>
+
+            <div class="copyright">
+                <a id="pagecopyright"></a>
+                <TMPL_IF COPYRIGHT>
+                    <TMPL_VAR COPYRIGHT>
+                </TMPL_IF>
+                Copyleft 2007-2022, AwesomeWM project
+            </div>
+            <TMPL_IF LICENSE>
+                <div class="license">
+                    <a name="pagelicense"></a>
+                    License: <TMPL_VAR LICENSE>
+                </div>
+            </TMPL_IF>
+
+            <div class="pagedate">
+                Last edited <TMPL_VAR NAME=MTIME>
+            </div>
+
+        </div>
     </div>
-<TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
-<!-- from <TMPL_VAR NAME=WIKINAME> -->
-</div>
 
-<!-- Piwik -->
-<script type="text/javascript">
-  var _paq = _paq || [];
-  _paq.push(["setCookieDomain", "*.awesomewm.org"]);
-  _paq.push(["setDomains", ["*.awesomewm.org"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="https://piwik.awesomewm.org/";
-    _paq.push(['setTrackerUrl', u+'piwik.php']);
-    _paq.push(['setSiteId', 26]);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="https://piwik.awesomewm.org/piwik.php?idsite=26" style="border:0;" alt="" /></p></noscript>
-<!-- End Piwik Code -->
-
+    <!-- dark/light support -->
+    <ul class="mode-switch">
+        <li class="mode-switch-icon"></li>
+        <li><label class="switch"><input type="checkbox"><span class="slider round"></span></label></li>
+    </ul>
+    <script src="<TMPL_VAR BASEURL>script/dark-light-mode-switch.js"></script>
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setCookieDomain", "*.awesomewm.org"]);
+        _paq.push(["setDomains", ["*.awesomewm.org"]]);
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://piwik.awesomewm.org/";
+            _paq.push(['setTrackerUrl', u + 'piwik.php']);
+            _paq.push(['setSiteId', 26]);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <noscript>
+        <p><img src="https://piwik.awesomewm.org/piwik.php?idsite=26" style="border:0;" alt="" /></p>
+    </noscript>
 </body>
 </html>
