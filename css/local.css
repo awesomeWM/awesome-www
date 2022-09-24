@@ -64,7 +64,7 @@ ul {
 }
 
 li::marker {
-  color: var(--accent-background-color);
+  color: var(--bullet-points-color);
 }
 
 #arrow li {
