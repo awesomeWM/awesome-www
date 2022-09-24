@@ -12,12 +12,13 @@
  * color7:  #3c4847
  * color8:  #3f5f47
  * color9:  #c1605d
- * color10:  #a9c68e
- * color11:  #decf50
- * color12:  #a6bbcb
- * color13:  #ad79a2
- * color14:  #8aa1af
- * color15:  #fafafa
+ * colorA:  #a9c68e
+ * colorB:  #decf50
+ * colorC:  #a6bbcb
+ * colorD:  #ad79a2
+ * colorE:  #8aa1af
+ * colorF:  #fafafa
+ * colorA:  #4f5867
  */
 
 :root {
@@ -27,11 +28,14 @@
   --main-headline-color: #3c4847;
   --accent-background-color: #006194;
   --accent-color: #fafafa;
+  --warning-message: #b44631;
   --menu-hover-color: #000300;
   --screenshot-border-color: #347272;
   --button-background-color: #535d6c;
   --button-text-color: #fafafa;
   --button-hover-color: #000300;
+  --nav-text-color: #006194;
+  --nav-accent-color: #000300;
 }
 
 .darkmode {

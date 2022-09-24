@@ -10,6 +10,9 @@ checkbox.addEventListener("click", () => {
 
 set_theme_checkbox();
 
+// apply specific styling after page reload
+document.getElementById('navbar').classList.add("topBotomBordersOut");
+
 // set correct state of dark/light theme mode
 function set_theme_checkbox() {
     if (checkbox.checked) {
