@@ -1,4 +1,4 @@
-let siteVars = new Array();
+var siteVars = new Array();
 siteVars['theme_active'] = 'light';
 siteVars['theme_forced'] = '';
 
