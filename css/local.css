@@ -192,11 +192,12 @@ iframe {
 
 #content ul {
   margin: 0;
-  padding: 5px 0 15px 35px;
+  padding: 11px 0 15px 20px;
 }
 
 #content li {
   margin-bottom: 5px;
+  padding-left: 3px;
 }
 
 #content {
@@ -312,7 +313,7 @@ footer p {
 }
 
 .shine:hover {
-  box-shadow: 0 0 10px 0 var(--button-background-color) inset, 0 0 10px 4px var(--button-background-color);
+  box-shadow: 0 0 1px 0 var(--button-background-color) inset, 0 0 1px 1px var(--button-background-color);
 }
 
 /**** navigation ***/
