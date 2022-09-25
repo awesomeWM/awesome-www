@@ -182,17 +182,17 @@ iframe {
 
 #content h1 {
   margin: 0;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 5px 0;
 }
 
 #content h2 {
   margin: 0;
-  padding: 10px 0 10px 0;
+  padding: 20px 0 5px 0;
 }
 
 #content ul {
   margin: 0;
-  padding: 15px 0 15px 35px;
+  padding: 5px 0 15px 35px;
 }
 
 #content li {
@@ -249,20 +249,28 @@ footer p {
 
 /** buttons */
 
-.button_container {
+.flex-container {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 20px;
+  align-items: center;
   justify-content: center;
 }
 
-@media all and (min-width: 500px) {
-  .button_container {
-    flex-direction: row;
-  }
+.row {
+  width: auto;
+}
+
+.flex-href {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
+  display: inline-block;
+  background: #4E9CAF;
+  border-radius: 5px;
   box-sizing: border-box;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -282,12 +290,11 @@ footer p {
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5;
-  margin: 30px;
+  margin: 8px;
   padding: 1.2em 2.2em;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  border-radius: 2px;
 }
 
 .btn:hover,
@@ -299,7 +306,7 @@ footer p {
 .shine {
   border-color: var(--button-background-color);
   color: var(--button-text-color);
-  box-shadow: 0 0 40px 40px var(--button-background-color) inset, 0 0 0 0 var(--button-background-color);
+  box-shadow: 0 0 60px 60px var(--button-background-color) inset, 0 0 0 0 var(--button-background-color);
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 }
