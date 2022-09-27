@@ -342,6 +342,10 @@ nav.container a {
   cursor: pointer;
 }
 
+nav.container a:hover {
+  color: var(--nav-accent-color);
+}
+
 /* effect top-bottom borders go out */
 nav.topBotomBordersOut a:before,
 nav.topBotomBordersOut a:after {
