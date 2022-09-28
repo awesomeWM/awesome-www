@@ -1,0 +1,45 @@
+/**
+ * AWESOME THEME LIGHT
+ * background:  #ffffff
+ * foreground:  #000300
+ * color0:  #000300
+ * color1:  #b44631
+ * color2:  #6fc24e
+ * color3:  #cab14c
+ * color4:  #006194
+ * color5:  #926090
+ * color6:  #59929d
+ * color7:  #3c4847
+ * color8:  #3f5f47
+ * color9:  #c1605d
+ * colorA:  #a9c68e
+ * colorB:  #decf50
+ * colorC:  #a6bbcb
+ * colorD:  #ad79a2
+ * colorE:  #8aa1af
+ * colorF:  #fafafa
+ * colorA:  #4f5867
+ */
+
+:root {
+  --background-color: #ffffff;
+  --color: #000300;
+  --link-color: #006194;
+  --main-headline-color: #3c4847;
+  --bullet-points-color: #3c4847;
+  --accent-background-color: #006194;
+  --accent-color: #fafafa;
+  --warning-message: #b44631;
+  --menu-hover-color: #000300;
+  --screenshot-border-color: #347272;
+  --button-background-color: #535d6c;
+  --button-text-color: #fafafa;
+  --button-hover-color: #000300;
+  --nav-text-color: #006194;
+  --nav-accent-color: #000300;
+}
+
+.darkmode {
+  visibility: hidden;
+  display: none;
+}

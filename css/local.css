@@ -1,0 +1,391 @@
+/* Styles for https://awesomewm.org/
+ * Source: https://github.com/awesomeWM/awesome-www
+ * Originally created by Devit Schizoper (01.12.2006)
+ */
+
+:root {
+  color-scheme: dark light;
+  supported-color-schemes: dark light;
+  --duration: 0.5s;
+  --timing: ease;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Noto Sans, Verdana, Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  color: var(--color);
+}
+
+body.expand {
+  transition:
+    color var(--duration) var(--timing),
+    background-color var(--duration) var(--timing);
+}
+
+.preload {
+  transition: none !important;
+}
+
+:any-link {
+  color: var(--link-color);
+}
+
+figure {
+  margin: 1rem 0;
+}
+
+figcaption {
+  margin: 0.5rem 0;
+}
+
+p {
+  margin: 11px 0 10px 0;
+  padding: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li::marker {
+  color: var(--bullet-points-color);
+}
+
+#arrow li {
+  background: url(/images/arrow.svg) no-repeat left;
+  background-size: 8px;
+  padding: 3px 0px 3px 18px;
+  list-style: none;
+  margin: 0;
+}
+
+h1 {
+  color: var(--main-headline-color);
+  font-size: 1.9rem;
+  line-height: 1;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+blockquote {
+  background: var(--background-color);
+  color: var(--color);
+  padding: 10px;
+}
+
+iframe {
+  border: 5px solid var(--screenshot-border-color);
+}
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  display: block;
+  text-align: right;
+}
+
+.screenshot img {
+  border: 5px solid var(--screenshot-border-color);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+  max-width: 1024px;
+}
+
+.fork-me-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+#justified-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  width: 40%;
+  max-width: 800px;
+}
+
+.standout {
+  font-size: larger;
+  font-weight: bold;
+  color: var(--warning-message);
+}
+
+.standout a {
+  color: var(--warning-message);
+}
+
+/**** header  ***/
+
+#pageheader {
+  display: inline-block;
+  font-family: Noto Sans, Verdana, Arial, sans-serif;
+  font-size: 1.0em;
+  margin-left: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+#pageheader h2 {
+  display: block;
+  float: left;
+  font-size: 3.0em;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-right: 20px;
+  position: relative;
+  top: 5px;
+}
+
+#pageheader h2 a {
+  text-decoration: none;
+}
+
+#pageheader h2 a:hover {
+  color: var(--menu-hover-color);
+}
+
+/**** article ***/
+
+#content {
+  width: 100%;
+}
+
+#content h1 {
+  margin: 0;
+  padding: 20px 0 5px 0;
+}
+
+#content h2 {
+  margin: 0;
+  padding: 20px 0 5px 0;
+}
+
+#content ul {
+  margin: 0;
+  padding: 11px 0 15px 20px;
+}
+
+#content li {
+  margin-bottom: 5px;
+  padding-left: 3px;
+}
+
+#content {
+  display: block;
+  display: inline;
+  float: left;
+  margin-left: 20%;
+  width: 60%;
+}
+
+/**** clear div ***/
+
+#clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  overflow: hidden;
+  width: 100%;
+}
+
+/**** footer ***/
+
+footer {
+  border-top: dashed 1px gray;
+  margin: 40px auto 0 auto;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  width: 70%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+#pageinfo {
+  border-top: 0;
+  margin: 0 0;
+}
+
+#donate {
+  margin: 1em 0;
+  text-align: center;
+}
+
+#donate p,
+#donate div {
+  text-align: center;
+}
+
+.aw-anniversary {
+  margin-left: 65px;
+}
+
+/** buttons */
+
+.flex-container {
+  display: flex;
+  height: 100%;
+  padding: 0;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  width: auto;
+}
+
+.flex-href {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #4E9CAF;
+  border-radius: 5px;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid var(--button-background-color);
+  border-color: var(--button-background-color);
+  color: var(--button-background-color);
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 8px;
+  padding: 1.2em 2.2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--button-hover-color);
+  outline: 0;
+}
+
+.shine {
+  border-color: var(--button-background-color);
+  color: var(--button-text-color);
+  box-shadow: 0 0 60px 60px var(--button-background-color) inset, 0 0 0 0 var(--button-background-color);
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.shine:hover {
+  box-shadow: 0 0 1px 0 var(--button-background-color) inset, 0 0 1px 1px var(--button-background-color);
+}
+
+/**** navigation ***/
+
+nav.container {
+  font-family: Noto Sans;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+nav.container a {
+  color: var(--link-color);
+  text-decoration: none;
+  font: 0.99em Noto Sans;
+  font-weight: bold;
+  margin: 0px 10px;
+  padding: 5px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+
+nav.container a:hover {
+  color: var(--nav-accent-color);
+}
+
+/* effect top-bottom borders go out */
+nav.topBotomBordersOut a:before,
+nav.topBotomBordersOut a:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: var(--nav-accent-color);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+nav.topBotomBordersOut a:before {
+  top: 0px;
+  transform: translateY(10px);
+}
+
+nav.topBotomBordersOut a:after {
+  bottom: 0px;
+  transform: translateY(-10px);
+}
+
+nav.topBotomBordersOut a:hover:before,
+nav.topBotomBordersOut a:hover:after {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* selected menu item */
+
+nav.active-menu-about a.menu-about,
+nav.active-menu-download a.menu-download,
+nav.active-menu-community a.menu-community,
+nav.active-menu-recipes a.menu-recipes,
+nav.active-menu-screenshots a.menu-screenshots,
+nav.active-menu-doc a.menu-doc {
+  color: var(--nav-accent-color);
+  text-decoration-line: underline;
+  text-decoration-thickness: 1.7px;
+}
+
+/* vim: set sw=2 et: */

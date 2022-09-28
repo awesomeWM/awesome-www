@@ -8,9 +8,18 @@ It is primarily targeted at power users, developers and any people dealing with
 every day computing tasks and who want to have fine-grained control on their
 graphical environment.
 
-<div class="screenshot">
-[[!img images/screen.png alt="awesome screenshot" size="382x216"]]
+<div class="flex-container">
+  <div class="row">
+    <a class="btn shine" href="https://awesomewm.org/doc/api/documentation/07-my-first-awesome.md.html#">awesome 4.3<br/>documentation<br/>(stable)</a>
+    <a class="flex-href" href="https://awesomewm.org/apidoc/documentation/07-my-first-awesome.md.html#">
+Docs for latest git version</a>
+  </div>
 </div>
+
+<div class="screenshot">
+[[!img images/screen.png link="images/screen.png" alt="awesome screenshot"]]
+</div>
+
 
 # Concepts
 
@@ -39,7 +48,7 @@ window manager.
 * Very stable, fast and small codebase and footprint.
 * First window manager using the asynchronous [XCB](http://xcb.freedesktop.org)
   library instead of the old, synchronous
-  [Xlib](http://en.wikipedia.org/wiki/Xlib), which makes **awesome** less
+  [Xlib](http://en.wikipedia.org/wiki/Xlib), which makes **awesome** less
   subject to latency compared to other window managers.
 * Documented source code and API.
 * No mouse needed: everything can be performed with the keyboard.
