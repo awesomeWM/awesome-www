@@ -23,6 +23,7 @@
 
 :root {
   --background-color: #ffffff;
+  --background-gradient-color: #00619425;
   --color: #000300;
   --link-color: #006194;
   --main-headline-color: #3c4847;
@@ -33,10 +34,14 @@
   --menu-hover-color: #000300;
   --screenshot-border-color: #347272;
   --button-background-color: #535d6c;
-  --button-text-color: #fafafa;
+  --button-background-color-transparent: #535d6c99;
+  --button-text-color: #f6f3f3;
   --button-hover-color: #000300;
   --nav-text-color: #006194;
-  --nav-accent-color: #000300;
+  --nav-accent-color: #000000;
+  --nav-background-color: #fafafa;
+  --nav-background-color-transparent: #24252a00;
+  --nav-border-color: #24252a20;
 }
 
 .darkmode {

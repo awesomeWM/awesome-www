@@ -1,26 +1,24 @@
 const checkbox = document.querySelector("input[type='checkbox']");
-const mode_switch_icon = document.querySelector(".mode-switch-icon");
+const slider = document.querySelector('.slider');
 
 // configure and set correct state of theme checkbox
 checkbox.checked = siteVars['theme_active'] == 'dark'
 checkbox.addEventListener("click", () => {
     theme_switch();
     set_theme_checkbox();
+    scrollFunction();
 });
 
 set_theme_checkbox();
 
-// apply specific styling after page reload
-document.getElementById('navbar').classList.add("topBotomBordersOut");
-
 // set correct state of dark/light theme mode
 function set_theme_checkbox() {
     if (checkbox.checked) {
-        mode_switch_icon.classList.add("mode-switch-dark");
-        mode_switch_icon.classList.remove("mode-switch-light");
+        slider.classList.add("slider-dark");
+        slider.classList.remove("slider-light");
     } else {
-        mode_switch_icon.classList.add("mode-switch-light");
-        mode_switch_icon.classList.remove("mode-switch-dark");
+        slider.classList.remove("slider-dark");
+        slider.classList.add("slider-light");
     }
 }
 
