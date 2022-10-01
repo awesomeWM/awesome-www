@@ -2,13 +2,6 @@
  * Dark/Light Theme Switcher build on Checkbox and UL/LI structure 
  */
 
-.mode-switch {
-    display: flex;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-}
-
 .mode-switch>li {
     list-style: none;
     margin-right: 6px;
@@ -18,17 +11,6 @@
     padding: 0px 0px 0px 32px;
     list-style: none;
     margin: 0;
-}
-
-.mode-switch-dark {
-    background: url(../images/icons/moon.svg) no-repeat left top;
-    background-size: 32px 32px;
-    filter: invert(100%);
-}
-
-.mode-switch-light {
-    background: url(../images/icons/sun.svg) no-repeat left top;
-    background-size: 32px 32px;
 }
 
 .switch {
@@ -58,7 +40,7 @@
     transition: 0.4s;
 }
 
-.slider:before {
+.slider-dark:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -68,6 +50,22 @@
     background-color: #fafafa;
     -webkit-transition: 0.4s;
     transition: 0.4s;
+    background: url(../images/icons/moon.svg) no-repeat left top;
+    background-size: 25px 25px; 
+}
+
+.slider-light:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #fafafa;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background: url(../images/icons/sun.svg) no-repeat left top;
+    background-size: 25px 25px;    
 }
 
 input:checked+.slider {
