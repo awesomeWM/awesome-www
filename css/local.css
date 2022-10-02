@@ -36,8 +36,8 @@ body.expand {
 
 .top-gradient {
   background-image:
-      linear-gradient(to top, transparent, var(--background-gradient-color));
-  background-size: 100% 3%;
+      linear-gradient(to bottom, var(--background-gradient-color), transparent);
+  background-size: 100% 2%;
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -386,14 +386,12 @@ footer p {
 
 .cta,
 .overlay__content a {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: var(--nav-text-color);
   text-decoration: none;
 }
 
 .nav__links a {
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
