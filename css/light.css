@@ -20,10 +20,14 @@
  * colorF:  #fafafa
  * colorA:  #4f5867
  */
-
+/**
+light-1: #00619425
+light-2: #59929d40
+light-3: #59929d30
+*/
 :root {
   --background-color: #ffffff;
-  --background-gradient-color: #00619425;
+  --background-gradient-color: #3c484735;
   --color: #000300;
   --link-color: #006194;
   --main-headline-color: #3c4847;
