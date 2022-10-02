@@ -20,14 +20,10 @@
  * colorF:  #fafafa
  * colorA:  #4f5867
  */
-/**
-light-1: #00619425
-light-2: #59929d40
-light-3: #59929d30
-*/
+
 :root {
   --background-color: #ffffff;
-  --background-gradient-color: #3c484735;
+  --background-gradient-color: #4a7a8360;
   --color: #000300;
   --link-color: #006194;
   --main-headline-color: #3c4847;
@@ -43,6 +39,7 @@ light-3: #59929d30
   --button-hover-color: #000300;
   --nav-text-color: #006194;
   --nav-accent-color: #000000;
+  --nav-selected-color: #000300;
   --nav-background-color: #fafafa;
   --nav-background-color-transparent: #24252a00;
   --nav-border-color: #24252a20;

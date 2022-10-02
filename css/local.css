@@ -142,7 +142,7 @@ iframe {
   max-width: 800px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
   #justified-logo img {
     width: 60%;
   }
@@ -345,16 +345,16 @@ footer p {
 .active-menu-recipes a.menu-recipes,
 .active-menu-screenshots a.menu-screenshots,
 .active-menu-doc a.menu-doc {
-  color: var(--nav-accent-color);
-  text-decoration-line: underline;
+  color: var(--nav-selected-color);
   text-decoration-thickness: 1.7px;
+  font-weight: 700;
 }
 
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 10%;
+  padding: 25px 10%;
   background-color: var(--nav-background-color-transparent);
   border: 1px;
   border-color: var(--nav-border-color);
@@ -491,7 +491,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1080px) {
   .nav__links,
   .cta,
   .mode-switch {
