@@ -39,7 +39,6 @@ updates when the current MPD state changes.
 
     local mpc = require("mpc")
     local textbox = require("wibox.widget.textbox")
-    local timer = require("gears.timer")
     local mpd_widget = textbox()
     local state, title, artist, file = "stop", "", "", ""
     local function update_widget()
@@ -53,15 +52,14 @@ updates when the current MPD state changes.
         end
         mpd_widget.text = text
     end
-    local connection
+
     local function error_handler(err)
         mpd_widget:set_text("Error: " .. tostring(err))
-        -- Try a reconnect soon-ish
-        timer.start_new(10, function()
-            connection:send("ping")
-        end)
     end
-    connection = mpc.new(nil, nil, nil, error_handler,
+
+    local reconnect_interval = 1 -- negative to disable
+    local connection
+    connection = mpc.new(nil, nil, nil, error_handler, reconnect_interval,
         "status", function(_, result)
             state = result.state
         end,
