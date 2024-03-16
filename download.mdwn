@@ -5,7 +5,7 @@
 **awesome** is currently available in:
 
 * Arch Linux:
-  * [stable](https://www.archlinux.org/packages/community/x86_64/awesome/)
+  * [stable](https://www.archlinux.org/packages/extra/x86_64/awesome/)
   * [awesome-git in AUR](https://aur.archlinux.org/packages/awesome-git)
   * [awesome-luajit-git in AUR](https://aur.archlinux.org/packages/awesome-luajit-git/)
 * [Debian](http://packages.debian.org/awesome)
