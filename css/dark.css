@@ -18,14 +18,15 @@
  * colorD:  #ad79a2
  * colorE:  #8aa1af
  * colorF:  #bababa
- * color10: #755cf2
+ * color10: #edf0f1
+ * color11: #0088a9
  */
 
 :root {
   --background-color: #222222;
+  --background-gradient-color: #ab73ef25;
   --color: #c4c5c8;
   --link-color: #59929d;
-  --image-filter: grayscale(50%);
   --main-headline-color: #b44631;
   --bullet-points-color: #b44631;
   --accent-background-color: #00bcd4;
@@ -34,10 +35,16 @@
   --menu-hover-color: #ad79a2;
   --screenshot-border-color: #347272;
   --button-background-color: #59929d;
-  --button-text-color: #fafafa;
-  --button-hover-color: #00bcd4;
-  --nav-text-color: #59929d;
-  --nav-accent-color: #c4c5c8;
+  --button-background-color-transparent: #59929d99;
+  --button-text-color: #edf0f1;
+  --button-hover-color: #0088a9;
+  --nav-text-color: #edf0f1;
+  --nav-accent-color: #0088a9;
+  --nav-selected-color: #00bcd4;
+  --nav-background-color: #24252a;
+  --nav-background-color-transparent: #24252a00;
+  --nav-border-color: #bababa30;
+  --image-filter: grayscale(50%);
 }
 
 img:not([src*=".svg"]) {

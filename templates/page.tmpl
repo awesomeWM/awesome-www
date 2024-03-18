@@ -42,7 +42,7 @@
     <script type="application/ld+json">
         {"@context": "https://schema.org","@type": "WebSite","description": "The awesomewm.org website","headline": "home","name": "awesome window manager","publisher": {"@type": "Organization","logo": {"@type": "ImageObject","url": "https://awesomewm.org/images/icons/aw_64.png"}},"url": "https://awesomewm.org/"}</script>
 </head>
-<body>
+<body class="top-gradient">
     <header id="pageheader">
         <a href="https://github.com/awesomeWM/awesome"><img class="fork-me-banner"
                 src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67"
@@ -55,17 +55,45 @@
         <figure class="lightmode" id="justified-logo">
             <img alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome2.svg">
         </figure>
-
-        <nav id="navbar" class="container active-menu-<TMPL_VAR NAME="title">">
-            <a class="menu-about" alt="home" href="<TMPL_VAR BASEURL>index.html">home</a>
-            <a class="menu-download" alt="download" href="<TMPL_VAR BASEURL>download/">download</a>
-            <a class="menu-community" alt="community" href="<TMPL_VAR BASEURL>community/">community</a>
-            <a class="menu-recipes" alt="recipes" href="<TMPL_VAR BASEURL>recipes/">recipes</a>
-            <a class="menu-screenshots" alt="screenshots" href="<TMPL_VAR BASEURL>screenshots/">screenshots</a>
-            <a class="menu-doc" alt="doc" href="<TMPL_VAR BASEURL>doc/">doc</a>
-            <a class="menu-issues" alt="bugs/issues" href="https://github.com/awesomeWM/awesome/issues">bugs/issues</a>
-        </nav>
     </header>
+    <header id="navbar">
+        <a class="logo" href="/">
+            <figure class="darkmode zero-margins">
+                <img id="nav-logo-dark" alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome-dark-1.svg">
+            </figure>
+            <figure class="lightmode zero-margins">
+                <img id="nav-logo-light" alt="awesome-logo" src="<TMPL_VAR BASEURL>images/awesome2.svg">
+            </figure>
+        </a>
+        <nav class="active-menu-<TMPL_VAR NAME="title">">
+            <ul class="nav__links">
+                <li><a class="nav__href menu-about" href="<TMPL_VAR BASEURL>index.html">Home</a></li>
+                <li><a class="nav__href menu-download" href="<TMPL_VAR BASEURL>download/">Download</a></li>
+                <li><a class="nav__href menu-community" href="<TMPL_VAR BASEURL>community/">Community</a></li>
+                <li><a class="nav__href menu-recipes" href="<TMPL_VAR BASEURL>recipes/">Recipes</a></li>
+                <li><a class="nav__href menu-screenshots" href="<TMPL_VAR BASEURL>screenshots/">Screenshots</a></li>
+                <li><a class="nav__href menu-doc" href="<TMPL_VAR BASEURL>doc/">Doc</a></li>
+                <li><a class="nav__href menu-issues" href="https://github.com/awesomeWM/awesome/issues">Bugs/Issues</a></li>
+            </ul>
+        </nav>
+        <p class="menu cta">Menu</p>
+        <!-- dark/light support -->
+        <ul class="mode-switch">
+            <li><label class="switch"><input type="checkbox"><span class="slider round"></span></label></li>
+        </ul>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content active-menu-<TMPL_VAR NAME="title">">
+            <a class="menu-about" href="<TMPL_VAR BASEURL>index.html">Home</a>
+            <a class="menu-download" href="<TMPL_VAR BASEURL>download/">Download</a>
+            <a class="menu-community" href="<TMPL_VAR BASEURL>community/">Community</a>
+            <a class="menu-recipes" href="<TMPL_VAR BASEURL>recipes/">Recipes</a>
+            <a class="menu-screenshots" href="<TMPL_VAR BASEURL>screenshots/">Screenshots</a>
+            <a class="menu-doc" href="<TMPL_VAR BASEURL>doc/">Doc</a>
+            <a class="menu-issues" href="https://github.com/awesomeWM/awesome/issues">Bugs/Issues</a>
+        </div>
+    </div>
 
     <article id="content">
         <TMPL_VAR CONTENT>
@@ -116,11 +144,8 @@
         </section>
     </footer>
 
-    <!-- dark/light support -->
-    <ul class="mode-switch">
-        <li class="mode-switch-icon"></li>
-        <li><label class="switch"><input type="checkbox"><span class="slider round"></span></label></li>
-    </ul>
+    <script defer src="<TMPL_VAR BASEURL>script/navscroll.js"></script>
+        <script defer src="<TMPL_VAR BASEURL>script/mobile.js"></script>
     <script defer src="<TMPL_VAR BASEURL>script/dark-light-mode-switch.js"></script>
     <!-- Piwik -->
     <script type="text/javascript">

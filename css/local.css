@@ -24,7 +24,6 @@ html {
 body {
   margin: 0;
   width: 100%;
-  height: 100%;
   background-color: var(--background-color);
   color: var(--color);
 }
@@ -33,6 +32,14 @@ body.expand {
   transition:
     color var(--duration) var(--timing),
     background-color var(--duration) var(--timing);
+}
+
+.top-gradient {
+  background-image:
+      linear-gradient(to bottom, var(--background-gradient-color), transparent);
+  background-size: 100% 2%;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .preload {
@@ -123,15 +130,22 @@ iframe {
   top: 0;
   left: 0;
   border: 0;
+  z-index: 99;
 }
 
 #justified-logo img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
+  padding-top: 80px;
   width: 40%;
   max-width: 800px;
+}
+
+@media only screen and (max-width: 950px) {
+  #justified-logo img {
+    width: 60%;
+  }
 }
 
 .standout {
@@ -292,6 +306,7 @@ footer p {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 900;
   line-height: 1.5;
@@ -322,70 +337,169 @@ footer p {
 
 /**** navigation ***/
 
-nav.container {
-  font-family: Noto Sans;
-  font-weight: bold;
-  margin: 0 auto;
-  padding: 1em 1em;
-  text-align: center;
-}
-
-nav.container a {
-  color: var(--link-color);
-  text-decoration: none;
-  font: 0.99em Noto Sans;
-  font-weight: bold;
-  margin: 0px 10px;
-  padding: 5px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
-}
-
-nav.container a:hover {
-  color: var(--nav-accent-color);
-}
-
-/* effect top-bottom borders go out */
-nav.topBotomBordersOut a:before,
-nav.topBotomBordersOut a:after {
-  position: absolute;
-  left: 0px;
-  width: 100%;
-  height: 2px;
-  background: var(--nav-accent-color);
-  content: "";
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-nav.topBotomBordersOut a:before {
-  top: 0px;
-  transform: translateY(10px);
-}
-
-nav.topBotomBordersOut a:after {
-  bottom: 0px;
-  transform: translateY(-10px);
-}
-
-nav.topBotomBordersOut a:hover:before,
-nav.topBotomBordersOut a:hover:after {
-  opacity: 1;
-  transform: translateY(0px);
-}
-
 /* selected menu item */
 
-nav.active-menu-about a.menu-about,
-nav.active-menu-download a.menu-download,
-nav.active-menu-community a.menu-community,
-nav.active-menu-recipes a.menu-recipes,
-nav.active-menu-screenshots a.menu-screenshots,
-nav.active-menu-doc a.menu-doc {
-  color: var(--nav-accent-color);
-  text-decoration-line: underline;
+.active-menu-about a.menu-about,
+.active-menu-download a.menu-download,
+.active-menu-community a.menu-community,
+.active-menu-recipes a.menu-recipes,
+.active-menu-screenshots a.menu-screenshots,
+.active-menu-doc a.menu-doc {
+  color: var(--nav-selected-color);
   text-decoration-thickness: 1.7px;
+  font-weight: 700;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 10%;
+  background-color: var(--nav-background-color-transparent);
+  border: 1px;
+  border-color: var(--nav-border-color);
+  border-style: hidden;
+  transition: 0.4s;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 98;
+}
+
+#nav-logo-dark {
+  width: 200px;
+  transition: 0.4s;
+  display: none;
+}
+
+#nav-logo-light {
+  width: 200px;
+  transition: 0.4s;
+  display: none;
+}
+
+.zero-margins {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.cta,
+.overlay__content a {
+  font-weight: 500;
+  color: var(--nav-text-color);
+  text-decoration: none;
+}
+
+.nav__links a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--nav-accent-color) !important;
+}
+
+.nav__href {
+  color: var(--nav-text-color);
+}
+
+.cta {
+  padding: 9px 25px;
+  color: var(--button-text-color);
+  background-color: var(--button-background-color);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease 0s;
+}
+
+.cta:hover {
+  background-color: var(--button-background-color-transparent);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--nav-accent-color);
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: var(--nav-text-color);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .nav__links,
+  .cta,
+  .mode-switch {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
 }
 
 /* vim: set sw=2 et: */
