@@ -1,0 +1,96 @@
+# awesome-stop-unfocused
+
+A module for [Awesome WM](https://awesomewm.org) to stop unfocused clients
+(programs) that might take CPU resources unnecessarily (e.g. browsers).
+
+## Usage
+
+1. Download [stop_unfocused.lua](https://awesomewm.org/recipes/stop_unfocused.lua),
+   e.g. into `~/.config/awesome/lib`.
+2. Add the following to your `rc.lua`, which automatically enables it:
+
+   ```lua
+   local stop_unfocused = require('lib/stop_unfocused')
+   ```
+
+## Configuration
+
+### Rules
+
+You can configure the rules for matching clients:
+
+```lua
+stop_unfocused.config.rules = {
+  {rule = {class = 'qutebrowser'}},
+  {rule = {class = 'Firefox'}},
+  {rule = {class = 'Thunderbird'}},
+}
+```
+
+### Timeout
+
+You can configure the global timeout after which an unfocused client (matching
+the rules) should get stopped (in seconds):
+
+```lua
+stop_unfocused.config.stop_timeout = 10
+```
+
+You can also specify this in the rule:
+
+```lua
+stop_unfocused.config.rules = {
+  {rule = {class = 'qutebrowser'}, timeout = 10},
+  {rule = {class = 'Firefox'}},
+  {rule = {class = 'Thunderbird'}, timeout = 2},
+}
+```
+
+## Methods
+
+You can use the `sigstop()` and `sigcont()` methods, e.g. for the tasklist
+mouse buttons to stop a client when it gets minimized.
+
+## Example config with custom callback to handle child processes
+
+```lua
+local stop_unfocused = require('lib/stop_unfocused')
+stop_unfocused.config.rules = {
+    { rule = {class = 'qutebrowser'}, properties = {
+        stop_timeout=5,
+      },
+      callback = function(c, stop, done_cb)
+        local ps_cmd = '$(ps -o pgid= '..tostring(c.pid)..')'
+        if stop then
+          return stop_unfocused.spawn_with_cb_on_exit(
+            {'sh', '-c', 'pkill -STOP -g '..ps_cmd..' -f QtWebEngineProc'},
+            done_cb)
+        else
+          return stop_unfocused.spawn_with_cb_on_exit(
+            {'sh', '-c', 'pkill -CONT -g '..ps_cmd},
+            done_cb)
+        end
+      end,
+    },
+    { rule = {class = 'Firefox'} },
+    { rule = {class = 'Thunderbird'} },
+}
+```
+
+## Temporarily ignore clients
+
+To temporarily ignore clients (e.g. an unfocused browser playing some video)
+something like this can be used, e.g. mapped to some key(s), which toggles the
+state, and :
+
+```lua
+    i = function (c)
+      if stop_unfocused.ignore_clients[c] then
+        stop_unfocused.ignore_clients[c] = nil
+        naughty.notify({text="stop_unfocused: not ignoring"})
+      else
+        stop_unfocused.ignore_clients[c] = true
+        naughty.notify({text="stop_unfocused: ignoring"})
+      end
+    end,
+```

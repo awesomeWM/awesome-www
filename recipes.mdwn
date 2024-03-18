@@ -58,3 +58,4 @@ to improve your Awesome setup.
 * [Poppin' - Pop over applications](https://github.com/raksooo/poppin)
 * [Awesome taglist](../recipes/awesome-taglist)
 * [Tag based screen rotation](https://github.com/raksooo/screenrotation)
+* [[SIGSTOP unfocused clients|recipes/stop_unfocused]]
